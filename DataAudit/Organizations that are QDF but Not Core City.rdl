@@ -201,11 +201,7 @@
                   <Width>0.95295in</Width>
                 </TablixColumn>
                 <TablixColumn>
-<<<<<<< HEAD
-                  <Width>1.09289in</Width>
-=======
                   <Width>1.34289in</Width>
->>>>>>> 6e9e47643ca0672abea0def32db1bee78b1dfe08
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.04167in</Width>
@@ -525,22 +521,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-<<<<<<< HEAD
-                        <Textbox Name="Textbox3">
-=======
                         <Textbox Name="textbox7">
->>>>>>> 6e9e47643ca0672abea0def32db1bee78b1dfe08
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-<<<<<<< HEAD
-                                  <Value>ESP QDF Date</Value>
-=======
                                   <Value>JS Core City Cleveland</Value>
->>>>>>> 6e9e47643ca0672abea0def32db1bee78b1dfe08
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -552,11 +540,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-<<<<<<< HEAD
-                          <rd:DefaultName>Textbox3</rd:DefaultName>
-=======
                           <rd:DefaultName>textbox7</rd:DefaultName>
->>>>>>> 6e9e47643ca0672abea0def32db1bee78b1dfe08
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -581,6 +565,7 @@
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
+                            <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1733,11 +1718,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-<<<<<<< HEAD
-                                  <Value>=FormatDateTime(Fields!ESP_Qualified_Deal_Flow_Date__c.Value,2)</Value>
-=======
                                   <Value>=Fields!JS_Core_City_Cleveland__c.Value</Value>
->>>>>>> 6e9e47643ca0672abea0def32db1bee78b1dfe08
                                   <Style>
                                     <FontFamily />
                                     <Format>MM/dd/yyyy</Format>
@@ -1755,6 +1736,27 @@
                             <Border>
                               <Style>Solid</Style>
                             </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
+                            <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1772,7 +1774,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ESP_Qualified_Deal_Flow_Date__c.Value</Value>
+                                  <Value>=FormatDateTime(Fields!ESP_Qualified_Deal_Flow_Date__c.Value,2)</Value>
                                   <Style>
                                     <FontFamily />
                                     <Format>d</Format>
@@ -2669,11 +2671,7 @@
             <Top>1.95708in</Top>
             <Left>0.09375in</Left>
             <Height>0.43in</Height>
-<<<<<<< HEAD
-            <Width>33.42082in</Width>
-=======
             <Width>33.67082in</Width>
->>>>>>> 6e9e47643ca0672abea0def32db1bee78b1dfe08
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -2939,11 +2937,7 @@
         <Height>4.07875in</Height>
         <Style />
       </Body>
-<<<<<<< HEAD
-      <Width>35.51457in</Width>
-=======
       <Width>34.7229in</Width>
->>>>>>> 6e9e47643ca0672abea0def32db1bee78b1dfe08
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
