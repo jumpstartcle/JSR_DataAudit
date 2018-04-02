@@ -198,7 +198,7 @@
                   <Width>0.95295in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.09289in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.04167in</Width>
@@ -520,14 +520,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="textbox8">
+                        <Textbox Name="Textbox3">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>ESP QDF Date </Value>
+                                  <Value>ESP QDF Date</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -537,7 +537,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>textbox8</rd:DefaultName>
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -562,7 +562,6 @@
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
-                            <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1713,15 +1712,17 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ESP_Qualified_Deal_Flow_Date__c.Value</Value>
+                                  <Value>=FormatDateTime(Fields!ESP_Qualified_Deal_Flow_Date__c.Value,2)</Value>
                                   <Style>
                                     <FontFamily />
-                                    <Format>d</Format>
+                                    <Format>MM/dd/yyyy</Format>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>ESP_Qualified_Deal_Flow_Date__c</rd:DefaultName>
@@ -1729,27 +1730,6 @@
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <TopBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </RightBorder>
-                            <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -2661,7 +2641,7 @@
             <Top>1.95708in</Top>
             <Left>0.09375in</Left>
             <Height>0.43in</Height>
-            <Width>33.32793in</Width>
+            <Width>33.42082in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -2920,7 +2900,7 @@
         <Height>4.07875in</Height>
         <Style />
       </Body>
-      <Width>33.42168in</Width>
+      <Width>35.51457in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
