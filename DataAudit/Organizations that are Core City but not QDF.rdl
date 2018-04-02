@@ -158,7 +158,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Organizations that are Core City but </Value>
+                    <Value>Organizations that are Core City but N</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontSize>14pt</FontSize>
@@ -166,7 +166,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>not QDF</Value>
+                    <Value>ot QDF</Value>
                     <Style>
                       <FontSize>14pt</FontSize>
                       <FontWeight>Bold</FontWeight>
