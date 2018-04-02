@@ -2821,7 +2821,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>: uspDAOrgsNotQDFNotCoreCity</Value>
+                    <Value>:  uspDAOrgsNotQDFNotCoreCity</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Bold</FontWeight>
@@ -2833,10 +2833,17 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Secondary Objects: </Value>
+                    <Value>Secondary Objects:  </Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Normal</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>vwClientServices</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -2852,7 +2859,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>: GitHub/JSR_DataAudit/DataAudit/Organizations that are QDF but Not Core City</Value>
+                    <Value>:  GitHub/JSR_DataAudit/DataAudit/Organizations that are QDF but Not Core City</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Bold</FontWeight>
@@ -2871,7 +2878,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>: https://report.jumpstartinc.org/ReportS/report/Data%20Audit/Organizations%20that%20are%20QDF%20but%20Not%20Core%20City</Value>
+                    <Value>:  https://report.jumpstartinc.org/ReportS/report/Data%20Audit/Organizations%20that%20are%20QDF%20but%20Not%20Core%20City</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Bold</FontWeight>
