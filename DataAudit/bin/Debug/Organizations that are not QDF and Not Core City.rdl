@@ -2821,10 +2821,16 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>: uspDAOrgsNotQDFNotCoreCity</Value>
+                    <Value>:  uspDAOrgsNotQDFNotCoreCity  </Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>(Filtered on;  ESP Qualified Deal Flow Date is Blank and JS Core City Cleveland is Blank)</Value>
+                    <Style>
+                      <FontWeight>Normal</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -2833,10 +2839,35 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Secondary Objects: </Value>
+                    <Value>Secondary Objects:  </Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Normal</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>vwClientServices</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -2852,7 +2883,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>: GitHub/JSR_DataAudit/DataAudit/Organizations that are not QDF and not Core City</Value>
+                    <Value>:  GitHub/JSR_DataAudit/DataAudit/Organizations that are not QDF and not Core City</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Bold</FontWeight>
@@ -2871,7 +2902,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>: https://report.jumpstartinc.org/ReportS/report/Data%20Audit/Organizations%20that%20are%20not%20QDF%20and%20not%20Core%20City</Value>
+                    <Value>:  https://report.jumpstartinc.org/ReportS/report/Data%20Audit/Organizations%20that%20are%20not%20QDF%20and%20not%20Core%20City</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Bold</FontWeight>

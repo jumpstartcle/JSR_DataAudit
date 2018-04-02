@@ -2821,10 +2821,17 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>:  uspDAOrgsNotQDFNotCoreCity</Value>
+                    <Value>:  uspDAOrgsNotQDFNotCoreCity   </Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>(Filtered on;  ESP Qualified Deal Flow Date is Not Blank and JS Core City Cleveland is Blank)</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -2841,6 +2848,18 @@
                   </TextRun>
                   <TextRun>
                     <Value>vwClientServices</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Bold</FontWeight>
