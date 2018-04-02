@@ -2753,7 +2753,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>This report displays the organizations that are Core City (CC) but Not Qualified Deal Flow (QDF) in Salesforce for the Time Period (quarter) that needs reviewed. </Value>
+                    <Value>This report displays the Organizations that are Core City (CC) but Not Qualified Deal Flow (QDF) in Salesforce for the Time Period (quarter) that needs reviewed. </Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                     </Style>
@@ -2810,7 +2810,33 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>The Date of First Contact is between the Start Date and End Date in the report parameter above.</Value>
+                    <Value>The Date of First Contact is between the </Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>Start Date</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value> and </Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>End Date</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value> in the report parameter above.</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                     </Style>
