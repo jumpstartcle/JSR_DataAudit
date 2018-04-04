@@ -814,7 +814,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>ESP Primary Market Application 2017</Value>
+                                  <Value>ESP Primary Market  or Application 2017</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -2629,7 +2629,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>This report displays the organizations that are Core City (CC) but Not Qualified Deal Flow (QDF)  in Salesforce for the time period that needs reviewed. The goal is that any companies that are eligible for ESP or Core City are marked as such prior to reporting on those two programs is done. </Value>
+                    <Value>This report displays the Organizations that are Core City (CC) but Not Qualified Deal Flow (QDF) in Salesforce for the Time Period (quarter) that needs reviewed. </Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                     </Style>
@@ -2640,7 +2640,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Data selection: all Organizations where the Date of First Contact is between two parameter dates (Start of Period and End of Period) where ESP Qualified Deal Flow Date is blank and JS Core City Cleveland is Not blank.</Value>
+                    <Value>The goal is that any Companies that are eligible for ESP or Core City are marked as such prior to the reporting on those two programs is done. </Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                     </Style>
@@ -2648,12 +2648,109 @@
                 </TextRuns>
                 <Style />
               </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Data selection</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <TextDecoration>Underline</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>All Organizations where;</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>The Date of First Contact is between the </Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>Start Date</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value> and </Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>End Date</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value> in the report parameter above.</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>AND the JS Core City Cleveland is NOT Blank.</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>AND the ESP Qualified Deal Flow Date IS blank.</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
             <Top>0.62375in</Top>
             <Left>0.09375in</Left>
             <Height>1.26389in</Height>
-            <Width>5.78125in</Width>
+            <Width>11.28542in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -2674,7 +2771,32 @@
                   <TextRun>
                     <Value>Defining the report fields</Value>
                     <Style>
+                      <FontFamily>Arial</FontFamily>
                       <TextDecoration>Underline</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Cs Name - Displays the field 'Client Services Name' from the Client Services Record.</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>CS Id - Displays the field 'ID' from the Client Services Record.</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -2687,10 +2809,10 @@
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Bold</FontWeight>
+                      <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <ListStyle>Bulleted</ListStyle>
                 <ListLevel>1</ListLevel>
                 <Style />
               </Paragraph>
@@ -2704,10 +2826,17 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>: uspDAOrgsNotQDFNotCoreCity</Value>
+                    <Value>:  uspDAOrgsNotQDFNotCoreCity </Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>(Filtered on; JS Core City Cleveland is Not Blank and ESP Qualified Deal Flow Date is Blank)</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -2716,10 +2845,35 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Secondary Objects: </Value>
+                    <Value>Secondary Objects:  </Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Normal</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>vwClientServices</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -2735,7 +2889,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>: GitHub/JSR_DataAudit/DataAudit/Organizations that are Core City but not QDF</Value>
+                    <Value>:  GitHub/JSR_DataAudit/DataAudit/Organizations that are Core City but not QDF</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Bold</FontWeight>
@@ -2754,7 +2908,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>: https://report.jumpstartinc.org/ReportS/report/Data%20Audit/Organizations%20that%20are%20Core%20City%20but%20not%20QDF</Value>
+                    <Value>:  https://report.jumpstartinc.org/ReportS/report/Data%20Audit/Organizations%20that%20are%20Core%20City%20but%20not%20QDF</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Bold</FontWeight>
@@ -2773,7 +2927,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>: </Value>
+                    <Value>:  </Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Bold</FontWeight>
