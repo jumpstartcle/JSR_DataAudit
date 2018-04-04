@@ -213,7 +213,7 @@
                   <Width>1.72916in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.50001in</Width>
+                  <Width>2.35418in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.44704in</Width>
@@ -2683,7 +2683,7 @@
             <Top>1.95708in</Top>
             <Left>0.09375in</Left>
             <Height>0.43in</Height>
-            <Width>35.57707in</Width>
+            <Width>36.43124in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -2995,6 +2995,23 @@
                   </TextRun>
                 </TextRuns>
                 <ListLevel>2</ListLevel>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>If you find any duplicate Client Services Records during your review, please bring them to the attention of IT (Alex or Jeri).</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>1</ListLevel>
                 <Style>
                   <TextAlign>Left</TextAlign>
                 </Style>
