@@ -2823,7 +2823,7 @@
             <Top>1.95708in</Top>
             <Left>0.09375in</Left>
             <Height>0.43in</Height>
-            <Width>36.26041in</Width>
+            <Width>36.26042in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -2898,9 +2898,12 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>This report displays the Organizations that are neither Qualified Deal Flow (QDF) NOR Core City (CC) in Salesforce for the Time Period (quarter) that needs reviewed. </Value>
+                    <Value>This report displays the Organizations that are neither Qualified Deal Flow (QDF) NOR Core City (CC) in Salesforce for the Time Period (Quarter) that needs reviewed. </Value>
                     <Style>
+                      <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -2909,9 +2912,12 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>The goal is that any Companies that are eligible for ESP or Core City are marked as such prior to the reporting on those two programs is done. </Value>
+                    <Value>The goal is that any Companies that are eligible for ESP or Core City are marked as such prior to Quarterly Reporting on these two programs is Completed. </Value>
                     <Style>
+                      <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -2922,7 +2928,10 @@
                   <TextRun>
                     <Value />
                     <Style>
+                      <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -2931,9 +2940,11 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Data selection</Value>
+                    <Value>Data selection includes Organizations where;</Value>
                     <Style>
+                      <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
                       <TextDecoration>Underline</TextDecoration>
                     </Style>
                   </TextRun>
@@ -2943,46 +2954,48 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>All Organizations where;</Value>
+                    <Value>The "Date of First Contact" is between the</Value>
                     <Style>
+                      <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>The Date of First Contact is between the </Value>
-                    <Style>
-                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>Start Date</Value>
+                    <Value> Date of First Contact Start Date</Value>
                     <Style>
+                      <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Bold</FontWeight>
+                      <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value> and the </Value>
+                    <Value> and </Value>
                     <Style>
+                      <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>End Date</Value>
+                    <Value>Date of First Contact End Date</Value>
                     <Style>
+                      <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Bold</FontWeight>
+                      <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value> in the report parameters above.</Value>
+                    <Value> in the Report Parameters above.</Value>
                     <Style>
+                      <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -2992,9 +3005,12 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>AND the ESP Qualified Deal Flow Date is Blank </Value>
+                    <Value>And the "ESP Qualified Deal Flow Date" is Blank.</Value>
                     <Style>
+                      <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -3004,9 +3020,131 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>AND the JS Core City Cleveland is Blank.</Value>
+                    <Value>And the "JS Core City Cleveland" is Blank.</Value>
                     <Style>
+                      <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>And the "Not ESP QDF, Reviewed By" is Blank.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>And the "Client Services Created By" is a JumpStart Employee.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Work Instructions:</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>Underline</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Please add or adjust any needed data in Salesforce to designate a Company as Qualified Deal Flow (QDF) and/or Core City (CC) if appropriate.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>If the Company is not eligible for ESP,  Fill in the field "Not ESP QDF, Reviewed By".</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>You can click on the Client Services Name in this report and it will take you to the record in Salesforce.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>2</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>If you find any duplicate Client Services Records during your review, please bring them to the attention of IT (Alex or Jeri).</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -3039,6 +3177,7 @@
                   <TextRun>
                     <Value>Defining the report fields</Value>
                     <Style>
+                      <FontFamily>Arial</FontFamily>
                       <TextDecoration>Underline</TextDecoration>
                     </Style>
                   </TextRun>
@@ -3048,8 +3187,58 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Cs Name - Displays the field 'Client Services Name' from the Client Services Record.</Value>
+                    <Value>Client Services Name</Value>
                     <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value> - Displays the field 'Client Services Name' from the Client Services Record.</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListStyle>Bulleted</ListStyle>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Client Services Record Created By </Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>- Displays the field 'Name' from the User Record.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListStyle>Bulleted</ListStyle>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Company Billing Address/City/State/Zip is displayed in the Organization Record as one field, however the information is stored in the Account Table as follows;</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
                       <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
@@ -3059,7 +3248,132 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>CS Id - Displays the field 'ID' from the Client Services Record.</Value>
+                    <Value>Address - </Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>Is pulled from the Billing Street field.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListStyle>Bulleted</ListStyle>
+                <ListLevel>2</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>City - </Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>Is pulled from the Billing City field.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListStyle>Bulleted</ListStyle>
+                <ListLevel>2</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>State - </Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>Is pulled from the Billing State field.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListStyle>Bulleted</ListStyle>
+                <ListLevel>2</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Zip</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value> – Is pulled from the Billing Postal Code field.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListStyle>Bulleted</ListStyle>
+                <ListLevel>2</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Lead Advisor</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value> - Displays the field 'Name' from the Lead Advisor's Contact Record.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListStyle>Bulleted</ListStyle>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
                     <Style>
                       <TextDecoration>None</TextDecoration>
                     </Style>
