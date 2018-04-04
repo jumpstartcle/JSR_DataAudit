@@ -3124,7 +3124,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>You can click on the Client Services Name in this report and it will take you to the record is Salesforce.</Value>
+                    <Value>You can click on the Client Services Name in this report and it will take you to the record in Salesforce.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
