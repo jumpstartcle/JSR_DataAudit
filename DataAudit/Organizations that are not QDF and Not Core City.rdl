@@ -2823,7 +2823,7 @@
             <Top>1.95708in</Top>
             <Left>0.09375in</Left>
             <Height>0.43in</Height>
-            <Width>36.26041in</Width>
+            <Width>36.26042in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -2940,7 +2940,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Data selection includes Organizations where; </Value>
+                    <Value>Data selection includes Organizations where;</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
