@@ -10,16 +10,20 @@
   <DataSets />
   <Reports>
     <ProjectItem>
-      <Name>Organizations that are not QDF and not Core City.rdl</Name>
-      <FullPath>Organizations that are not QDF and Not Core City.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Organizations that are Core City but not QDF.rdl</Name>
       <FullPath>Organizations that are Core City but not QDF.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Organizations that are not QDF and not Core City.rdl</Name>
+      <FullPath>Organizations that are not QDF and Not Core City.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Organizations that are QDF but Not Core City.rdl</Name>
       <FullPath>Organizations that are QDF but Not Core City.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Organizations Ethnicity Minority Fields Audit.rdl</Name>
+      <FullPath>Organizations Ethnicity Minority Fields Audit.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
