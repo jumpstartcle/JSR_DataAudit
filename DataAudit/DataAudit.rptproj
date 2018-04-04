@@ -25,6 +25,10 @@
       <Name>Organizations Ethnicity Minority Fields Audit.rdl</Name>
       <FullPath>Organizations Ethnicity Minority Fields Audit.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>SpinOff Connections Audit.rdl</Name>
+      <FullPath>SpinOff Connections Audit.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
