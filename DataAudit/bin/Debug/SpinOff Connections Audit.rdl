@@ -1012,21 +1012,11 @@
   <ReportParameters>
     <ReportParameter Name="Start">
       <DataType>DateTime</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>=#01/01/2018#</Value>
-        </Values>
-      </DefaultValue>
-      <Prompt>Date of First Contact From</Prompt>
+      <Prompt>Date of First Contact Start Date:</Prompt>
     </ReportParameter>
     <ReportParameter Name="End">
       <DataType>DateTime</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>=Today()</Value>
-        </Values>
-      </DefaultValue>
-      <Prompt>To</Prompt>
+      <Prompt>Date of First Contact End Date:</Prompt>
     </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
