@@ -10,6 +10,10 @@
   <DataSets />
   <Reports>
     <ProjectItem>
+      <Name>Organizations Ethnicity Minority Fields Audit.rdl</Name>
+      <FullPath>Organizations Ethnicity Minority Fields Audit.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Organizations that are Core City but not QDF.rdl</Name>
       <FullPath>Organizations that are Core City but not QDF.rdl</FullPath>
     </ProjectItem>
@@ -22,12 +26,16 @@
       <FullPath>Organizations that are QDF but Not Core City.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Organizations Ethnicity Minority Fields Audit.rdl</Name>
-      <FullPath>Organizations Ethnicity Minority Fields Audit.rdl</FullPath>
+      <Name>Organizations with Multiple Point in Time Records for the Same Date.rdl</Name>
+      <FullPath>Organizations with Multiple Point in Time Records for the Same Date.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>SpinOff Connections Audit.rdl</Name>
       <FullPath>SpinOff Connections Audit.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Organizations with Multiple Time Period Data Records for the Same Date.rdl</Name>
+      <FullPath>Organizations with Multiple Time Period Data Records for the Same Date.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
