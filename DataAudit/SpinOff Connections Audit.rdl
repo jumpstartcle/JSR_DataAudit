@@ -1005,7 +1005,7 @@
   <ReportParameters>
     <ReportParameter Name="Start">
       <DataType>DateTime</DataType>
-      <Prompt>Date of First Contact Start Date</Prompt>
+      <Prompt>Date of First Contact Start Date:</Prompt>
     </ReportParameter>
     <ReportParameter Name="End">
       <DataType>DateTime</DataType>
