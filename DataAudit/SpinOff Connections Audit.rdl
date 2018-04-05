@@ -24,18 +24,8 @@
             <Value>=Parameters!End.Value</Value>
           </QueryParameter>
         </QueryParameters>
-        <CommandText>SELECT 
-cs.OrganizationName
-, 'https://jumpstart.my.salesforce.com/' + cs.Organization__c as OrgURL
-, cs.Date_of_First_Contact__c
-, cs.ESP_Qualified_Deal_Flow_Date__c
-, cs.Lead_Advisor__c
-, cs.LeadAdvisorName
-, cs.LeadAdvisorAccountName
-, cs.ESP_Short_Description__c
-FROM [dbo].[vwClientServices] cs
-WHERE cs.Date_of_First_Contact__c BETWEEN  @Start and @End
-AND cs.Organization__c NOT IN (SELECT Related_OrgID_2 FROM dbo.vwOrgSpinouts)</CommandText>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>uspSpinOffConnectionsAudit</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -549,7 +539,7 @@ AND cs.Organization__c NOT IN (SELECT Related_OrgID_2 FROM dbo.vwOrgSpinouts)</C
             <DataSetName>DataSet1</DataSetName>
             <Top>1.53472in</Top>
             <Height>0.46125in</Height>
-            <Width>14in</Width>
+            <Width>14.00001in</Width>
             <Style />
           </Tablix>
           <Textbox Name="textbox1">
@@ -782,7 +772,22 @@ AND cs.Organization__c NOT IN (SELECT Related_OrgID_2 FROM dbo.vwOrgSpinouts)</C
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Primary Object: </Value>
+                    <Value>Primary Object:     </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>uspSpinOffConnectionsAudit</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Secondary Object: </Value>
                     <Style />
                   </TextRun>
                   <TextRun>
@@ -987,7 +992,7 @@ AND cs.Organization__c NOT IN (SELECT Related_OrgID_2 FROM dbo.vwOrgSpinouts)</C
         <Height>6.00472in</Height>
         <Style />
       </Body>
-      <Width>14in</Width>
+      <Width>14.00001in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
@@ -1002,7 +1007,7 @@ AND cs.Organization__c NOT IN (SELECT Related_OrgID_2 FROM dbo.vwOrgSpinouts)</C
       <DataType>DateTime</DataType>
       <DefaultValue>
         <Values>
-          <Value>=#01/01/2017#</Value>
+          <Value>=#01/01/2018#</Value>
         </Values>
       </DefaultValue>
       <Prompt>Date of First Contact From</Prompt>
