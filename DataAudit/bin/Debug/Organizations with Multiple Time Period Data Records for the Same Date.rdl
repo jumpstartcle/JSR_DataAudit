@@ -1307,7 +1307,7 @@
           <FilterExpression>=Fields!RptType.Value</FilterExpression>
           <Operator>Equal</Operator>
           <FilterValues>
-            <FilterValue>Point</FilterValue>
+            <FilterValue>Time</FilterValue>
           </FilterValues>
         </Filter>
       </Filters>
