@@ -322,6 +322,13 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrganizationName</rd:DefaultName>
+                          <ActionInfo>
+                            <Actions>
+                              <Action>
+                                <Hyperlink>=Fields!OrgURL.Value</Hyperlink>
+                              </Action>
+                            </Actions>
+                          </ActionInfo>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
