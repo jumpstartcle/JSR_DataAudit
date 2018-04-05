@@ -37,6 +37,10 @@
       <Name>Organizations with Multiple Time Period Data Records for the Same Date.rdl</Name>
       <FullPath>Organizations with Multiple Time Period Data Records for the Same Date.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Almost Client Review.rdl</Name>
+      <FullPath>Almost Client Review.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>

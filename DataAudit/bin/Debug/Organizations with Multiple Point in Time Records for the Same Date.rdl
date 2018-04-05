@@ -651,7 +651,7 @@
         </SortExpressions>
         <Top>0.04167in</Top>
         <Height>0.5in</Height>
-        <Width>11.52083in</Width>
+        <Width>11.52084in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -697,15 +697,127 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Organization Id
-Organization Name
-Employment Data As Of
-Company Reporting Data Name
-Estimated Data
-Approximate Average Salary
-Total Number Of Employees
-Total Employees (Core City)
-Primary Contact Company</Value>
+                <Value>Organization Id</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <ListStyle>Bulleted</ListStyle>
+            <ListLevel>1</ListLevel>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Organization Name</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <ListStyle>Bulleted</ListStyle>
+            <ListLevel>1</ListLevel>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Employment Data As Of</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <ListStyle>Bulleted</ListStyle>
+            <ListLevel>1</ListLevel>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Company Reporting Data Name</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <ListStyle>Bulleted</ListStyle>
+            <ListLevel>1</ListLevel>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Estimated Data</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <ListStyle>Bulleted</ListStyle>
+            <ListLevel>1</ListLevel>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Approximate Average Salary</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <ListStyle>Bulleted</ListStyle>
+            <ListLevel>1</ListLevel>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Total Number Of Employees</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <ListStyle>Bulleted</ListStyle>
+            <ListLevel>1</ListLevel>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Total Employees (Core City)</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <ListStyle>Bulleted</ListStyle>
+            <ListLevel>1</ListLevel>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Primary Contact Company</Value>
                 <Style>
                   <FontWeight>Bold</FontWeight>
                 </Style>
@@ -868,7 +980,7 @@ Primary Contact Company</Value>
     <Height>4.85417in</Height>
     <Style />
   </Body>
-  <Width>11.52083in</Width>
+  <Width>11.52084in</Width>
   <Page>
     <PageHeader>
       <Height>1.15625in</Height>
