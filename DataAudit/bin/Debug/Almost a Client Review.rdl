@@ -708,7 +708,7 @@
             </SortExpressions>
             <Top>1.53472in</Top>
             <Height>0.46125in</Height>
-            <Width>12.47918in</Width>
+            <Width>12.47917in</Width>
             <Style />
           </Tablix>
           <Textbox Name="textbox1">
@@ -797,13 +797,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Client Service Record Name </Value>
-                    <Style>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>- With a link to the record in Salesforce</Value>
+                    <Value>Client Service Record Name - With a link to the record in Salesforce</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>

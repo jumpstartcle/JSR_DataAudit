@@ -10,6 +10,10 @@
   <DataSets />
   <Reports>
     <ProjectItem>
+      <Name>Almost a Client Review.rdl</Name>
+      <FullPath>Almost a Client Review.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Duplicate Client Progress Records.rdl</Name>
       <FullPath>Duplicate Client Progress Records.rdl</FullPath>
     </ProjectItem>
@@ -42,8 +46,8 @@
       <FullPath>SpinOff Connections Audit.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Almost a Client Review.rdl</Name>
-      <FullPath>Almost a Client Review.rdl</FullPath>
+      <Name>Two Contacts Same Email Address.rdl</Name>
+      <FullPath>Two Contacts Same Email Address.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
