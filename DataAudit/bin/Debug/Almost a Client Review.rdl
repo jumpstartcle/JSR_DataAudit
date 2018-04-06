@@ -16,40 +16,44 @@
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>SFDown</DataSourceName>
-        <CommandText>SELECT * FROM vwDuplicateClientProgressRecords</CommandText>
+        <CommandText>SELECT * FROM vwAlmostClientReview</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
-        <Field Name="OrganizationName">
-          <DataField>OrganizationName</DataField>
+        <Field Name="Name">
+          <DataField>Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="OrgURL">
-          <DataField>OrgURL</DataField>
+        <Field Name="CSRurl">
+          <DataField>CSRurl</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="CRDCreatedBy">
-          <DataField>CRDCreatedBy</DataField>
+        <Field Name="ESP_Qualified_Deal_Flow_Date__c">
+          <DataField>ESP_Qualified_Deal_Flow_Date__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="CRDName">
-          <DataField>CRDName</DataField>
+        <Field Name="Advisor_Organization_f__c">
+          <DataField>Advisor_Organization_f__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ODSA_Operating_Stage__c">
-          <DataField>ODSA_Operating_Stage__c</DataField>
+        <Field Name="LeadAdvisorName">
+          <DataField>LeadAdvisorName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ODSA_Stage_Start_Date__c">
-          <DataField>ODSA_Stage_Start_Date__c</DataField>
+        <Field Name="Total_ESP_Time_Spent__c">
+          <DataField>Total_ESP_Time_Spent__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Date_of_First_Contact__c">
+          <DataField>Date_of_First_Contact__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="ODSA_Stage_Change_Type__c">
-          <DataField>ODSA_Stage_Change_Type__c</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="Total_Time_Spent__c">
+          <DataField>Total_Time_Spent__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="ODSA_Stage_Change_Reason__c">
-          <DataField>ODSA_Stage_Change_Reason__c</DataField>
+        <Field Name="Last_Time_Spent_Date__c">
+          <DataField>Last_Time_Spent_Date__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
@@ -63,25 +67,28 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>2.06251in</Width>
+                  <Width>2.85417in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.9375in</Width>
+                  <Width>1.69792in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.60417in</Width>
+                  <Width>2.28125in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.85417in</Width>
+                  <Width>1.07292in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.07291in</Width>
+                  <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.0625in</Width>
+                  <Width>1.25in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.26042in</Width>
+                  <Width>0.92708in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.39583in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -97,7 +104,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Organization Name</Value>
+                                  <Value>Client Service Record Name</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>11pt</FontSize>
@@ -131,7 +138,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>CRD Record Created By</Value>
+                                  <Value>Lead Advisor Name</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>11pt</FontSize>
@@ -165,7 +172,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>CRD Name</Value>
+                                  <Value>Lead Advisor Organization</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>11pt</FontSize>
@@ -192,40 +199,6 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox3">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>ODSA Operating Stage</Value>
-                                  <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                    <FontSize>11pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox3</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
                         <Textbox Name="Textbox22">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -233,7 +206,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>ODSA Stage Start Date</Value>
+                                  <Value>Date of First Contact</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>11pt</FontSize>
@@ -262,14 +235,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox7">
+                        <Textbox Name="Textbox2">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>ODSA Stage Change Type</Value>
+                                  <Value>QDF Date</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>11pt</FontSize>
@@ -280,6 +253,74 @@
                               <Style>
                                 <TextAlign>Center</TextAlign>
                               </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox2</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Total ESP Time Spent</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox7">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Total Time Spent</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox7</rd:DefaultName>
@@ -305,7 +346,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>ODSA Stage Change Reason</Value>
+                                  <Value>Last Time Spent Date </Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>11pt</FontSize>
@@ -339,14 +380,14 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="OrganizationName">
+                        <Textbox Name="Name">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!OrganizationName.Value</Value>
+                                  <Value>=Fields!Name.Value</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -356,11 +397,11 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>OrganizationName</rd:DefaultName>
+                          <rd:DefaultName>Name</rd:DefaultName>
                           <ActionInfo>
                             <Actions>
                               <Action>
-                                <Hyperlink>=Fields!OrgURL.Value</Hyperlink>
+                                <Hyperlink>=Fields!CSRurl.Value</Hyperlink>
                               </Action>
                             </Actions>
                           </ActionInfo>
@@ -369,6 +410,10 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(   
+   Fields!Total_ESP_Time_Spent__c.Value &gt;=15 and Fields!Total_ESP_Time_Spent__c.Value &lt; 20, "Orange",
+   Fields!Total_ESP_Time_Spent__c.Value &gt; 10 and Fields!Total_ESP_Time_Spent__c.Value &lt; 15, "Green"
+)</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -379,14 +424,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="CRDCreatedBy">
+                        <Textbox Name="LeadAdvisorName">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!CRDCreatedBy.Value</Value>
+                                  <Value>=Fields!LeadAdvisorName.Value</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                   </Style>
@@ -395,7 +440,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>CRDCreatedBy</rd:DefaultName>
+                          <rd:DefaultName>LeadAdvisorName</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -411,14 +456,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="CRDName">
+                        <Textbox Name="Advisor_Organization_f__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!CRDName.Value</Value>
+                                  <Value>=Fields!Advisor_Organization_f__c.Value</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                   </Style>
@@ -427,7 +472,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>CRDName</rd:DefaultName>
+                          <rd:DefaultName>Advisor_Organization_f__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -443,46 +488,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="ODSA_Operating_Stage__c">
+                        <Textbox Name="Date_of_First_Contact__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ODSA_Operating_Stage__c.Value</Value>
-                                  <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>ODSA_Operating_Stage__c</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="ODSA_Stage_Start_Date__c">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!ODSA_Stage_Start_Date__c.Value</Value>
+                                  <Value>=Fields!Date_of_First_Contact__c.Value</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <Format>M/d/yyyy</Format>
@@ -494,7 +507,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>ODSA_Stage_Start_Date__c</rd:DefaultName>
+                          <rd:DefaultName>Date_of_First_Contact__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -510,16 +523,17 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="ODSA_Stage_Change_Type__c">
+                        <Textbox Name="ESP_Qualified_Deal_Flow_Date__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ODSA_Stage_Change_Type__c.Value</Value>
+                                  <Value>=Fields!ESP_Qualified_Deal_Flow_Date__c.Value</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
+                                    <Format>M/d/yyyy</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -528,7 +542,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>ODSA_Stage_Change_Type__c</rd:DefaultName>
+                          <rd:DefaultName>ESP_Qualified_Deal_Flow_Date__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -544,16 +558,83 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="ODSA_Stage_Change_Reason__c">
+                        <Textbox Name="Total_ESP_Time_Spent__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ODSA_Stage_Change_Reason__c.Value</Value>
+                                  <Value>=Fields!Total_ESP_Time_Spent__c.Value</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
+                                    <Format>#,0.0;(#,0.0)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Total_ESP_Time_Spent__c</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Total_Time_Spent__c">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Total_Time_Spent__c.Value</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <Format>0.0;(0.0)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Total_Time_Spent__c</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Last_Time_Spent_Date__c">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Last_Time_Spent_Date__c.Value</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <Format>MM/dd/yyyy</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -562,7 +643,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>ODSA_Stage_Change_Reason__c</rd:DefaultName>
+                          <rd:DefaultName>Last_Time_Spent_Date__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -589,6 +670,7 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -602,6 +684,12 @@
                   <Group Name="table1_Details_Group">
                     <DataElementName>Detail</DataElementName>
                   </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!Total_Time_Spent__c.Value</Value>
+                      <Direction>Descending</Direction>
+                    </SortExpression>
+                  </SortExpressions>
                   <TablixMembers>
                     <TablixMember />
                   </TablixMembers>
@@ -614,15 +702,13 @@
             <DataSetName>DataSet1</DataSetName>
             <SortExpressions>
               <SortExpression>
-                <Value>=Fields!OrganizationName.Value</Value>
-              </SortExpression>
-              <SortExpression>
-                <Value>=Fields!ODSA_Stage_Start_Date__c.Value</Value>
+                <Value>=Fields!Total_Time_Spent__c.Value</Value>
+                <Direction>Descending</Direction>
               </SortExpression>
             </SortExpressions>
-            <Top>1.26389in</Top>
+            <Top>1.53472in</Top>
             <Height>0.46125in</Height>
-            <Width>12.85417in</Width>
+            <Width>12.47918in</Width>
             <Style />
           </Tablix>
           <Textbox Name="textbox1">
@@ -632,7 +718,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Duplicate Client Progress Records</Value>
+                    <Value>Almost a Client Review</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
                       <FontSize>20pt</FontSize>
@@ -645,7 +731,7 @@
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Height>0.37723in</Height>
-            <Width>7.26042in</Width>
+            <Width>7.10417in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
@@ -661,11 +747,38 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value />
+                    <Value>Displays all Client Service Records where:</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
                 <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontWeight>Normal</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListStyle>Bulleted</ListStyle>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>1</ListLevel>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
               </Paragraph>
               <Paragraph>
                 <TextRuns>
@@ -684,7 +797,13 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Organization Name (with a link to Salesforce)</Value>
+                    <Value>Client Service Record Name </Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>- With a link to the record in Salesforce</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -699,7 +818,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Company Reporting Data Record Created By</Value>
+                    <Value>Lead Advisor</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -714,7 +833,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Company Reporting Data Name</Value>
+                    <Value>Lead Advisor Organization</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -729,7 +848,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>ODSA Operating Stage</Value>
+                    <Value>Date of First Contact</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -744,7 +863,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>ODSA Stage Start Date</Value>
+                    <Value>Qualified Deal Flow Date</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -759,7 +878,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>ODSA Stage Change Type</Value>
+                    <Value>Total ESP Time Spent</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -774,7 +893,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>ODSA Stage Change Reason</Value>
+                    <Value>Total Time Spent</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -789,7 +908,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Company Reporting Data Record Type Name</Value>
+                    <Value>Last Time Spent Date</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -828,13 +947,13 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Organization Name</Value>
+                    <Value>Total Time Spent</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value> (Ascending)</Value>
+                    <Value> (Descending)</Value>
                     <Style>
                       <FontWeight>Normal</FontWeight>
                     </Style>
@@ -899,7 +1018,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>:           /GitHub/JSR_DataAudit/DataAudit/Duplicate Client Progress Records</Value>
+                    <Value>:           /GitHub/JSR_DataAudit/DataAudit/Almost Client Review</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -933,7 +1052,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>: /Data Audit/Duplicate Client Progress Records</Value>
+                    <Value>: /Data Audit/Almost Client Review</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -964,7 +1083,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Query Last Modified/Reviewed: 04/05/2018</Value>
+                    <Value>Query Last Modified/Reviewed: 04/04/2018</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
@@ -1029,7 +1148,7 @@
                     <Style />
                   </TextRun>
                   <TextRun>
-                    <Value>Displays a list of Organizations with multiple Client Progress Records where the ODSA Operating Stage is the same.</Value>
+                    <Value>Displays a list of Companies who haven’t hit 20 ESP hours but are moving in that direction. Hopefully we can use this to proactively warn network partners that they need to get a CEL signed. </Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -1040,11 +1159,58 @@
                 </TextRuns>
                 <Style />
               </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>In orange – companies who have 15 – 19 hours, and had time recorded since 1/1/2017.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListStyle>Bulleted</ListStyle>
+                <ListLevel>2</ListLevel>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>In green – companies who have 10 – 14 hours, and had time recorded since 1/1/2017.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListStyle>Bulleted</ListStyle>
+                <ListLevel>2</ListLevel>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox13</rd:DefaultName>
             <Top>0.44667in</Top>
-            <Height>0.52027in</Height>
-            <Width>7.26042in</Width>
+            <Height>0.95777in</Height>
+            <Width>7.45834in</Width>
             <ZIndex>5</ZIndex>
             <Style>
               <Border>
@@ -1060,7 +1226,7 @@
         <Height>6.00472in</Height>
         <Style />
       </Body>
-      <Width>12.93751in</Width>
+      <Width>15.70834in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>

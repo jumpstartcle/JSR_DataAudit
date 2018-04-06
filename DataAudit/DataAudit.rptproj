@@ -10,6 +10,10 @@
   <DataSets />
   <Reports>
     <ProjectItem>
+      <Name>Duplicate Client Progress Records.rdl</Name>
+      <FullPath>Duplicate Client Progress Records.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Organizations Ethnicity Minority Fields Audit.rdl</Name>
       <FullPath>Organizations Ethnicity Minority Fields Audit.rdl</FullPath>
     </ProjectItem>
@@ -30,16 +34,16 @@
       <FullPath>Organizations with Multiple Point in Time Records for the Same Date.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>SpinOff Connections Audit.rdl</Name>
-      <FullPath>SpinOff Connections Audit.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Organizations with Multiple Time Period Data Records for the Same Date.rdl</Name>
       <FullPath>Organizations with Multiple Time Period Data Records for the Same Date.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Almost Client Review.rdl</Name>
-      <FullPath>Almost Client Review.rdl</FullPath>
+      <Name>SpinOff Connections Audit.rdl</Name>
+      <FullPath>SpinOff Connections Audit.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Almost a Client Review.rdl</Name>
+      <FullPath>Almost a Client Review.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

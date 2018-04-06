@@ -349,7 +349,7 @@
                                   <Value>=Fields!OrganizationName.Value</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
-                                    <FontWeight>Bold</FontWeight>
+                                    <FontWeight>Normal</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -622,7 +622,7 @@
             </SortExpressions>
             <Top>1.26389in</Top>
             <Height>0.46125in</Height>
-            <Width>12.85417in</Width>
+            <Width>12.85418in</Width>
             <Style />
           </Tablix>
           <Textbox Name="textbox1">
@@ -862,7 +862,7 @@
                     <Style />
                   </TextRun>
                   <TextRun>
-                    <Value>vwAlmostClientReview</Value>
+                    <Value>vwDuplicateClientProgressRecords</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -916,7 +916,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>:           https://report.jumpstartinc.org/ReportServer/Pages/ReportViewer.aspx?%2fData+Audit%2fAlmost+Client+Review&amp;rs:Command=Render</Value>
+                    <Value>:           https://report.jumpstartinc.org/ReportServer/Pages/ReportViewer.aspx?%2fData+Audit%2fDuplicate+Client+Progress+Records&amp;rs:Command=Render</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
