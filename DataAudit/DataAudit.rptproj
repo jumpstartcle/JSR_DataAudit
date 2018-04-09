@@ -49,6 +49,10 @@
       <Name>Two Contacts Same Email Address.rdl</Name>
       <FullPath>Two Contacts Same Email Address.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Organizations with Multiple Client Services Records.rdl</Name>
+      <FullPath>Organizations with Multiple Client Services Records.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
