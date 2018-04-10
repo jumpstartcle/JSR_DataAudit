@@ -53,6 +53,10 @@
       <Name>Organizations with Multiple Client Services Records.rdl</Name>
       <FullPath>Organizations with Multiple Client Services Records.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Client Service Records where the Lead Advisor is Blank.rdl</Name>
+      <FullPath>Client Service Records where the Lead Advisor is Blank.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
