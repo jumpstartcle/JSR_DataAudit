@@ -148,6 +148,10 @@
           <DataField>RecordTypeId</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="PartnerOrg">
+          <DataField>PartnerOrg</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <Filters>
         <Filter>
@@ -162,6 +166,13 @@
           <Operator>Equal</Operator>
           <FilterValues>
             <FilterValue DataType="Boolean">true</FilterValue>
+          </FilterValues>
+        </Filter>
+        <Filter>
+          <FilterExpression>=Fields!PartnerOrg.Value</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue>JumpStart Inc.</FilterValue>
           </FilterValues>
         </Filter>
       </Filters>

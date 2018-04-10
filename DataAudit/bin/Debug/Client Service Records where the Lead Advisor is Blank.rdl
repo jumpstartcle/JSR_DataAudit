@@ -545,8 +545,10 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Organization Name</Value>
+                    <Value>CSR Name</Value>
                     <Style>
+                      <FontFamily>Tahoma</FontFamily>
+                      <FontSize>11pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -579,7 +581,7 @@
                     <Style />
                   </TextRun>
                   <TextRun>
-                    <Value>uspSpinOffConnectionsAudit</Value>
+                    <Value>uspDA_CSR_LeadAdvBlank</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -622,7 +624,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>:           /GitHub/JSR_DataAudit/DataAudit/SpinOff Connections Audit</Value>
+                    <Value>:           /GitHub/JSR_DataAudit/DataAudit/Client Service Records where the Lead Advisor is Blank</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -639,7 +641,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>:           https://report.jumpstartinc.org/ReportServer/Pages/ReportViewer.aspx?%2fData+Audit%2fSpinOff+Connections+Audit&amp;rs:Command=Render</Value>
+                    <Value>:           https://report.jumpstartinc.org/ReportServer/Pages/ReportViewer.aspx?%2fData+Audit%2fClient+Service+Records+where+the+Lead+Advisor+is+Blank&amp;rs:Command=Render</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -656,7 +658,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>: /Data Audit/SpinOff Connections Audit</Value>
+                    <Value>: /Data Audit/Client Service Records where the Lead Advisor is Blank</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -667,7 +669,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox9</rd:DefaultName>
             <Top>1.51333in</Top>
-            <Height>3.76223in</Height>
+            <Height>3.0539in</Height>
             <Width>12.85417in</Width>
             <ZIndex>2</ZIndex>
             <Style>
@@ -782,7 +784,7 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>6.00472in</Height>
+        <Height>4.59847in</Height>
         <Style />
       </Body>
       <Width>15.70834in</Width>

@@ -148,6 +148,10 @@
           <DataField>RecordTypeId</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="PartnerOrg">
+          <DataField>PartnerOrg</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <Filters>
         <Filter>
@@ -162,6 +166,13 @@
           <Operator>Equal</Operator>
           <FilterValues>
             <FilterValue DataType="Boolean">false</FilterValue>
+          </FilterValues>
+        </Filter>
+        <Filter>
+          <FilterExpression>=Fields!PartnerOrg.Value</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue>JumpStart Inc.</FilterValue>
           </FilterValues>
         </Filter>
       </Filters>
@@ -3116,7 +3127,7 @@
             <Top>1.9432in</Top>
             <Left>0.09375in</Left>
             <Height>0.43in</Height>
-            <Width>40.64583in</Width>
+            <Width>40.64582in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -3817,7 +3828,7 @@
             <rd:DefaultName>textbox65</rd:DefaultName>
             <Top>2.61972in</Top>
             <Left>0.09375in</Left>
-            <Height>1.36458in</Height>
+            <Height>2.85416in</Height>
             <Width>11.28542in</Width>
             <ZIndex>5</ZIndex>
             <Style>
@@ -3831,7 +3842,7 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>4.07875in</Height>
+        <Height>5.47388in</Height>
         <Style />
       </Body>
       <Width>43.56249in</Width>

@@ -14,6 +14,10 @@
       <FullPath>Almost a Client Review.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Client Service Records where the Lead Advisor is Blank.rdl</Name>
+      <FullPath>Client Service Records where the Lead Advisor is Blank.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Duplicate Client Progress Records.rdl</Name>
       <FullPath>Duplicate Client Progress Records.rdl</FullPath>
     </ProjectItem>
@@ -34,6 +38,10 @@
       <FullPath>Organizations that are QDF but Not Core City.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Organizations with Multiple Client Services Records.rdl</Name>
+      <FullPath>Organizations with Multiple Client Services Records.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Organizations with Multiple Point in Time Records for the Same Date.rdl</Name>
       <FullPath>Organizations with Multiple Point in Time Records for the Same Date.rdl</FullPath>
     </ProjectItem>
@@ -50,12 +58,16 @@
       <FullPath>Two Contacts Same Email Address.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Organizations with Multiple Client Services Records.rdl</Name>
-      <FullPath>Organizations with Multiple Client Services Records.rdl</FullPath>
+      <Name>Organizations that are Classified as Ohio Third Frontier (OTF) PreSeed Funds.rdl</Name>
+      <FullPath>Organizations that are Classified as Ohio Third Frontier (OTF) PreSeed Funds.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Client Service Records where the Lead Advisor is Blank.rdl</Name>
-      <FullPath>Client Service Records where the Lead Advisor is Blank.rdl</FullPath>
+      <Name>Organizations that are Not QDF - Non JumpStart Created.rdl</Name>
+      <FullPath>Organizations that are Not QDF - Non JumpStart Created.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Source Tranche Release Record Mismatch.rdl</Name>
+      <FullPath>Source Tranche Release Record Mismatch.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
