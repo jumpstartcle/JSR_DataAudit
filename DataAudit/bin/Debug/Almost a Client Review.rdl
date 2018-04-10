@@ -720,8 +720,7 @@
                   <TextRun>
                     <Value>Almost a Client Review</Value>
                     <Style>
-                      <FontFamily>Tahoma</FontFamily>
-                      <FontSize>20pt</FontSize>
+                      <FontSize>16pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
