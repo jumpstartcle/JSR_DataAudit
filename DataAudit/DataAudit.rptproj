@@ -69,6 +69,10 @@
       <Name>Source Tranche Release Record Mismatch.rdl</Name>
       <FullPath>Source Tranche Release Record Mismatch.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>ESP Do Not Survey Audit.rdl</Name>
+      <FullPath>ESP Do Not Survey Audit.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
