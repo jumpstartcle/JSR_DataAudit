@@ -2320,7 +2320,7 @@ And the "Client Services Created By" is a NOT a JumpStart Employee.</Value>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>(Filtered on;  )</Value>
+                    <Value>(Filtered on; ESP Qualified Deal Flow Date is Blank and Organization does not equal JumpStart Inc. )</Value>
                     <Style>
                       <FontWeight>Normal</FontWeight>
                     </Style>
