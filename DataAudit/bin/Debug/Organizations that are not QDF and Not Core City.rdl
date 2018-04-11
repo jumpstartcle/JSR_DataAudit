@@ -3422,7 +3422,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>(Filtered on;  ESP Qualified Deal Flow Date is Blank and JS Core City Cleveland is Blank)</Value>
+                    <Value>(Filtered on;  ESP Qualified Deal Flow Date is Blank, JS Core City Cleveland is Blank and Partner Organization equals JumpStart Inc.)</Value>
                     <Style>
                       <FontWeight>Normal</FontWeight>
                     </Style>

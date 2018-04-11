@@ -3161,7 +3161,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>(Filtered on; JS Core City Cleveland is Not Blank and ESP Qualified Deal Flow Date is Blank)</Value>
+                    <Value>(Filtered on; JS Core City Cleveland is Not Blank, ESP Qualified Deal Flow Date is Blank and Partner Organization equals JumpStart Inc.)</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Normal</FontWeight>
@@ -3279,7 +3279,7 @@
             <Top>2.61972in</Top>
             <Left>0.09375in</Left>
             <Height>1.36458in</Height>
-            <Width>11.28542in</Width>
+            <Width>11.57709in</Width>
             <ZIndex>5</ZIndex>
             <Style>
               <Border>
