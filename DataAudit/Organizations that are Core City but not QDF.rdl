@@ -148,6 +148,10 @@
           <DataField>RecordTypeId</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="PartnerOrg">
+          <DataField>PartnerOrg</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <Filters>
         <Filter>
@@ -164,6 +168,13 @@
             <FilterValue DataType="Boolean">true</FilterValue>
           </FilterValues>
         </Filter>
+        <Filter>
+          <FilterExpression>=Fields!PartnerOrg.Value</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue>JumpStart Inc.</FilterValue>
+          </FilterValues>
+        </Filter>
       </Filters>
     </DataSet>
   </DataSets>
@@ -178,17 +189,10 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Organizations that are Core City but N</Value>
+                    <Value>Organizations that are Core City but Not QDF</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
-                      <FontSize>14pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>ot QDF</Value>
-                    <Style>
-                      <FontSize>14pt</FontSize>
+                      <FontSize>16pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -2683,7 +2687,7 @@
             <Top>1.95708in</Top>
             <Left>0.09375in</Left>
             <Height>0.43in</Height>
-            <Width>36.43124in</Width>
+            <Width>36.43123in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
