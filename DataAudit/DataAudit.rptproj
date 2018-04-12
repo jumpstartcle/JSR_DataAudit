@@ -73,6 +73,10 @@
       <Name>ESP Do Not Survey Audit.rdl</Name>
       <FullPath>ESP Do Not Survey Audit.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Duplicate Advisor Entries.rdl</Name>
+      <FullPath>Duplicate Advisor Entries.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
