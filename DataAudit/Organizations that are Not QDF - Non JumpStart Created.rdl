@@ -163,12 +163,33 @@
         </Filter>
         <Filter>
           <FilterExpression>=Fields!PartnerOrg.Value</FilterExpression>
-          <Operator>NotEqual</Operator>
+          <Operator>Equal</Operator>
           <FilterValues>
-            <FilterValue>JumpStart Inc.</FilterValue>
+            <FilterValue>=Parameters!NetworkPartner.Value</FilterValue>
           </FilterValues>
         </Filter>
       </Filters>
+    </DataSet>
+    <DataSet Name="NetworkPartner">
+      <Query>
+        <DataSourceName>SalesForce</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@Start">
+            <Value>=Parameters!Start.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@End">
+            <Value>=Parameters!End.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>uspDA_PartnerCreatedBy</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="PartnerOrg">
+          <DataField>PartnerOrg</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
     </DataSet>
   </DataSets>
   <ReportSections>
@@ -2465,10 +2486,21 @@ And the "Client Services Created By" is a NOT a JumpStart Employee.</Value>
       <DataType>DateTime</DataType>
       <Prompt>Date of First Contact End Date</Prompt>
     </ReportParameter>
+    <ReportParameter Name="NetworkPartner">
+      <DataType>String</DataType>
+      <Prompt>Network Partner</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>NetworkPartner</DataSetName>
+          <ValueField>PartnerOrg</ValueField>
+          <LabelField>PartnerOrg</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfColumns>2</NumberOfColumns>
       <NumberOfRows>2</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
@@ -2480,6 +2512,11 @@ And the "Client Services Created By" is a NOT a JumpStart Employee.</Value>
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>End</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>NetworkPartner</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
