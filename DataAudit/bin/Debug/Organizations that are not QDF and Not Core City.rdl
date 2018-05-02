@@ -2193,53 +2193,6 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Client Services Name</Value>
-                    <Style>
-                      <FontFamily>Arial</FontFamily>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value> - Displays the field 'Client Services Name' from the Client Services Record.</Value>
-                    <Style>
-                      <FontFamily>Arial</FontFamily>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <ListStyle>Bulleted</ListStyle>
-                <ListLevel>1</ListLevel>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Client Services Record Created By </Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Arial</FontFamily>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>- Displays the field 'Name' from the User Record.</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Arial</FontFamily>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <ListStyle>Bulleted</ListStyle>
-                <ListLevel>1</ListLevel>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
                     <Value>Company Billing Address/City/State/Zip is displayed in the Organization Record as one field, however the information is stored in the Account Table as follows;</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
@@ -2381,23 +2334,11 @@
                   <TextRun>
                     <Value />
                     <Style>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <ListLevel>1</ListLevel>
                 <Style />
               </Paragraph>
               <Paragraph>
