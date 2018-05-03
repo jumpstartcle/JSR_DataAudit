@@ -175,6 +175,13 @@
             <FilterValue>JumpStart Inc.</FilterValue>
           </FilterValues>
         </Filter>
+        <Filter>
+          <FilterExpression>=Fields!County__c.Value</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue>Cuyahoga</FilterValue>
+          </FilterValues>
+        </Filter>
       </Filters>
     </DataSet>
   </DataSets>
