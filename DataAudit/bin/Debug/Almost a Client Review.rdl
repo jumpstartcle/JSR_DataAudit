@@ -755,42 +755,6 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Displays all Client Service Records where:</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style>
-                      <FontWeight>Normal</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <ListStyle>Bulleted</ListStyle>
-                <ListLevel>1</ListLevel>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <ListLevel>1</ListLevel>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
                     <Value>Defining the Report Fields:</Value>
                     <Style>
                       <FontWeight>Normal</FontWeight>
@@ -798,9 +762,7 @@
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
+                <Style />
               </Paragraph>
               <Paragraph>
                 <TextRuns>
@@ -889,7 +851,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Primary Object:     </Value>
+                    <Value>Primary Object:  </Value>
                     <Style />
                   </TextRun>
                   <TextRun>
@@ -906,6 +868,12 @@
                   <TextRun>
                     <Value>Secondary Object: </Value>
                     <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>vwClientServices</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
