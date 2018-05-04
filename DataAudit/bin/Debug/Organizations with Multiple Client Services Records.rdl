@@ -36,6 +36,8 @@
                             <TextRun>
                               <Value>Organization ID</Value>
                               <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -67,6 +69,8 @@
                             <TextRun>
                               <Value>Organization Name</Value>
                               <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -99,6 +103,8 @@
                             <TextRun>
                               <Value>Client Service  ID</Value>
                               <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -130,6 +136,8 @@
                             <TextRun>
                               <Value>Client Services Record Name</Value>
                               <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -162,6 +170,8 @@
                             <TextRun>
                               <Value>Date of First Contact</Value>
                               <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -491,23 +501,96 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Displays all Organizations that have multiple Client Services Records.
-There should only be one Client Service Record attached to an Organization.
-
-</Value>
+                <Value>Displays all Organizations that have multiple Client Services Records where:</Value>
                 <Style />
               </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>The Client Services Record Type is NEO OTF ESP</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <ListLevel>1</ListLevel>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>There should only be one Client Service Record attached to an Organization.</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <ListLevel>2</ListLevel>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <ListLevel>2</ListLevel>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
               <TextRun>
                 <Value>Work Instructions:</Value>
                 <Style>
                   <TextDecoration>Underline</TextDecoration>
                 </Style>
               </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
               <TextRun>
-                <Value>
-Any Organizations with multiple Client Services Records listed on this report will need to be reviewed and deduplicated (merged) if applicable.
-Client Service Records need to be merged manually.
-Merge all the applicable data into one good Client Services Record and Delete the other one.</Value>
+                <Value>Any Organizations with multiple Client Services Records listed on this report will need to be reviewed and deduplicated (merged) in Salesforce if applicable.</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <ListLevel>1</ListLevel>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Client Service Records need to be merged manually.</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <ListLevel>2</ListLevel>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Merge all the applicable data into one good Client Services Record and Delete the other one.</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <ListLevel>1</ListLevel>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
                 <Style />
               </TextRun>
             </TextRuns>
