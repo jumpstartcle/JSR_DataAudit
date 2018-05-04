@@ -92,7 +92,7 @@
                   <Width>2.07292in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.8125in</Width>
+                  <Width>2.1875in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.60417in</Width>
@@ -123,7 +123,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Organization Name</Value>
+                                  <Value>Company Name</Value>
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -259,7 +259,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Company Reporting  Data Created Date</Value>
+                                  <Value>Company Reporting Data Record Created Date</Value>
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -861,7 +861,7 @@
             </SortExpressions>
             <Top>2.3507in</Top>
             <Height>0.46125in</Height>
-            <Width>18.22917in</Width>
+            <Width>18.60417in</Width>
             <Style />
           </Tablix>
           <Textbox Name="textbox1">
