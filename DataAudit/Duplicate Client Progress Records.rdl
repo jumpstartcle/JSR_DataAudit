@@ -728,7 +728,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -913,7 +912,7 @@
                     <Style />
                   </TextRun>
                   <TextRun>
-                    <Value>vwDA_DuplicateClientProgressRecords</Value>
+                    <Value>uspDA_DuplicateClientProgressRecords</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
