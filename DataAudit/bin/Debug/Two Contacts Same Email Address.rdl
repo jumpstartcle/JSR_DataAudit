@@ -941,7 +941,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>If one Contact exists where Duplicate Email Address Reviewed is Blank and the other Contacts have the field ' Duplicate Email Address Reviewed'  filled in then show All of the Contact records with the same email regardless of Duplicate Email Address Reviewed not being Blank. </Value>
+                <Value>If one Contact exists where Duplicate Email Address Reviewed is Blank and the other Contacts have the field ' Duplicate Email Address Reviewed' filled in, then show All of the Contact records with the same email regardless of Duplicate Email Address Reviewed not being Blank. </Value>
                 <Style>
                   <FontStyle>Normal</FontStyle>
                   <FontWeight>Normal</FontWeight>
