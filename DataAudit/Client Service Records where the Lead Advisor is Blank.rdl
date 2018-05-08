@@ -400,7 +400,8 @@
                   <TextRun>
                     <Value>Client Service Records where the Lead Advisor is Blank</Value>
                     <Style>
-                      <FontSize>16pt</FontSize>
+                      <FontFamily>Tahoma</FontFamily>
+                      <FontSize>20pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
