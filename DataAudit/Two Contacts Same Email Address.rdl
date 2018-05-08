@@ -12,13 +12,13 @@
               <Width>1.57292in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4in</Width>
+              <Width>3.86458in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.625in</Width>
+              <Width>1.76042in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.5in</Width>
+              <Width>1.89583in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.67709in</Width>
@@ -535,7 +535,7 @@
                       <ActionInfo>
                         <Actions>
                           <Action>
-                            <Hyperlink>="https://na2.salesforce.com/" &amp; Fields!ContactId.Value</Hyperlink>
+                            <Hyperlink>=Fields!ConURL.Value</Hyperlink>
                           </Action>
                         </Actions>
                       </ActionInfo>
@@ -544,32 +544,13 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
-                        <TopBorder>
-                          <Color>Black</Color>
-                          <Style>Solid</Style>
-                          <Width>1pt</Width>
-                        </TopBorder>
-                        <BottomBorder>
-                          <Color>Black</Color>
-                          <Style>Solid</Style>
-                          <Width>1pt</Width>
-                        </BottomBorder>
-                        <LeftBorder>
-                          <Color>Black</Color>
-                          <Style>Solid</Style>
-                          <Width>1pt</Width>
-                        </LeftBorder>
-                        <RightBorder>
-                          <Color>Black</Color>
-                          <Style>Solid</Style>
-                          <Width>1pt</Width>
-                        </RightBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -592,7 +573,7 @@
                       <ActionInfo>
                         <Actions>
                           <Action>
-                            <Hyperlink>="https://na2.salesforce.com/" &amp; Fields!OrgId.Value</Hyperlink>
+                            <Hyperlink>=Fields!OrgURL.Value</Hyperlink>
                           </Action>
                         </Actions>
                       </ActionInfo>
@@ -601,26 +582,6 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
-                        <TopBorder>
-                          <Color>Black</Color>
-                          <Style>Solid</Style>
-                          <Width>1pt</Width>
-                        </TopBorder>
-                        <BottomBorder>
-                          <Color>Black</Color>
-                          <Style>Solid</Style>
-                          <Width>1pt</Width>
-                        </BottomBorder>
-                        <LeftBorder>
-                          <Color>Black</Color>
-                          <Style>Solid</Style>
-                          <Width>1pt</Width>
-                        </LeftBorder>
-                        <RightBorder>
-                          <Color>Black</Color>
-                          <Style>Solid</Style>
-                          <Width>1pt</Width>
-                        </RightBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -950,7 +911,7 @@
         <DataSetName>DataSet1</DataSetName>
         <Top>3.48959in</Top>
         <Height>0.75in</Height>
-        <Width>14.21875in</Width>
+        <Width>14.61458in</Width>
         <Style />
       </Tablix>
       <Textbox Name="Textbox16">
@@ -1073,7 +1034,7 @@ If you find that a Contact should have multiple contact records add today's date
         <rd:DefaultName>Textbox16</rd:DefaultName>
         <Top>0.04167in</Top>
         <Height>3.40625in</Height>
-        <Width>13.09375in</Width>
+        <Width>14.61458in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -1089,7 +1050,7 @@ If you find that a Contact should have multiple contact records add today's date
     <Height>8.03in</Height>
     <Style />
   </Body>
-  <Width>14.21875in</Width>
+  <Width>14.61458in</Width>
   <Page>
     <PageHeader>
       <Height>0.60417in</Height>
@@ -1105,7 +1066,8 @@ If you find that a Contact should have multiple contact records add today's date
                 <TextRun>
                   <Value>Two Contacts, Same Email Address</Value>
                   <Style>
-                    <FontSize>12pt</FontSize>
+                    <FontFamily>Tahoma</FontFamily>
+                    <FontSize>20pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -1114,8 +1076,8 @@ If you find that a Contact should have multiple contact records add today's date
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>textbox1</rd:DefaultName>
-          <Height>0.25in</Height>
-          <Width>4.02083in</Width>
+          <Height>0.54861in</Height>
+          <Width>6.6875in</Width>
           <Style>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
@@ -1136,12 +1098,14 @@ If you find that a Contact should have multiple contact records add today's date
                   </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox3</rd:DefaultName>
-          <Top>0.31944in</Top>
-          <Left>4.14584in</Left>
+          <Top>0.29861in</Top>
+          <Left>9.35416in</Left>
           <Height>0.25in</Height>
           <Width>5.26042in</Width>
           <ZIndex>1</ZIndex>
@@ -1168,11 +1132,13 @@ If you find that a Contact should have multiple contact records add today's date
                   </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox3</rd:DefaultName>
-          <Left>4.14584in</Left>
+          <Left>9.15625in</Left>
           <Height>0.25in</Height>
           <Width>5.45833in</Width>
           <ZIndex>2</ZIndex>
@@ -1248,6 +1214,10 @@ If you find that a Contact should have multiple contact records add today's date
         </Field>
         <Field Name="OrgURL">
           <DataField>OrgURL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ConURL">
+          <DataField>ConURL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="CSRId">
