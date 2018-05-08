@@ -41,6 +41,10 @@
           <DataField>CSURL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="CreatedDate">
+          <DataField>CreatedDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
         <Field Name="CRDName">
           <DataField>CRDName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -79,13 +83,16 @@
                   <Width>2.06251in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.26041in</Width>
+                  <Width>2.68749in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.15625in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.9375in</Width>
+                  <Width>2.07292in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.1875in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.60417in</Width>
@@ -97,7 +104,7 @@
                   <Width>1.07291in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.0625in</Width>
+                  <Width>1.64583in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.26042in</Width>
@@ -116,10 +123,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Organization Name</Value>
+                                  <Value>Company Name</Value>
                                   <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                    <FontSize>11pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -150,10 +156,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>CS Name</Value>
+                                  <Value>Client Services Name</Value>
                                   <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                    <FontSize>11pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -186,13 +191,14 @@
                                 <TextRun>
                                   <Value>Date of First Contact</Value>
                                   <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                    <FontSize>11pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox5</rd:DefaultName>
@@ -218,18 +224,54 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>CRD Record Created By</Value>
+                                  <Value>Company Reporting Data Record Created By</Value>
                                   <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                    <FontSize>11pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox18</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox9">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Company Reporting Data Record Created Date</Value>
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox9</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -252,7 +294,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>CRD Name</Value>
+                                  <Value>Company Reporting Data Name</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>11pt</FontSize>
@@ -260,7 +302,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox20</rd:DefaultName>
@@ -288,13 +332,14 @@
                                 <TextRun>
                                   <Value>ODSA Operating Stage</Value>
                                   <Style>
-                                    <FontFamily>Tahoma</FontFamily>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox3</rd:DefaultName>
@@ -322,8 +367,7 @@
                                 <TextRun>
                                   <Value>ODSA Stage Start Date</Value>
                                   <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                    <FontSize>11pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -358,8 +402,7 @@
                                 <TextRun>
                                   <Value>ODSA Stage Change Type</Value>
                                   <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                    <FontSize>11pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -394,8 +437,7 @@
                                 <TextRun>
                                   <Value>ODSA Stage Change Reason</Value>
                                   <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                    <FontSize>11pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -514,7 +556,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Date_of_First_Contact__c</rd:DefaultName>
@@ -546,10 +590,47 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>CRDCreatedBy</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="CreatedDate">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!CreatedDate.Value</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <Format>MM/dd/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>CreatedDate</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -578,7 +659,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>CRDName</rd:DefaultName>
@@ -610,7 +693,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>ODSA_Operating_Stage__c</rd:DefaultName>
@@ -638,7 +723,6 @@
                                 <TextRun>
                                   <Value>=Fields!ODSA_Stage_Start_Date__c.Value</Value>
                                   <Style>
-                                    <FontFamily>Tahoma</FontFamily>
                                     <Format>M/d/yyyy</Format>
                                   </Style>
                                 </TextRun>
@@ -672,9 +756,7 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!ODSA_Stage_Change_Type__c.Value</Value>
-                                  <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -745,6 +827,7 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -776,9 +859,9 @@
                 <Value>=Fields!ODSA_Stage_Start_Date__c.Value</Value>
               </SortExpression>
             </SortExpressions>
-            <Top>1.26389in</Top>
+            <Top>2.3507in</Top>
             <Height>0.46125in</Height>
-            <Width>16.27084in</Width>
+            <Width>18.60417in</Width>
             <Style />
           </Tablix>
           <Textbox Name="textbox1">
@@ -788,7 +871,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Duplicate Client Progress Records</Value>
+                    <Value>Duplicate Client Progress Records Audit</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
                       <FontSize>20pt</FontSize>
@@ -801,206 +884,9 @@
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Height>0.37723in</Height>
-            <Width>7.26042in</Width>
+            <Width>9.57292in</Width>
             <ZIndex>1</ZIndex>
             <Style>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox9">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Defining the Report Fields:</Value>
-                    <Style>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>Underline</TextDecoration>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <ListLevel>1</ListLevel>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Report Sort Order:</Value>
-                    <Style>
-                      <TextDecoration>Underline</TextDecoration>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Organization Name</Value>
-                    <Style>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value> (Ascending)</Value>
-                    <Style>
-                      <FontWeight>Normal</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <ListStyle>Bulleted</ListStyle>
-                <ListLevel>1</ListLevel>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Primary Object:     </Value>
-                    <Style />
-                  </TextRun>
-                  <TextRun>
-                    <Value>uspDA_DuplicateClientProgressRecords</Value>
-                    <Style>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Secondary Object: </Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Git</Value>
-                    <Style>
-                      <FontWeight>Normal</FontWeight>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>:           /GitHub/JSR_DataAudit/DataAudit/Duplicate Client Progress Records</Value>
-                    <Style>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Url</Value>
-                    <Style>
-                      <FontWeight>Normal</FontWeight>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>:           https://report.jumpstartinc.org/ReportServer/Pages/ReportViewer.aspx?%2fData+Audit%2fDuplicate+Client+Progress+Records&amp;rs:Command=Render</Value>
-                    <Style>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>RptServer</Value>
-                    <Style>
-                      <FontWeight>Normal</FontWeight>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>: /Data Audit/Duplicate Client Progress Records</Value>
-                    <Style>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox9</rd:DefaultName>
-            <Top>1.85708in</Top>
-            <Height>4.06431in</Height>
-            <Width>12.85417in</Width>
-            <ZIndex>2</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
@@ -1019,16 +905,16 @@
                   </TextRun>
                 </TextRuns>
                 <Style>
-                  <TextAlign>Left</TextAlign>
+                  <TextAlign>Right</TextAlign>
                 </Style>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>0.11in</Top>
-            <Left>8.34375in</Left>
+            <Top>0.14112in</Top>
+            <Left>13.875in</Left>
             <Height>0.25in</Height>
             <Width>4in</Width>
-            <ZIndex>3</ZIndex>
+            <ZIndex>2</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1051,16 +937,16 @@
                   </TextRun>
                 </TextRuns>
                 <Style>
-                  <TextAlign>Left</TextAlign>
+                  <TextAlign>Right</TextAlign>
                 </Style>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox11</rd:DefaultName>
-            <Top>0.42944in</Top>
-            <Left>8.34375in</Left>
+            <Top>0.46056in</Top>
+            <Left>13.875in</Left>
             <Height>0.25in</Height>
             <Width>4in</Width>
-            <ZIndex>4</ZIndex>
+            <ZIndex>3</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -1075,11 +961,155 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value xml:space="preserve"> </Value>
-                    <Style />
+                    <Value>Displays a list of Organizations with multiple Client Progress Records where:</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
                   </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
                   <TextRun>
-                    <Value>Displays a list of Organizations with multiple Client Progress Records where the ODSA Operating Stage is the same.</Value>
+                    <Value>The Company Reporting Data Record Type is 'ODSA Client Progress'.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListStyle>Bulleted</ListStyle>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>And the Company Reporting Data ODSA Operating Stage is the same.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListStyle>Bulleted</ListStyle>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Work Instructions:</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>Underline</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>For each Organization Name with multiple Client Progress Records do the following:</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Open each Salesforce record in a new window by clicking on the Organization Name on the report so that you can compare them side by side.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>If the Date of First Contact is the same, one of the records will need to be deleted.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Delete the record that was created last. (Keep the original record).</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -1092,10 +1122,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox13</rd:DefaultName>
-            <Top>0.44667in</Top>
-            <Height>0.52027in</Height>
-            <Width>7.26042in</Width>
-            <ZIndex>5</ZIndex>
+            <Top>0.4189in</Top>
+            <Height>1.69569in</Height>
+            <Width>9.57292in</Width>
+            <ZIndex>4</ZIndex>
             <Style>
               <Border>
                 <Style>Solid</Style>
@@ -1107,7 +1137,7 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>6.00472in</Height>
+        <Height>6.01861in</Height>
         <Style />
       </Body>
       <Width>19.00001in</Width>

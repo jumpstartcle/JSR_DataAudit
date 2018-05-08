@@ -6,16 +6,16 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>1.76042in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>3.17708in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>1.95833in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.52083in</Width>
+              <Width>4.125in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.25in</Width>
@@ -34,8 +34,10 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Org ID</Value>
+                              <Value>Organization ID</Value>
                               <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -65,8 +67,10 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Organization</Value>
+                              <Value>Organization Name</Value>
                               <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -97,8 +101,10 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>CSID</Value>
+                              <Value>Client Service  ID</Value>
                               <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -128,8 +134,10 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Client Services Record</Value>
+                              <Value>Client Services Record Name</Value>
                               <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -160,13 +168,17 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Date 1st Contact</Value>
+                              <Value>Date of First Contact</Value>
                               <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>textbox4</rd:DefaultName>
@@ -407,7 +419,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Lead_Creation_Date__c</rd:DefaultName>
@@ -475,9 +489,9 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>MultJENOpp</DataSetName>
-        <Top>1.46875in</Top>
+        <Top>1.85417in</Top>
         <Height>0.75in</Height>
-        <Width>7.77083in</Width>
+        <Width>12.27083in</Width>
         <Style />
       </Tablix>
       <Textbox Name="textbox13">
@@ -487,13 +501,96 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Displays all Organizations that have multiple Client Services Records.
-There should only be one Client Service Record attached to an Organization.
-
-Work Instructions:
-Any Organizations with multiple Client Services Records listed on this report will need to be reviewed and deduplicated (merged) if applicable.
-Client Service Records need to be merged manually.
-Merge all the applicable data into one good Client Services Record and Delete the other one.</Value>
+                <Value>Displays all Organizations that have multiple Client Services Records where:</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>The Client Services Record Type is NEO OTF ESP</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <ListLevel>1</ListLevel>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>There should only be one Client Service Record attached to an Organization.</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <ListLevel>2</ListLevel>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <ListLevel>2</ListLevel>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Work Instructions:</Value>
+                <Style>
+                  <TextDecoration>Underline</TextDecoration>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Any Organizations with multiple Client Services Records listed on this report will need to be reviewed and deduplicated (merged) in Salesforce if applicable.</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <ListLevel>1</ListLevel>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Client Service Records need to be merged manually.</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <ListLevel>2</ListLevel>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Merge all the applicable data into one good Client Services Record and Delete the other one.</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <ListLevel>1</ListLevel>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
                 <Style />
               </TextRun>
             </TextRuns>
@@ -502,243 +599,10 @@ Merge all the applicable data into one good Client Services Record and Delete th
         </Paragraphs>
         <rd:DefaultName>textbox13</rd:DefaultName>
         <Top>0.07291in</Top>
-        <Height>1.21875in</Height>
-        <Width>9.5625in</Width>
+        <Height>1.5in</Height>
+        <Width>12.27083in</Width>
         <ZIndex>1</ZIndex>
         <Style>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="Textbox7">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Defining the Report Fields:</Value>
-                <Style>
-                  <FontWeight>Normal</FontWeight>
-                  <TextDecoration>Underline</TextDecoration>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Organization Id</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style>
-              <TextAlign>Left</TextAlign>
-            </Style>
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Organization Name</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style>
-              <TextAlign>Left</TextAlign>
-            </Style>
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Client Services Record Id</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style>
-              <TextAlign>Left</TextAlign>
-            </Style>
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Client Services Record Name</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style>
-              <TextAlign>Left</TextAlign>
-            </Style>
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Date of First Contact</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style>
-              <TextAlign>Left</TextAlign>
-            </Style>
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value />
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListLevel>1</ListLevel>
-            <Style>
-              <TextAlign>Left</TextAlign>
-            </Style>
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Report Sort Order:</Value>
-                <Style>
-                  <TextDecoration>Underline</TextDecoration>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style>
-              <TextAlign>Left</TextAlign>
-            </Style>
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value />
-                <Style>
-                  <FontWeight>Normal</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style>
-              <TextAlign>Left</TextAlign>
-            </Style>
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Primary Object:     </Value>
-                <Style />
-              </TextRun>
-              <TextRun>
-                <Value>vwDA_OrgsMultipleCSRs</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Secondary Object: </Value>
-                <Style />
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value />
-                <Style />
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Git</Value>
-                <Style>
-                  <FontWeight>Normal</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>:           /GitHub/JSR_DataAudit/DataAudit/Organizations with Multiple Client Services Records</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Url</Value>
-                <Style>
-                  <FontWeight>Normal</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>:           https://report.jumpstartinc.org/ReportServer/Pages/ReportViewer.aspx?%2fData+Audit%2fOrganizations+with+Multiple+Client+Services+Records&amp;rs:Command=Render</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>RptServer</Value>
-                <Style>
-                  <FontWeight>Normal</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>: /Data Audit/Organizations with Multiple Client Services Records</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Textbox7</rd:DefaultName>
-        <Top>2.42694in</Top>
-        <Height>2.86472in</Height>
-        <Width>10.33333in</Width>
-        <ZIndex>2</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -749,10 +613,10 @@ Merge all the applicable data into one good Client Services Record and Delete th
     <Height>5.42708in</Height>
     <Style />
   </Body>
-  <Width>10.33333in</Width>
+  <Width>12.27083in</Width>
   <Page>
     <PageHeader>
-      <Height>0.54056in</Height>
+      <Height>0.56834in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -765,7 +629,8 @@ Merge all the applicable data into one good Client Services Record and Delete th
                 <TextRun>
                   <Value>Organizations with Multiple Client Services Records</Value>
                   <Style>
-                    <FontSize>14pt</FontSize>
+                    <FontFamily>Tahoma</FontFamily>
+                    <FontSize>20pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -774,8 +639,9 @@ Merge all the applicable data into one good Client Services Record and Delete th
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>textbox1</rd:DefaultName>
+          <Top>0.02778in</Top>
           <Height>0.375in</Height>
-          <Width>5.30208in</Width>
+          <Width>7.3564in</Width>
           <Style>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
@@ -794,14 +660,16 @@ Merge all the applicable data into one good Client Services Record and Delete th
                   <Style />
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>0.23389in</Top>
-          <Left>5.48834in</Left>
+          <Top>0.24889in</Top>
+          <Left>7.42584in</Left>
           <Height>0.25in</Height>
-          <Width>1.98958in</Width>
+          <Width>4.84499in</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -825,14 +693,14 @@ Merge all the applicable data into one good Client Services Record and Delete th
                 </TextRun>
               </TextRuns>
               <Style>
-                <TextAlign>Left</TextAlign>
+                <TextAlign>Right</TextAlign>
               </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox6</rd:DefaultName>
-          <Left>5.48834in</Left>
+          <Left>7.42584in</Left>
           <Height>0.22in</Height>
-          <Width>4.27208in</Width>
+          <Width>4.84499in</Width>
           <ZIndex>2</ZIndex>
           <Style>
             <Border>
