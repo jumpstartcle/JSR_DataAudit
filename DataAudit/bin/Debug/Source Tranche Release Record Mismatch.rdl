@@ -599,12 +599,22 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Or there is an Actual Dollar Amount and the Actual Disbursement Date is Blank.
-</Value>
+                <Value>Or there is an Actual Dollar Amount and the Actual Disbursement Date is Blank.</Value>
                 <Style />
               </TextRun>
             </TextRuns>
             <ListStyle>Bulleted</ListStyle>
+            <ListLevel>1</ListLevel>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value xml:space="preserve">
+</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
             <ListLevel>1</ListLevel>
             <Style />
           </Paragraph>
