@@ -176,7 +176,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Created By</Value>
+                              <Value>Tranche Release Record Created By</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -184,7 +184,7 @@
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Left</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -432,7 +432,7 @@
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Left</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -588,7 +588,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>And there is an Actual Disbursement Date but the Actual Dollar Amount is Blank or Zero.</Value>
+                <Value>And there is an Actual Disbursement Date, but the Actual Dollar Amount is Blank or Zero.</Value>
                 <Style />
               </TextRun>
             </TextRuns>
