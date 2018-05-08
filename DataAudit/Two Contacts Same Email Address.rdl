@@ -1194,7 +1194,7 @@ In Salesforce the same Contact can be associated with multiple Organizations (th
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>To deduplicate an Organization record you must first check to see if either Organization has a Client Service record tied to it. The Client Services Records must be de-duplicated so that only one of the Organizations to be merged has a CSR. CSR's are merged manually.</Value>
+                <Value>To deduplicate an Organization record you must first check to see if either Organization has a Client Service record tied to it. </Value>
                 <Style>
                   <FontStyle>Normal</FontStyle>
                   <FontWeight>Normal</FontWeight>
@@ -1211,7 +1211,58 @@ In Salesforce the same Contact can be associated with multiple Organizations (th
           <Paragraph>
             <TextRuns>
               <TextRun>
+                <Value>The Client Services Records must be de-duplicated so that only one of the Organizations to be merged has a CSR. CSR's are merged manually.</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <ListLevel>2</ListLevel>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
                 <Value>Potentially you may find other duplicate data.</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <ListLevel>1</ListLevel>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>If two contacts exist with one at Individual and one at a real Organization, change the Organization on the Individual Contact to the real Organization and then deduplicate.</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <ListLevel>1</ListLevel>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>If two contacts exist with one at a College/University and is obviously a student and the other is at a Organization that is likely a startup, change the Organization on the college/university contact to be the startup and deduplicate.</Value>
                 <Style>
                   <FontStyle>Normal</FontStyle>
                   <FontWeight>Normal</FontWeight>
@@ -1381,7 +1432,6 @@ In Salesforce the same Contact can be associated with multiple Organizations (th
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>textbox1</rd:DefaultName>
-          <Top>0in</Top>
           <Height>0.54861in</Height>
           <Width>6.95833in</Width>
           <Style>
