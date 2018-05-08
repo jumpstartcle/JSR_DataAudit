@@ -18,6 +18,9 @@
               <Width>1.625in</Width>
             </TablixColumn>
             <TablixColumn>
+              <Width>1.5in</Width>
+            </TablixColumn>
+            <TablixColumn>
               <Width>1.67709in</Width>
             </TablixColumn>
             <TablixColumn>
@@ -153,6 +156,37 @@
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox8</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox12">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>CS Record ID</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox12</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -317,6 +351,35 @@
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox11</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox15">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox15</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -617,6 +680,55 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
+                    <Textbox Name="CSRId">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!CSRId.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>CSRId</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <TopBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </BottomBorder>
+                        <LeftBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </RightBorder>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
                     <Textbox Name="Duplicate_Email_Address_Reviewed__c">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
@@ -782,6 +894,7 @@
             <TablixMember />
             <TablixMember />
             <TablixMember />
+            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
@@ -837,7 +950,7 @@
         <DataSetName>DataSet1</DataSetName>
         <Top>3.48959in</Top>
         <Height>0.75in</Height>
-        <Width>12.71875in</Width>
+        <Width>14.21875in</Width>
         <Style />
       </Tablix>
       <Textbox Name="Textbox17">
@@ -991,7 +1104,7 @@
                 <Style />
               </TextRun>
               <TextRun>
-                <Value>vwTwoContactsSameEmailAddress</Value>
+                <Value>uspDA_TwoContactsSameEmailAddress</Value>
                 <Style>
                   <FontWeight>Bold</FontWeight>
                 </Style>
@@ -1143,7 +1256,7 @@ If you find that a Contact should have multiple contact records add today's date
     <Height>8.03in</Height>
     <Style />
   </Body>
-  <Width>13.09375in</Width>
+  <Width>14.21875in</Width>
   <Page>
     <PageHeader>
       <Height>0.60417in</Height>
@@ -1267,7 +1380,8 @@ If you find that a Contact should have multiple contact records add today's date
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>SalesForce</DataSourceName>
-        <CommandText>select  *  from vwTwoContactsSameEmailAddress</CommandText>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>uspDA_TwoContactsSameEmailAddress</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -1303,9 +1417,21 @@ If you find that a Contact should have multiple contact records add today's date
           <DataField>OrgURL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="CSRId">
+          <DataField>CSRId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="CreatedBy">
           <DataField>CreatedBy</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TotCt">
+          <DataField>TotCt</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="RevCt">
+          <DataField>RevCt</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
