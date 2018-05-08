@@ -1279,7 +1279,7 @@ In Salesforce the same Contact can be associated with multiple Organizations (th
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Caution; Before you merge Client Service records make sure you know that they are really the same business Idea (CSR). </Value>
+                <Value>Caution; Before you merge Client Service Records make sure you know that they are really the same business Idea (CSR). </Value>
                 <Style>
                   <FontStyle>Normal</FontStyle>
                   <FontWeight>Normal</FontWeight>
