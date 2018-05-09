@@ -810,7 +810,7 @@
                     <Style />
                   </TextRun>
                   <TextRun>
-                    <Value>Minority Owened</Value>
+                    <Value>Minority Owned</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -857,7 +857,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value> is blank or Causasian.</Value>
+                    <Value> is blank or Caucasian.</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
@@ -987,7 +987,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox9</rd:DefaultName>
-            <Top>3.25169in</Top>
+            <Top>3.2378in</Top>
             <Height>1.63542in</Height>
             <Width>11.82292in</Width>
             <ZIndex>3</ZIndex>
