@@ -9,13 +9,13 @@
               <Width>1.76042in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.76041in</Width>
+              <Width>2.62499in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.28125in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.48958in</Width>
+              <Width>1.62501in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.04167in</Width>
@@ -48,6 +48,7 @@
                             <TextRun>
                               <Value>Organization Id</Value>
                               <Style>
+                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -82,6 +83,7 @@
                             <TextRun>
                               <Value>Organization Name</Value>
                               <Style>
+                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -116,6 +118,7 @@
                             <TextRun>
                               <Value>Employment Data As Of </Value>
                               <Style>
+                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -150,6 +153,7 @@
                             <TextRun>
                               <Value>Company Reporting Data Name</Value>
                               <Style>
+                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -184,6 +188,7 @@
                             <TextRun>
                               <Value>Estimated Data</Value>
                               <Style>
+                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -218,6 +223,7 @@
                             <TextRun>
                               <Value>Approximate Average Salary</Value>
                               <Style>
+                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -252,6 +258,7 @@
                             <TextRun>
                               <Value>Total Number of Employees </Value>
                               <Style>
+                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -286,6 +293,7 @@
                             <TextRun>
                               <Value>Total Employees Core City </Value>
                               <Style>
+                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -320,6 +328,7 @@
                             <TextRun>
                               <Value>Primary Contact Company </Value>
                               <Style>
+                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -687,7 +696,7 @@
         </SortExpressions>
         <Top>0.02778in</Top>
         <Height>0.5in</Height>
-        <Width>13.79166in</Width>
+        <Width>13.79167in</Width>
         <Style>
           <Border>
             <Style>None</Style>
