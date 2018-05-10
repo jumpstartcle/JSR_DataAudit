@@ -992,6 +992,17 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
+                    <Value>Work Instructions</Value>
+                    <Style>
+                      <TextDecoration>Underline</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
                     <Value>Please review for the following:</Value>
                     <Style />
                   </TextRun>
