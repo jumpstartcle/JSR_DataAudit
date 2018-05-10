@@ -9,7 +9,7 @@
               <Width>1.76042in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.625in</Width>
+              <Width>2.76041in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.28125in</Width>
@@ -30,7 +30,7 @@
               <Width>1.22917in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.79167in</Width>
+              <Width>2in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -685,9 +685,9 @@
             <Value>=Fields!OrganizationName.Value</Value>
           </SortExpression>
         </SortExpressions>
-        <Top>1.26042in</Top>
+        <Top>0.02778in</Top>
         <Height>0.5in</Height>
-        <Width>13.44792in</Width>
+        <Width>13.79166in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -701,7 +701,7 @@
   <Width>13.80084in</Width>
   <Page>
     <PageHeader>
-      <Height>2.31486in</Height>
+      <Height>2.14819in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -834,7 +834,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Open all applicable duplicate records an review them for differences.</Value>
+                  <Value>Open all applicable duplicate records and review them for differences.</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -884,7 +884,7 @@
           <rd:DefaultName>textbox13</rd:DefaultName>
           <Top>1.01278in</Top>
           <Left>0.00917in</Left>
-          <Height>1.30208in</Height>
+          <Height>1.08333in</Height>
           <Width>13.79167in</Width>
           <ZIndex>3</ZIndex>
           <Style>
