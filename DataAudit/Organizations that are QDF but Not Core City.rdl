@@ -1906,6 +1906,11 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
+            <SortExpressions>
+              <SortExpression>
+                <Value>=Fields!Name.Value</Value>
+              </SortExpression>
+            </SortExpressions>
             <Top>1.9432in</Top>
             <Left>0.09375in</Left>
             <Height>0.43in</Height>

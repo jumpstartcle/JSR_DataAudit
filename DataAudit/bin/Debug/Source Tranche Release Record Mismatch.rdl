@@ -6,10 +6,10 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.75in</Width>
+              <Width>3.90625in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.75in</Width>
+              <Width>2.97431in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.48125in</Width>
@@ -21,7 +21,7 @@
               <Width>1.39583in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>1.26528in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.90625in</Width>
@@ -40,8 +40,9 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Source Tranche Release Name</Value>
+                              <Value>Source Tranche Release</Value>
                               <Style>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -74,6 +75,7 @@
                             <TextRun>
                               <Value>Organization Receiving Funds</Value>
                               <Style>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -106,6 +108,7 @@
                             <TextRun>
                               <Value>Actual Disbursement Date</Value>
                               <Style>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -140,6 +143,7 @@
                             <TextRun>
                               <Value>Actual Amount</Value>
                               <Style>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -172,8 +176,9 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Created By</Value>
+                              <Value>Tranche Release Record Created By</Value>
                               <Style>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -207,6 +212,7 @@
                             <TextRun>
                               <Value>Created Date</Value>
                               <Style>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -240,12 +246,13 @@
                             <TextRun>
                               <Value>Record Type</Value>
                               <Style>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Left</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -489,7 +496,7 @@
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Left</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -549,9 +556,9 @@
             <Value>=Fields!Actual_Disbursement_Date__c.Value</Value>
           </SortExpression>
         </SortExpressions>
-        <Top>1.25in</Top>
+        <Top>1.72917in</Top>
         <Height>0.5in</Height>
-        <Width>12.43958in</Width>
+        <Width>14.08542in</Width>
         <Style />
       </Tablix>
       <Textbox Name="textbox2">
@@ -570,7 +577,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>The Funding Status = 13.Closed</Value>
+                <Value>The Funding Status is 13.Closed</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -581,7 +588,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>And is an Actual Disbursement Date but the Actual Dollar Amount is Blank or Zero.</Value>
+                <Value>And there is an Actual Disbursement Date, but the Actual Dollar Amount is Blank or Zero.</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -592,48 +599,30 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Or there is an Actual Dollar Amount and the Actual Disbursement Date is Blank.
+                <Value>Or there is an Actual Dollar Amount and the Actual Disbursement Date is Blank.</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <ListStyle>Bulleted</ListStyle>
+            <ListLevel>1</ListLevel>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value xml:space="preserve">
 </Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
             <ListLevel>1</ListLevel>
             <Style />
           </Paragraph>
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Instructions:  Either the needed information should be filled in or the records should be deleted. When this report is empty then there are no issues.</Value>
-                <Style />
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>textbox2</rd:DefaultName>
-        <Top>0.02778in</Top>
-        <Height>1.16667in</Height>
-        <Width>10.38542in</Width>
-        <ZIndex>1</ZIndex>
-        <Style>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="textbox65">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Defining the report fields</Value>
+                <Value>Work Instructions</Value>
                 <Style>
-                  <FontStyle>Normal</FontStyle>
-                  <FontWeight>Normal</FontWeight>
                   <TextDecoration>Underline</TextDecoration>
                 </Style>
               </TextRun>
@@ -643,245 +632,30 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value> Source Tranche Release Name (Hyperlink to record in Salesforce)</Value>
-                <Style>
-                  <FontStyle>Normal</FontStyle>
-                  <FontWeight>Bold</FontWeight>
-                  <TextDecoration>None</TextDecoration>
-                </Style>
+                <Value>Either the needed information should be filled in or the records should be deleted. When this report is empty then there are no issues.</Value>
+                <Style />
               </TextRun>
             </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
             <Style />
           </Paragraph>
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value> Organization Receiving Funds (Hyperlink to record in Salesforce</Value>
-                <Style>
-                  <FontStyle>Normal</FontStyle>
-                  <FontWeight>Bold</FontWeight>
-                  <TextDecoration>None</TextDecoration>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value> Actual Disbursement Date</Value>
-                <Style>
-                  <FontStyle>Normal</FontStyle>
-                  <FontWeight>Bold</FontWeight>
-                  <TextDecoration>None</TextDecoration>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value> Actual Amount</Value>
-                <Style>
-                  <FontStyle>Normal</FontStyle>
-                  <FontWeight>Bold</FontWeight>
-                  <TextDecoration>None</TextDecoration>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value> Source Tranche Release Record Created By</Value>
-                <Style>
-                  <FontStyle>Normal</FontStyle>
-                  <FontWeight>Bold</FontWeight>
-                  <TextDecoration>None</TextDecoration>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value> Source Tranche Release Record Created Date</Value>
-                <Style>
-                  <FontStyle>Normal</FontStyle>
-                  <FontWeight>Bold</FontWeight>
-                  <TextDecoration>None</TextDecoration>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value> Source Tranche Release Record Type Name</Value>
-                <Style>
-                  <FontStyle>Normal</FontStyle>
-                  <FontWeight>Bold</FontWeight>
-                  <TextDecoration>None</TextDecoration>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value />
-                <Style>
-                  <FontStyle>Normal</FontStyle>
-                  <FontWeight>Bold</FontWeight>
-                  <TextDecoration>None</TextDecoration>
-                </Style>
+                <Value>Click on the Source Trance Release to access the record in Salesforce.</Value>
+                <Style />
               </TextRun>
             </TextRuns>
             <ListLevel>1</ListLevel>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value />
-                <Style>
-                  <FontStyle>Normal</FontStyle>
-                  <FontWeight>Normal</FontWeight>
-                  <TextDecoration>None</TextDecoration>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Primary Object</Value>
-                <Style>
-                  <FontWeight>Normal</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>:  vwDA_SourceTrancheMismatch</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Secondary Objects:  </Value>
-                <Style>
-                  <FontWeight>Normal</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value />
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Git</Value>
-                <Style>
-                  <FontWeight>Normal</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>:  GitHub/JSR_DataAudit/DataAudit/Source Tranche Release Record Mismatch</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>URL</Value>
-                <Style>
-                  <FontWeight>Normal</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>:  https://report.jumpstartinc.org/ReportServer/Pages/ReportViewer.aspx?%2fData+Audit%2fSource+Tranche+Release+Record+Mismatch&amp;rs:Command=Render</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>RptServer</Value>
-                <Style>
-                  <FontWeight>Normal</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>: </Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>/Data Audit/Source Tranche Release Record Mismatch</Value>
-                <Style>
-                  <FontStyle>Normal</FontStyle>
-                  <FontWeight>Bold</FontWeight>
-                  <TextDecoration>None</TextDecoration>
-                  <Color>#000000</Color>
-                </Style>
-              </TextRun>
-            </TextRuns>
             <Style />
           </Paragraph>
         </Paragraphs>
-        <rd:DefaultName>textbox65</rd:DefaultName>
-        <Top>1.86459in</Top>
-        <Height>2.94791in</Height>
-        <Width>12.43958in</Width>
-        <ZIndex>2</ZIndex>
+        <rd:DefaultName>textbox2</rd:DefaultName>
+        <Top>0.02778in</Top>
+        <Height>1.5in</Height>
+        <Width>14.08542in</Width>
+        <ZIndex>1</ZIndex>
         <Style>
-          <Border>
-            <Style>Solid</Style>
-          </Border>
-          <PaddingLeft>10pt</PaddingLeft>
+          <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
           <PaddingBottom>2pt</PaddingBottom>
@@ -891,7 +665,7 @@
     <Height>4.8125in</Height>
     <Style />
   </Body>
-  <Width>12.46042in</Width>
+  <Width>14.08542in</Width>
   <Page>
     <PageHeader>
       <Height>0.58333in</Height>
@@ -907,7 +681,7 @@
                 <TextRun>
                   <Value>Source Tranche Release Record Mismatch</Value>
                   <Style>
-                    <FontSize>16pt</FontSize>
+                    <FontSize>20pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -918,7 +692,7 @@
           <rd:DefaultName>textbox1</rd:DefaultName>
           <Top>0.03472in</Top>
           <Height>0.375in</Height>
-          <Width>7.875in</Width>
+          <Width>6.88056in</Width>
           <Style>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
@@ -937,14 +711,16 @@
                   <Style />
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox13</rd:DefaultName>
-          <Top>0.33333in</Top>
-          <Left>7.91667in</Left>
+          <Top>0.29861in</Top>
+          <Left>9.51806in</Left>
           <Height>0.25in</Height>
-          <Width>3.77083in</Width>
+          <Width>4.56736in</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -967,13 +743,15 @@
                   <Style />
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
-          <Top>0.01389in</Top>
-          <Left>7.91667in</Left>
+          <Top>0.03472in</Top>
+          <Left>9.51806in</Left>
           <Height>0.25in</Height>
-          <Width>3in</Width>
+          <Width>4.56736in</Width>
           <ZIndex>2</ZIndex>
           <Style>
             <PaddingLeft>2pt</PaddingLeft>
