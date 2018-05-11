@@ -18,11 +18,7 @@
               <Width>1.76042in</Width>
             </TablixColumn>
             <TablixColumn>
-<<<<<<< HEAD
-              <Width>1.5in</Width>
-=======
               <Width>1.89583in</Width>
->>>>>>> 39d29f181fedbbec0dd7829e30bd3bcb138038d7
             </TablixColumn>
             <TablixColumn>
               <Width>1.67709in</Width>
@@ -111,7 +107,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Organization</Value>
+                              <Value>Organization Name</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -121,13 +117,6 @@
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>textbox4</rd:DefaultName>
-                      <ActionInfo>
-                        <Actions>
-                          <Action>
-                            <Hyperlink>=Fields!OrgURL.Value</Hyperlink>
-                          </Action>
-                        </Actions>
-                      </ActionInfo>
                       <ZIndex>10</ZIndex>
                       <Style>
                         <Border>
@@ -150,11 +139,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-<<<<<<< HEAD
-                              <Value>Org Id</Value>
-=======
                               <Value>Organization Id</Value>
->>>>>>> 39d29f181fedbbec0dd7829e30bd3bcb138038d7
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -205,6 +190,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -249,13 +235,15 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Created Date</Value>
+                              <Value>Contact Record Created Date</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>textbox6</rd:DefaultName>
@@ -281,7 +269,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Created By</Value>
+                              <Value>Contact Record Created By</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -446,7 +434,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>textbox7</rd:DefaultName>
@@ -767,7 +757,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>CreatedDate</rd:DefaultName>
@@ -924,181 +916,16 @@
         <DataSetName>DataSet1</DataSetName>
         <Top>3.48959in</Top>
         <Height>0.75in</Height>
-<<<<<<< HEAD
-        <Width>14.21875in</Width>
-        <Style />
-      </Tablix>
-      <Textbox Name="Textbox17">
-=======
         <Width>14.61458in</Width>
         <Style />
       </Tablix>
       <Textbox Name="Textbox16">
->>>>>>> 39d29f181fedbbec0dd7829e30bd3bcb138038d7
         <CanGrow>true</CanGrow>
         <KeepTogether>true</KeepTogether>
         <Paragraphs>
           <Paragraph>
             <TextRuns>
               <TextRun>
-<<<<<<< HEAD
-                <Value>Data Selection Criteria:</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>
-    Show all Contacts where more than one contact has the same email address. Except when the field Duplicate Email Address Reviewed Is Not NULL. If one Contact exists where Duplicate Email Address Reviewed is NULL and there are Contacts with Duplicate Email address, Show ALL of the Contact records with the same email regardless of Duplicate Email Address Reviewed not being NULL. The field "Duplicate Email Address Reviewed" has already been created as a date field on the Contact Record.</Value>
-                <Style />
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value />
-                <Style />
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Defining the Report Fields:</Value>
-                <Style>
-                  <FontWeight>Normal</FontWeight>
-                  <TextDecoration>Underline</TextDecoration>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Email Address</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Contact Name</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Add the column "Duplicate Email Address Reviewed" from the Contact Record after Contact column.</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Organization (Keep the hyperlinks but update them to the new URL.</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Add the column "Organization Id".  This will make it easier to verify possible duplicate Organizations without having to click on the Organization Link.</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Contact Record Created Date</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Contact Record Created By</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value />
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <ListLevel>1</ListLevel>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Primary Object:     </Value>
-                <Style />
-              </TextRun>
-              <TextRun>
-                <Value>uspDA_TwoContactsSameEmailAddress</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Secondary Object: </Value>
-=======
                 <Value>Report displays all multiple contact records for the same email address in Salesforce.
 The Goal is to identify the contact records that are truly duplicates.
 In Salesforce the same Contact can be associated with multiple Organizations (this is acceptable).
@@ -1122,7 +949,6 @@ Multiple Contact Names with the same email address and the same Organization. Th
 You may find an Organization that exist twice (Similar Organization Name, Different Organization Id's)
 These will need to be reviewed and deduplicated (merged) if necessary. This can only be performed by a Sytems Administrator.
 To deduplicate an Organization record you must first check to see if either Organization has a Client Service record tied to it. </Value>
->>>>>>> 39d29f181fedbbec0dd7829e30bd3bcb138038d7
                 <Style />
               </TextRun>
             </TextRuns>
@@ -1131,145 +957,73 @@ To deduplicate an Organization record you must first check to see if either Orga
           <Paragraph>
             <TextRuns>
               <TextRun>
-<<<<<<< HEAD
-                <Value />
-                <Style />
-              </TextRun>
-            </TextRuns>
-=======
                 <Value>The Client Services Records must be de-duplicated so that only one of the Organizations to be merged has a CSR. CSR's are merged manually.</Value>
                 <Style />
               </TextRun>
             </TextRuns>
             <ListLevel>1</ListLevel>
->>>>>>> 39d29f181fedbbec0dd7829e30bd3bcb138038d7
             <Style />
           </Paragraph>
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Git</Value>
+                <Value>If two contacts exist with one at Individual and one at a real Organization, change the Organization on the Individual Contact to the real Organization and then deduplicate.</Value>
                 <Style>
+                  <FontStyle>Normal</FontStyle>
                   <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
                 </Style>
               </TextRun>
-<<<<<<< HEAD
-=======
             </TextRuns>
             <Style />
           </Paragraph>
           <Paragraph>
             <TextRuns>
->>>>>>> 39d29f181fedbbec0dd7829e30bd3bcb138038d7
               <TextRun>
-                <Value>:           /GitHub/JSR_DataAudit/DataAudit/Two Contacts Same Email Address</Value>
+                <Value>If two contacts exist with one at a College/University and is obviously a student and the other is at a Organization that is likely a startup, change the Organization on the college/university contact to be the startup and deduplicate.</Value>
                 <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-<<<<<<< HEAD
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Url</Value>
-                <Style>
+                  <FontStyle>Normal</FontStyle>
                   <FontWeight>Normal</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>:           https://report.jumpstartinc.org/ReportServer/Pages/ReportViewer.aspx?%2fData+Audit%2fTwo+Contacts+Same+Email+Address&amp;rs:Command=Render</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
                 </Style>
               </TextRun>
             </TextRuns>
-            <Style />
-=======
             <Style>
               <TextAlign>Left</TextAlign>
             </Style>
->>>>>>> 39d29f181fedbbec0dd7829e30bd3bcb138038d7
           </Paragraph>
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>RptServer</Value>
+                <Value />
                 <Style>
+                  <FontStyle>Normal</FontStyle>
                   <FontWeight>Normal</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-<<<<<<< HEAD
-                <Value>: /Data Audit/Two Contacts Same Email Address</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
                 </Style>
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Textbox17</rd:DefaultName>
-        <Top>4.40153in</Top>
-        <Height>3.52083in</Height>
-        <Width>13.09375in</Width>
-        <ZIndex>1</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="Textbox16">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Report displays all multiple contact records for the same email address in Salesforce.
-The Goal is to identify the contact records that are truly duplicates.
-In Salesforce the same Contact can be associated with multiple Organizations (this is acceptable).
-
-</Value>
-=======
                 <Value>Potentally you may find other duplicate data.</Value>
->>>>>>> 39d29f181fedbbec0dd7829e30bd3bcb138038d7
-                <Style />
-              </TextRun>
-              <TextRun>
-<<<<<<< HEAD
-                <Value>Work Instructions:</Value>
-                <Style>
-                  <TextDecoration>Underline</TextDecoration>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>
-Look for email addresses where the Contact Name is the same and the Organization is the same (Same Organization Id).
-Look for email addresses where the Contact Name looks the same but my be spelled a little differently (i.e. Debbie vs Deborah) and the Organization is the same (Same Organization Id).
-Open both Contact records to verify the data. If they are the same person deduplicate the contact by merging the records.
-Multiple Contact Names with the same email address and the same Organization. This is typically because these Contacts are all using a business email address (This is acceptable).
-
-You may find an Organization that exist twice (Similar Organization Name, Different Organization Id's)
-These will need to be reviewed and deduplicated (merged) if necessary. This can only be performed by a Sytems Administrator.
-To deduplicate an Organization record you must first check to see if either Organization has a Client Service record tied to it. The Client Services Records must be de-duplicated so that only one of the Organizations to be merged has a CSR. CSR's are merged manually.
-Potentally you may find other duplicate data.
-Caution; Before you merge Client Service records make sure you know that they are really the same business Idea (CSR). Contacts sometimes will have multiple ideas and thus multiple Organizations each with a Client Services Record.
-
-If you find that a Contact should have multiple contact records add today's date to the field Duplicate Email Address Reviewed on each of the Contact records you reviewed. This will cause those records to no longer appear on this report until another Contact with taht same email address is created later which has not been reviewed.</Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
-=======
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
                 <Value>
 Caution; Before you merge Client Service records make sure you know that they are really the same business Idea (CSR). Contacts sometimes will have multiple ideas and thus multiple Organizations each with a Client Services Record.
 
@@ -1280,7 +1034,6 @@ If you find that a Contact should have multiple contact records add today's date
             <Style>
               <TextAlign>Left</TextAlign>
             </Style>
->>>>>>> 39d29f181fedbbec0dd7829e30bd3bcb138038d7
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox16</rd:DefaultName>
@@ -1318,7 +1071,8 @@ If you find that a Contact should have multiple contact records add today's date
                 <TextRun>
                   <Value>Two Contacts, Same Email Address</Value>
                   <Style>
-                    <FontSize>12pt</FontSize>
+                    <FontFamily>Tahoma</FontFamily>
+                    <FontSize>20pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -1327,13 +1081,8 @@ If you find that a Contact should have multiple contact records add today's date
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>textbox1</rd:DefaultName>
-<<<<<<< HEAD
-          <Height>0.25in</Height>
-          <Width>4.02083in</Width>
-=======
           <Height>0.54861in</Height>
           <Width>6.6875in</Width>
->>>>>>> 39d29f181fedbbec0dd7829e30bd3bcb138038d7
           <Style>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
@@ -1354,17 +1103,14 @@ If you find that a Contact should have multiple contact records add today's date
                   </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox3</rd:DefaultName>
-<<<<<<< HEAD
-          <Top>0.31944in</Top>
-          <Left>4.14584in</Left>
-=======
           <Top>0.29861in</Top>
           <Left>9.35416in</Left>
->>>>>>> 39d29f181fedbbec0dd7829e30bd3bcb138038d7
           <Height>0.25in</Height>
           <Width>5.26042in</Width>
           <ZIndex>1</ZIndex>
@@ -1391,15 +1137,13 @@ If you find that a Contact should have multiple contact records add today's date
                   </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox3</rd:DefaultName>
-<<<<<<< HEAD
-          <Left>4.14584in</Left>
-=======
           <Left>9.15625in</Left>
->>>>>>> 39d29f181fedbbec0dd7829e30bd3bcb138038d7
           <Height>0.25in</Height>
           <Width>5.45833in</Width>
           <ZIndex>2</ZIndex>
