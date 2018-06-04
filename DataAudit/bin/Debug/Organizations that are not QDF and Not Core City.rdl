@@ -191,8 +191,8 @@
                   <TextRun>
                     <Value>Organizations that are Not QDF and Not Core City</Value>
                     <Style>
-                      <FontFamily>Arial</FontFamily>
-                      <FontSize>14pt</FontSize>
+                      <FontFamily>Tahoma</FontFamily>
+                      <FontSize>20pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -202,7 +202,7 @@
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Height>0.43in</Height>
-            <Width>5.875in</Width>
+            <Width>21.37501in</Width>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -1831,8 +1831,7 @@
                 <Value>=Fields!Name.Value</Value>
               </SortExpression>
             </SortExpressions>
-            <Top>1.95708in</Top>
-            <Left>0.09375in</Left>
+            <Top>3.51333in</Top>
             <Height>0.43in</Height>
             <Width>21.37501in</Width>
             <ZIndex>1</ZIndex>
@@ -1855,14 +1854,15 @@
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <Style />
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox11</rd:DefaultName>
-            <Top>0.31944in</Top>
-            <Left>6.08871in</Left>
-            <Height>0.25in</Height>
-            <Width>5.29046in</Width>
+            <Top>0.68in</Top>
+            <Height>0.19444in</Height>
+            <Width>21.37501in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
@@ -1884,13 +1884,15 @@
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <Style />
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox16</rd:DefaultName>
-            <Left>6.08871in</Left>
-            <Height>0.25in</Height>
-            <Width>5.29046in</Width>
+            <Top>0.43in</Top>
+            <Height>0.20833in</Height>
+            <Width>21.37501in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -2164,10 +2166,9 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>0.62375in</Top>
-            <Left>0.09375in</Left>
-            <Height>1.20833in</Height>
-            <Width>11.28542in</Width>
+            <Top>0.91611in</Top>
+            <Height>2.58333in</Height>
+            <Width>21.37501in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
