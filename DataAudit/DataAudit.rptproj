@@ -78,8 +78,8 @@
       <FullPath>SpinOff Connections Audit.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Two Contacts Same Email Address.rdl</Name>
-      <FullPath>Two Contacts Same Email Address.rdl</FullPath>
+      <Name>Multiple Contacts Same Email Address.rdl</Name>
+      <FullPath>Multiple Contacts Same Email Address.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
@@ -89,8 +89,8 @@
       <Options>
         <OutputPath>bin\Debug</OutputPath>
         <TargetServerVersion>SSRS2016</TargetServerVersion>
-        <TargetServerURL>http://localhost/reportserver</TargetServerURL>
-        <TargetFolder>DataAudit</TargetFolder>
+        <TargetServerURL>https://report.jumpstartinc.org/reportserver</TargetServerURL>
+        <TargetFolder>Data Audit</TargetFolder>
         <TargetMobileReportFolder>Mobile Reports</TargetMobileReportFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
         <TargetDatasetFolder>Datasets</TargetDatasetFolder>
