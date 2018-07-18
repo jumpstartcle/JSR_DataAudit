@@ -125,7 +125,6 @@
                                 <TextRun>
                                   <Value>Company Name</Value>
                                   <Style>
-                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -158,7 +157,6 @@
                                 <TextRun>
                                   <Value>Client Services Name</Value>
                                   <Style>
-                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -191,7 +189,6 @@
                                 <TextRun>
                                   <Value>Date of First Contact</Value>
                                   <Style>
-                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -226,7 +223,6 @@
                                 <TextRun>
                                   <Value>Company Reporting Data Record Created By</Value>
                                   <Style>
-                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -261,7 +257,6 @@
                                 <TextRun>
                                   <Value>Company Reporting Data Record Created Date</Value>
                                   <Style>
-                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -297,7 +292,6 @@
                                   <Value>Company Reporting Data Name</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -332,7 +326,6 @@
                                 <TextRun>
                                   <Value>ODSA Operating Stage</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -367,7 +360,6 @@
                                 <TextRun>
                                   <Value>ODSA Stage Start Date</Value>
                                   <Style>
-                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -402,7 +394,6 @@
                                 <TextRun>
                                   <Value>ODSA Stage Change Type</Value>
                                   <Style>
-                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -437,7 +428,6 @@
                                 <TextRun>
                                   <Value>ODSA Stage Change Reason</Value>
                                   <Style>
-                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -859,7 +849,7 @@
                 <Value>=Fields!ODSA_Stage_Start_Date__c.Value</Value>
               </SortExpression>
             </SortExpressions>
-            <Top>2.3507in</Top>
+            <Top>2.28388in</Top>
             <Height>0.46125in</Height>
             <Width>18.60417in</Width>
             <Style />
@@ -883,14 +873,12 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
-            <Height>0.37723in</Height>
-            <Width>9.57292in</Width>
+            <Height>0.375in</Height>
+            <Width>18.60417in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="Textbox6">
@@ -910,10 +898,9 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>0.14112in</Top>
-            <Left>13.875in</Left>
-            <Height>0.25in</Height>
-            <Width>4in</Width>
+            <Top>0.375in</Top>
+            <Height>0.15in</Height>
+            <Width>18.60417in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -921,8 +908,6 @@
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="textbox11">
@@ -933,7 +918,9 @@
                 <TextRuns>
                   <TextRun>
                     <Value>="Report Run on " &amp; Globals!ExecutionTime</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style>
@@ -942,16 +929,13 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox11</rd:DefaultName>
-            <Top>0.46056in</Top>
-            <Left>13.875in</Left>
-            <Height>0.25in</Height>
-            <Width>4in</Width>
+            <Top>0.525in</Top>
+            <Height>0.15in</Height>
+            <Width>18.60417in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="Textbox13">
@@ -1122,9 +1106,9 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox13</rd:DefaultName>
-            <Top>0.4189in</Top>
-            <Height>1.69569in</Height>
-            <Width>9.57292in</Width>
+            <Top>0.675in</Top>
+            <Height>1.58111in</Height>
+            <Width>18.60417in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -1132,12 +1116,10 @@
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>6.01861in</Height>
+        <Height>2.79986in</Height>
         <Style />
       </Body>
       <Width>19.00001in</Width>
