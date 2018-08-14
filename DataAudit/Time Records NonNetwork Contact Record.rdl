@@ -6,19 +6,25 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.625in</Width>
+              <Width>1.64008in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2in</Width>
+              <Width>1.01508in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.95833in</Width>
+              <Width>1.37967in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>2.01508in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.94792in</Width>
+              <Width>1.01508in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.60883in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>3.963in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -34,7 +40,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Record Creator</Value>
+                              <Value>Record Created By</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -45,6 +51,68 @@
                       </Paragraphs>
                       <rd:DefaultName>textbox3</rd:DefaultName>
                       <ZIndex>3</ZIndex>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox10">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Created Date</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox10</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox12">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Record Type</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox12</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -90,6 +158,37 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
+                    <Textbox Name="Textbox14">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Person</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox14</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
                     <Textbox Name="Textbox5">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
@@ -97,7 +196,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Person (Person's Org)</Value>
+                              <Value>Person's Organization</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -121,37 +220,6 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox9">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>Locked</Value>
-                              <Style>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox9</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
                     <Textbox Name="textbox2">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
@@ -159,7 +227,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>URL</Value>
+                              <Value>Link to Record in Salesforce</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -189,21 +257,21 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="salutation">
+                    <Textbox Name="RecordCreatedBy">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!UserCreated.Value</Value>
+                              <Value>=Fields!RecordCreatedBy.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>salutation</rd:DefaultName>
+                      <rd:DefaultName>RecordCreatedBy</rd:DefaultName>
                       <ZIndex>1</ZIndex>
                       <Style>
                         <Border>
@@ -219,21 +287,23 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="UserEmail">
+                    <Textbox Name="CreatedDate">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!UserEmail.Value</Value>
-                              <Style />
+                              <Value>=Fields!CreatedDate.Value</Value>
+                              <Style>
+                                <Format>MM/dd/yyyy</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>UserEmail</rd:DefaultName>
+                      <rd:DefaultName>CreatedDate</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -248,14 +318,101 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox7">
+                    <Textbox Name="RecordType">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Person.Value &amp; " (" &amp; Fields!PersonOrg.Value &amp; ")"</Value>
+                              <Value>=Fields!RecordType.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>RecordType</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Record_Creators_Email">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Record_Creators_Email.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Record_Creators_Email</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Person">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Person.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Person</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Persons_Organization">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Persons_Organization.Value</Value>
                               <Style>
                                 <Format>M/d/yyyy</Format>
                               </Style>
@@ -264,7 +421,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox7</rd:DefaultName>
+                      <rd:DefaultName>Persons_Organization</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -279,54 +436,25 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="lockstatus">
+                    <Textbox Name="Link_to_Record_in_Salesforce">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!lockstatus.Value</Value>
+                              <Value>=Fields!Link_to_Record_in_Salesforce.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>lockstatus</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="name">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Fields!URL.Value</Value>
-                              <Style />
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>name</rd:DefaultName>
+                      <rd:DefaultName>Link_to_Record_in_Salesforce</rd:DefaultName>
                       <ActionInfo>
                         <Actions>
                           <Action>
-                            <Hyperlink>=Fields!URL.Value</Hyperlink>
+                            <Hyperlink>=Fields!Link_to_Record_in_Salesforce.Value</Hyperlink>
                           </Action>
                         </Actions>
                       </ActionInfo>
@@ -353,6 +481,8 @@
             <TablixMember />
             <TablixMember />
             <TablixMember />
+            <TablixMember />
+            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
@@ -368,13 +498,13 @@
               </Group>
               <SortExpressions>
                 <SortExpression>
-                  <Value>=Fields!UserCreated.Value</Value>
+                  <Value>=Fields!Persons_Organization.Value</Value>
                 </SortExpression>
                 <SortExpression>
                   <Value>=Fields!Person.Value</Value>
                 </SortExpression>
                 <SortExpression>
-                  <Value>=Fields!URL.Value</Value>
+                  <Value>=Fields!Link_to_Record_in_Salesforce.Value</Value>
                 </SortExpression>
               </SortExpressions>
               <TablixMembers>
@@ -389,85 +519,84 @@
         <DataSetName>DataSet1</DataSetName>
         <Top>0.06944in</Top>
         <Height>0.5in</Height>
-        <Width>10.53125in</Width>
+        <Width>12.63683in</Width>
         <Style />
       </Tablix>
     </ReportItems>
-    <Height>0.75in</Height>
+    <Height>0.625in</Height>
     <Style />
   </Body>
-  <Width>10.63542in</Width>
+  <Width>12.67991in</Width>
   <Page>
     <PageHeader>
-      <Height>1.91667in</Height>
+      <Height>1.78125in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
-        <Textbox Name="textbox1">
+        <Textbox Name="textbox4">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
           <Paragraphs>
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Daily Cleanup: Non Network Person</Value>
-                  <Style>
-                    <FontSize>14pt</FontSize>
-                    <FontWeight>Bold</FontWeight>
-                    <Color>Red</Color>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style />
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>textbox1</rd:DefaultName>
-          <Height>0.375in</Height>
-          <Width>10.125in</Width>
-          <Style>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="Textbox2">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>Query Last Modified: 8/26/2014</Value>
+                  <Value>Instructions: Export this to Excel and email Record Creator listed. Make the email subject "Time tracking errors in Salesforce" and in the body of the email paste the table and include the message "The individual you put in the Person field is not an employee at a Network organization. Please use the link provided to access the record, click the Edit button, use the magnifying glass search button by the Person field to locate the correct Contact record at the Correct Organization and then click on the Save button."
+ 
+Note that records marked Locked will need to be updated by an Administrator.</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
               <Style />
             </Paragraph>
           </Paragraphs>
-          <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>0.38889in</Top>
-          <Height>0.25in</Height>
-          <Width>3.625in</Width>
-          <ZIndex>1</ZIndex>
+          <rd:DefaultName>textbox4</rd:DefaultName>
+          <Top>0.84723in</Top>
+          <Height>0.90278in</Height>
+          <Width>12.63683in</Width>
           <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Textbox Name="Textbox6">
+        <Textbox Name="textbox6">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
           <Paragraphs>
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>="Last Run: " &amp; Globals!ExecutionTime</Value>
+                  <Value>Time Records Not Tied to JumpStart or a Network Partner Contact Record</Value>
+                  <Style>
+                    <FontFamily>Tahoma</FontFamily>
+                    <FontSize>20pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>textbox6</rd:DefaultName>
+          <Height>0.38194in</Height>
+          <Width>12.63683in</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox21">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="Report Run on " &amp; Globals!ExecutionTime</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -476,11 +605,10 @@
               </Style>
             </Paragraph>
           </Paragraphs>
-          <rd:DefaultName>Textbox6</rd:DefaultName>
-          <Top>0.38889in</Top>
-          <Left>5.58333in</Left>
-          <Height>0.22in</Height>
-          <Width>4.54167in</Width>
+          <rd:DefaultName>Textbox21</rd:DefaultName>
+          <Top>0.55555in</Top>
+          <Height>0.22571in</Height>
+          <Width>12.63683in</Width>
           <ZIndex>2</ZIndex>
           <Style>
             <Border>
@@ -492,74 +620,31 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Textbox Name="textbox4">
+        <Textbox Name="Textbox23">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
           <Paragraphs>
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Instructions: Export this to Excel and email Record Creator listed.  Make the email subject "Time tracking errors in Salesforce" and in the body of the email paste the table and include the message "</Value>
+                  <Value>Queries Last Modified/Reviewed: 08/14/2018</Value>
                   <Style />
                 </TextRun>
-                <TextRun>
-                  <Value>The individual you put in the Person field is not an employee at a Network organization.  Please use the link provided to access the record, click the Edit button, use the magnifying glass search button by the Person field to locate the correct Contact record at the Correct Organization and then click on the Save button.</Value>
-                  <Style>
-                    <FontStyle>Normal</FontStyle>
-                    <FontFamily>Calibri</FontFamily>
-                    <FontSize>11pt</FontSize>
-                    <FontWeight>Normal</FontWeight>
-                    <TextDecoration>None</TextDecoration>
-                    <Color>#000000</Color>
-                  </Style>
-                </TextRun>
-                <TextRun>
-                  <Value>" </Value>
-                  <Style>
-                    <FontStyle>Normal</FontStyle>
-                    <FontWeight>Normal</FontWeight>
-                    <TextDecoration>None</TextDecoration>
-                    <Color>#000000</Color>
-                  </Style>
-                </TextRun>
               </TextRuns>
-              <Style />
-            </Paragraph>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value />
-                  <Style>
-                    <FontStyle>Normal</FontStyle>
-                    <FontWeight>Normal</FontWeight>
-                    <TextDecoration>None</TextDecoration>
-                    <Color>#000000</Color>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style />
-            </Paragraph>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>Note that records marked Locked will need to be updated by an Administrator. </Value>
-                  <Style>
-                    <FontStyle>Normal</FontStyle>
-                    <FontWeight>Normal</FontWeight>
-                    <TextDecoration>None</TextDecoration>
-                    <Color>#000000</Color>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
-          <rd:DefaultName>textbox4</rd:DefaultName>
-          <Top>0.70833in</Top>
-          <Height>1.15278in</Height>
-          <Width>10.125in</Width>
+          <rd:DefaultName>Textbox23</rd:DefaultName>
+          <Top>0.38194in</Top>
+          <Height>0.22571in</Height>
+          <Width>12.63683in</Width>
           <ZIndex>3</ZIndex>
           <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -591,38 +676,37 @@
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>SalesForce</DataSourceName>
-        <CommandText>select 'https://jumpstart.my.salesforce.com/' + tt.id "URL", c.name "Person", acc.Name "PersonOrg", u.Name "UserCreated", u.Email "UserEmail",CASE when tt.Locked__c = 'true' then 'Locked' end as lockstatus
-from Time_Tracking__c tt
-inner join Contact c on tt.Person__c  = c.Id
-inner join Account acc on c.AccountId = acc.Id
-inner join [user] u on tt.createdbyid = u.id
-where (acc.Network_Partner__c not like '%JEN%' OR acc.Network_Partner__c is null)
-AND tt.Person__c not in ('0034000000qqOKeAAM','0034000000yGBZmAAO','0034000000qtN7cAAE','00340000017ewFhAAI', '0034000000Z5iBMAAZ')</CommandText>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>uspDA_TimeRecordsNonNetworkContactRecord</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
+        <Field Name="RecordCreatedBy">
+          <DataField>RecordCreatedBy</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="Person">
           <DataField>Person</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PersonOrg">
-          <DataField>PersonOrg</DataField>
+        <Field Name="CreatedDate">
+          <DataField>CreatedDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="RecordType">
+          <DataField>RecordType</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="URL">
-          <DataField>URL</DataField>
+        <Field Name="Record_Creators_Email">
+          <DataField>Record Creators Email</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="UserCreated">
-          <DataField>UserCreated</DataField>
+        <Field Name="Persons_Organization">
+          <DataField>Persons Organization</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="UserEmail">
-          <DataField>UserEmail</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="lockstatus">
-          <DataField>lockstatus</DataField>
+        <Field Name="Link_to_Record_in_Salesforce">
+          <DataField>Link to Record in Salesforce</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>

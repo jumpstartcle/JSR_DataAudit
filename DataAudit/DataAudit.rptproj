@@ -70,14 +70,11 @@
     <Report Include="Organizations with Multiple Time Period Data Records for the Same Date.rdl" />
     <Report Include="Source Tranche Release Record Mismatch.rdl" />
     <Report Include="SpinOff Connections Audit.rdl" />
-<<<<<<< HEAD
     <Report Include="Time Records Logged After the Core City Do Not Survey Date.rdl" />
     <Report Include="Time Records Logged After the ESP Do Not Survey Date.rdl" />
     <Report Include="Time Records Logged Before the Date of First Contact.rdl" />
     <Report Include="Time Records Logged Before the JS Date of First Contact.rdl" />
-    <Report Include="Two Contacts Same Email Address.rdl" />
-=======
->>>>>>> cfc7c42d49ab989c20c239eb0eff57513031e225
+    <Report Include="Time Records NonNetwork Contact Record.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
