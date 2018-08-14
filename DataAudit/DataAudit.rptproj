@@ -52,28 +52,32 @@
     <DataSource Include="SalesForce.rds" />
   </ItemGroup>
   <ItemGroup>
-    <Report Include="Almost a Client Review.rdl" />
+    <Report Include="Client Engagement Letter Review.rdl" />
     <Report Include="Client Service Records where the Lead Advisor is Blank.rdl" />
     <Report Include="Core City Do Not Survey Audit.rdl" />
     <Report Include="Duplicate Advisor Entries.rdl" />
     <Report Include="Duplicate Client Progress Records.rdl" />
     <Report Include="ESP Do Not Survey Audit.rdl" />
+    <Report Include="Multiple Contacts Same Email Address.rdl" />
     <Report Include="Organizations Ethnicity Minority Fields Audit.rdl" />
     <Report Include="Organizations that are Classified as Ohio Third Frontier (OTF) PreSeed Funds.rdl" />
     <Report Include="Organizations that are Core City but not QDF.rdl" />
     <Report Include="Organizations that are Not QDF - Non JumpStart Created.rdl" />
-    <Report Include="Organizations that are not QDF and not Core City.rdl" />
+    <Report Include="Organizations that are not QDF and Not Core City.rdl" />
     <Report Include="Organizations that are QDF but Not Core City.rdl" />
     <Report Include="Organizations with Multiple Client Services Records.rdl" />
     <Report Include="Organizations with Multiple Point in Time Records for the Same Date.rdl" />
     <Report Include="Organizations with Multiple Time Period Data Records for the Same Date.rdl" />
     <Report Include="Source Tranche Release Record Mismatch.rdl" />
     <Report Include="SpinOff Connections Audit.rdl" />
+<<<<<<< HEAD
     <Report Include="Time Records Logged After the Core City Do Not Survey Date.rdl" />
     <Report Include="Time Records Logged After the ESP Do Not Survey Date.rdl" />
     <Report Include="Time Records Logged Before the Date of First Contact.rdl" />
     <Report Include="Time Records Logged Before the JS Date of First Contact.rdl" />
     <Report Include="Two Contacts Same Email Address.rdl" />
+=======
+>>>>>>> cfc7c42d49ab989c20c239eb0eff57513031e225
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

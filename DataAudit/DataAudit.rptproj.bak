@@ -10,12 +10,16 @@
   <DataSets />
   <Reports>
     <ProjectItem>
-      <Name>Almost a Client Review.rdl</Name>
-      <FullPath>Almost a Client Review.rdl</FullPath>
+      <Name>Client Engagement Letter Review.rdl</Name>
+      <FullPath>Client Engagement Letter Review.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Client Service Records where the Lead Advisor is Blank.rdl</Name>
       <FullPath>Client Service Records where the Lead Advisor is Blank.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Core City Do Not Survey Audit.rdl</Name>
+      <FullPath>Core City Do Not Survey Audit.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Duplicate Advisor Entries.rdl</Name>
@@ -28,6 +32,10 @@
     <ProjectItem>
       <Name>ESP Do Not Survey Audit.rdl</Name>
       <FullPath>ESP Do Not Survey Audit.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Multiple Contacts Same Email Address.rdl</Name>
+      <FullPath>Multiple Contacts Same Email Address.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Organizations Ethnicity Minority Fields Audit.rdl</Name>
@@ -46,7 +54,7 @@
       <FullPath>Organizations that are Not QDF - Non JumpStart Created.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Organizations that are not QDF and not Core City.rdl</Name>
+      <Name>Organizations that are not QDF and Not Core City.rdl</Name>
       <FullPath>Organizations that are not QDF and Not Core City.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
@@ -72,14 +80,6 @@
     <ProjectItem>
       <Name>SpinOff Connections Audit.rdl</Name>
       <FullPath>SpinOff Connections Audit.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Two Contacts Same Email Address.rdl</Name>
-      <FullPath>Two Contacts Same Email Address.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Core City Do Not Survey Audit.rdl</Name>
-      <FullPath>Core City Do Not Survey Audit.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
