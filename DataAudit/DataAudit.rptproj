@@ -58,6 +58,7 @@
     <Report Include="Duplicate Advisor Entries.rdl" />
     <Report Include="Duplicate Client Progress Records.rdl" />
     <Report Include="ESP Do Not Survey Audit.rdl" />
+    <Report Include="JS Funded Date Audit.rdl" />
     <Report Include="Multiple Contacts Same Email Address.rdl" />
     <Report Include="Organizations Ethnicity Minority Fields Audit.rdl" />
     <Report Include="Organizations that are Classified as Ohio Third Frontier (OTF) PreSeed Funds.rdl" />
