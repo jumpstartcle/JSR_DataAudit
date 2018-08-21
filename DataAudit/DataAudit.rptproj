@@ -59,6 +59,7 @@
     <Report Include="Duplicate Client Progress Records.rdl" />
     <Report Include="ESP Do Not Survey Audit.rdl" />
     <Report Include="JS Funded Date Audit.rdl" />
+    <Report Include="Multiple Contacts Same Email Address - JOSF.rdl" />
     <Report Include="Multiple Contacts Same Email Address.rdl" />
     <Report Include="Organizations Ethnicity Minority Fields Audit.rdl" />
     <Report Include="Organizations that are Classified as Ohio Third Frontier (OTF) PreSeed Funds.rdl" />
@@ -76,6 +77,8 @@
     <Report Include="Time Records Logged Before the Date of First Contact.rdl" />
     <Report Include="Time Records Logged Before the JS Date of First Contact.rdl" />
     <Report Include="Time Records NonNetwork Contact Record.rdl" />
+    <Report Include="Update Network Funded Date.rdl" />
+    <Report Include="Update Network Portfolio Date.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
