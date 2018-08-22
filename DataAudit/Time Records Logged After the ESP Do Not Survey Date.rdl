@@ -84,6 +84,13 @@
       </Fields>
       <Filters>
         <Filter>
+          <FilterExpression>=IsNothing(Fields!ESP_Do_Not_Survey_Date__c.Value)</FilterExpression>
+          <Operator>NotEqual</Operator>
+          <FilterValues>
+            <FilterValue DataType="Boolean">=True</FilterValue>
+          </FilterValues>
+        </Filter>
+        <Filter>
           <FilterExpression>=Fields!Date__c.Value</FilterExpression>
           <Operator>GreaterThan</Operator>
           <FilterValues>
