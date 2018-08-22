@@ -90,6 +90,13 @@
             <FilterValue>=Fields!Core_City_Do_not_Survey_Date__c.Value</FilterValue>
           </FilterValues>
         </Filter>
+        <Filter>
+          <FilterExpression>=IsNothing(Fields!Core_City_Do_not_Survey_Date__c.Value)</FilterExpression>
+          <Operator>NotEqual</Operator>
+          <FilterValues>
+            <FilterValue DataType="Boolean">true</FilterValue>
+          </FilterValues>
+        </Filter>
       </Filters>
     </DataSet>
   </DataSets>
@@ -744,22 +751,6 @@
                 </TablixMember>
                 <TablixMember>
                   <Group Name="table1_Details_Group">
-                    <Filters>
-                      <Filter>
-                        <FilterExpression>=IsNothing(Fields!Core_City_Do_not_Survey_Date__c.Value)</FilterExpression>
-                        <Operator>NotEqual</Operator>
-                        <FilterValues>
-                          <FilterValue DataType="Boolean">true</FilterValue>
-                        </FilterValues>
-                      </Filter>
-                      <Filter>
-                        <FilterExpression>=Fields!Date__c.Value</FilterExpression>
-                        <Operator>GreaterThanOrEqual</Operator>
-                        <FilterValues>
-                          <FilterValue>=Fields!Core_City_Do_not_Survey_Date__c.Value</FilterValue>
-                        </FilterValues>
-                      </Filter>
-                    </Filters>
                     <DataElementName>Detail</DataElementName>
                   </Group>
                   <SortExpressions>
