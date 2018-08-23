@@ -704,10 +704,10 @@
         <Height>0.70486in</Height>
         <Style />
       </Body>
-      <Width>15.58616in</Width>
+      <Width>14.49241in</Width>
       <Page>
         <PageHeader>
-          <Height>1.12848in</Height>
+          <Height>1.3889in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -808,7 +808,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Displays a list of Client Service records where there is Time recorded before the Date of First Contact</Value>
+                      <Value>Displays a list of Client Service records where there is Time recorded before the Date of First Contact.</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontWeight>Normal</FontWeight>
@@ -818,10 +818,33 @@
                   </TextRuns>
                   <Style />
                 </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Instructions: </Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>ONLY update the Date of first contact IF the Date of first Contact will remain in the SAME quarter as it is in currently. Example: If Date of First Contact is 3/21 and time was logged on 2/15, change the Date of First Contact to 2/15. Example 2: If Date of First Contact is 5/1 and Time was logged on 2/15 Do NOT change the Date of First Contact to be in an earlier quarter.</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontSize>10.5pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#333333</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>0.78126in</Top>
-              <Height>0.26388in</Height>
+              <Height>0.54861in</Height>
               <Width>14.40908in</Width>
               <ZIndex>3</ZIndex>
               <Style>

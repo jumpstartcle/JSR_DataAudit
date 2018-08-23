@@ -9,88 +9,109 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="TimeRecords">
+    <DataSet Name="NonESPTimeRecordsAudit">
       <Query>
         <DataSourceName>SalesForce</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@StartDate">
+            <Value>=Parameters!StartDate.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@EndDate">
+            <Value>=Parameters!EndDate.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspDA_TimeRecords</CommandText>
-        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>uspDA_NonESPTimeRecordsAudit</CommandText>
       </Query>
       <Fields>
-        <Field Name="Client_Services__c">
-          <DataField>Client_Services__c</DataField>
+        <Field Name="OrganizationName">
+          <DataField>OrganizationName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="CS_Name">
-          <DataField>CS_Name</DataField>
+        <Field Name="CSR_Name">
+          <DataField>CSR_Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="CS_URL">
-          <DataField>CS_URL</DataField>
+        <Field Name="CSR_URL">
+          <DataField>CSR_URL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Date_of_First_Contact__c">
-          <DataField>Date_of_First_Contact__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+        <Field Name="Network_Services_Client_Date__c">
+          <DataField>Network_Services_Client_Date__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="JS_Date_of_First_Contact__c">
-          <DataField>JS_Date_of_First_Contact__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+        <Field Name="ESP_Qualified_Deal_Flow_Date__c">
+          <DataField>ESP_Qualified_Deal_Flow_Date__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TT_Date">
+          <DataField>TT_Date</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ESP_Do_Not_Survey_Date__c">
           <DataField>ESP_Do_Not_Survey_Date__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ESP_Do_Not_Survey_Reason__c">
           <DataField>ESP_Do_Not_Survey_Reason__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Core_City_Do_not_Survey_Date__c">
-          <DataField>Core_City_Do_not_Survey_Date__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="LeadAdvisorName">
-          <DataField>LeadAdvisorName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Core_City_Do_Not_Survey_Reason__c">
-          <DataField>Core_City_Do_Not_Survey_Reason__c</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Person__c">
-          <DataField>Person__c</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PersonName">
-          <DataField>PersonName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PersonOrg">
-          <DataField>PersonOrg</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Date__c">
-          <DataField>Date__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
         <Field Name="Time_Spent__c">
           <DataField>Time_Spent__c</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="TimeRecordType">
-          <DataField>TimeRecordType</DataField>
+        <Field Name="Person_Tracked_Time">
+          <DataField>Person_Tracked_Time</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Persons_Company">
+          <DataField>Persons_Company</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Who_Created_Record">
+          <DataField>Who_Created_Record</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Case">
+          <DataField>Case</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Total_ESP_Time_Spent__c">
+          <DataField>Total_ESP_Time_Spent__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Total_Time_Spent__c">
+          <DataField>Total_Time_Spent__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
       </Fields>
       <Filters>
         <Filter>
-          <FilterExpression>=Fields!Date__c.Value</FilterExpression>
-          <Operator>LessThan</Operator>
+          <FilterExpression>=Fields!Persons_Company.Value</FilterExpression>
+          <Operator>Equal</Operator>
           <FilterValues>
-            <FilterValue>=Fields!Date_of_First_Contact__c.Value</FilterValue>
+            <FilterValue>=Parameters!NetworkPartner.Value</FilterValue>
           </FilterValues>
         </Filter>
       </Filters>
+    </DataSet>
+    <DataSet Name="NetworkPartners">
+      <Query>
+        <DataSourceName>SalesForce</DataSourceName>
+        <CommandText>SELECT Id   , Name
+  FROM vwNetworkPartners
+ORDER BY Name</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Id">
+          <DataField>Id</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
     </DataSet>
   </DataSets>
   <ReportSections>
@@ -104,10 +125,19 @@
                   <Width>2.91382in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.04924in</Width>
+                  <Width>1.52083in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.40057in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.51042in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.50758in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.28882in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.6998in</Width>
@@ -116,13 +146,16 @@
                   <Width>3.10133in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.16382in</Width>
+                  <Width>1.35417in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.99716in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.97633in</Width>
+                  <Width>1.23675in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.48958in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -163,6 +196,40 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>ESP Qualified Deal Flow Date</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox2</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="Textbox44">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -170,7 +237,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Date of First Contact</Value>
+                                  <Value>Network Services Client Date</Value>
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -197,6 +264,40 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>ESP Do Not Survey Date</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="Textbox45">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -204,7 +305,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Lead Advisor</Value>
+                                  <Value>ESP Do Not Survey  Reason</Value>
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -215,6 +316,38 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox9">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Date (of Time Tracking Record)</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox9</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -293,26 +426,24 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox48">
+                        <Textbox Name="Textbox11">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Date (of Time Tracking Record)</Value>
+                                  <Value>Case </Value>
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox48</rd:DefaultName>
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -368,7 +499,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Time Record Type Name</Value>
+                                  <Value>Total ESP Time Logged</Value>
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -391,6 +522,38 @@
                         </Textbox>
                       </CellContents>
                     </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox7">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Total Time Logged</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox7</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
@@ -398,25 +561,25 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="CS_Name">
+                        <Textbox Name="CSR_Name">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!CS_Name.Value</Value>
+                                  <Value>=Fields!CSR_Name.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>CS_Name</rd:DefaultName>
+                          <rd:DefaultName>CSR_Name</rd:DefaultName>
                           <ActionInfo>
                             <Actions>
                               <Action>
-                                <Hyperlink>=Fields!CS_URL.Value</Hyperlink>
+                                <Hyperlink>=Fields!CSR_URL.Value</Hyperlink>
                               </Action>
                             </Actions>
                           </ActionInfo>
@@ -434,14 +597,47 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Date_of_First_Contact__c">
+                        <Textbox Name="ESP_Qualified_Deal_Flow_Date__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Date_of_First_Contact__c.Value</Value>
+                                  <Value>=Fields!ESP_Qualified_Deal_Flow_Date__c.Value</Value>
+                                  <Style>
+                                    <Format>M/d/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>ESP_Qualified_Deal_Flow_Date__c</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Network_Services_Client_Date__c">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Network_Services_Client_Date__c.Value</Value>
                                   <Style>
                                     <Format>MM/dd/yyyy</Format>
                                   </Style>
@@ -452,7 +648,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Date_of_First_Contact__c</rd:DefaultName>
+                          <rd:DefaultName>Network_Services_Client_Date__c</rd:DefaultName>
                           <ZIndex>7</ZIndex>
                           <Style>
                             <Border>
@@ -468,21 +664,54 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="LeadAdvisorName">
+                        <Textbox Name="ESP_Do_Not_Survey_Date__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!LeadAdvisorName.Value</Value>
+                                  <Value>=Fields!ESP_Do_Not_Survey_Date__c.Value</Value>
+                                  <Style>
+                                    <Format>MM/dd/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>ESP_Do_Not_Survey_Date__c</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="ESP_Do_Not_Survey_Reason__c">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!ESP_Do_Not_Survey_Reason__c.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>LeadAdvisorName</rd:DefaultName>
+                          <rd:DefaultName>ESP_Do_Not_Survey_Reason__c</rd:DefaultName>
                           <ZIndex>6</ZIndex>
                           <Style>
                             <Border>
@@ -498,21 +727,52 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="PersonName">
+                        <Textbox Name="TT_Date">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!PersonName.Value</Value>
+                                  <Value>=Fields!TT_Date.Value</Value>
+                                  <Style>
+                                    <Format>MM/dd/yyyy</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>TT_Date</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Person_Tracked_Time">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Person_Tracked_Time.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>PersonName</rd:DefaultName>
+                          <rd:DefaultName>Person_Tracked_Time</rd:DefaultName>
                           <ZIndex>5</ZIndex>
                           <Style>
                             <Border>
@@ -528,21 +788,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="PersonOrg">
+                        <Textbox Name="Persons_Company">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!PersonOrg.Value</Value>
+                                  <Value>=Fields!Persons_Company.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>PersonOrg</rd:DefaultName>
+                          <rd:DefaultName>Persons_Company</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -557,26 +817,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Date__c">
+                        <Textbox Name="Case">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Date__c.Value</Value>
-                                  <Style>
-                                    <Format>MM/dd/yyyy</Format>
-                                  </Style>
+                                  <Value>=Fields!Case.Value</Value>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Date__c</rd:DefaultName>
-                          <ZIndex>4</ZIndex>
+                          <rd:DefaultName>Case</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -624,22 +879,51 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="TimeRecordType">
+                        <Textbox Name="Total_ESP_Time_Spent__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!TimeRecordType.Value</Value>
+                                  <Value>=Fields!Total_ESP_Time_Spent__c.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>TimeRecordType</rd:DefaultName>
+                          <rd:DefaultName>Total_ESP_Time_Spent__c</rd:DefaultName>
                           <ZIndex>3</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Total_Time_Spent__c">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Total_Time_Spent__c.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Total_Time_Spent__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -666,6 +950,10 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -679,10 +967,10 @@
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!CS_Name.Value</Value>
+                      <Value>=Fields!CSR_Name.Value</Value>
                     </SortExpression>
                     <SortExpression>
-                      <Value>=Fields!PersonName.Value</Value>
+                      <Value>=Fields!Person_Tracked_Time.Value</Value>
                     </SortExpression>
                   </SortExpressions>
                   <TablixMembers>
@@ -694,20 +982,20 @@
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
-            <DataSetName>TimeRecords</DataSetName>
+            <DataSetName>NonESPTimeRecordsAudit</DataSetName>
             <Top>0.125in</Top>
             <Height>0.5in</Height>
-            <Width>14.40908in</Width>
+            <Width>20.02083in</Width>
             <Style />
           </Tablix>
         </ReportItems>
         <Height>0.70486in</Height>
         <Style />
       </Body>
-      <Width>14.49241in</Width>
+      <Width>20.02083in</Width>
       <Page>
         <PageHeader>
-          <Height>1.3889in</Height>
+          <Height>1.12848in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -718,7 +1006,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Time Records Logged Before the Date of First Contact</Value>
+                      <Value>Non-ESP Time Records Audit</Value>
                       <Style>
                         <FontFamily>Tahoma</FontFamily>
                         <FontSize>20pt</FontSize>
@@ -808,34 +1096,11 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Displays a list of Client Service records where there is Time recorded before the Date of First Contact.</Value>
+                      <Value>?????????????????????????????</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontWeight>Normal</FontWeight>
                         <TextDecoration>None</TextDecoration>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Instructions: </Value>
-                      <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontWeight>Normal</FontWeight>
-                        <TextDecoration>None</TextDecoration>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>ONLY update the Date of first contact IF the Date of first Contact will remain in the SAME quarter as it is in currently. Example: If Date of First Contact is 3/21 and time was logged on 2/15, change the Date of First Contact to 2/15. Example 2: If Date of First Contact is 5/1 and Time was logged on 2/15 Do NOT change the Date of First Contact to be in an earlier quarter.</Value>
-                      <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontSize>10.5pt</FontSize>
-                        <FontWeight>Normal</FontWeight>
-                        <TextDecoration>None</TextDecoration>
-                        <Color>#333333</Color>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -844,7 +1109,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>0.78126in</Top>
-              <Height>0.54861in</Height>
+              <Height>0.26388in</Height>
               <Width>14.40908in</Width>
               <ZIndex>3</ZIndex>
               <Style>
@@ -874,10 +1139,58 @@
       </Page>
     </ReportSection>
   </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="StartDate">
+      <DataType>DateTime</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=#1/1/2017#</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Time Tracking Start Date</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EndDate">
+      <DataType>DateTime</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=Today()</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Time Tracking End Date</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="NetworkPartner">
+      <DataType>String</DataType>
+      <Prompt>Network Partner</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>NetworkPartners</DataSetName>
+          <ValueField>Name</ValueField>
+          <LabelField>Name</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
-      <NumberOfColumns>3</NumberOfColumns>
-      <NumberOfRows>1</NumberOfRows>
+      <NumberOfColumns>2</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>StartDate</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>EndDate</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>NetworkPartner</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <Language>en-US</Language>
