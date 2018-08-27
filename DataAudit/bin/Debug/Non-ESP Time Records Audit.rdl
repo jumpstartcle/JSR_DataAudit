@@ -88,7 +88,7 @@
       <Filters>
         <Filter>
           <FilterExpression>=Fields!Persons_Company.Value</FilterExpression>
-          <Operator>Equal</Operator>
+          <Operator>In</Operator>
           <FilterValues>
             <FilterValue>=Parameters!NetworkPartner.Value</FilterValue>
           </FilterValues>
@@ -146,7 +146,7 @@ ORDER BY Name</CommandText>
                   <Width>3.10133in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.35417in</Width>
+                  <Width>1.95833in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.99716in</Width>
@@ -985,14 +985,14 @@ ORDER BY Name</CommandText>
             <DataSetName>NonESPTimeRecordsAudit</DataSetName>
             <Top>0.125in</Top>
             <Height>0.5in</Height>
-            <Width>20.02083in</Width>
+            <Width>20.62499in</Width>
             <Style />
           </Tablix>
         </ReportItems>
         <Height>0.70486in</Height>
         <Style />
       </Body>
-      <Width>20.02083in</Width>
+      <Width>20.62499in</Width>
       <Page>
         <PageHeader>
           <Height>1.12848in</Height>
@@ -1096,7 +1096,7 @@ ORDER BY Name</CommandText>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>?????????????????????????????</Value>
+                      <Value>Status update to the Network Partners about the Non-ESP Time logged in Salesforce. This time can only be logged by ESP Network Partners.</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontWeight>Normal</FontWeight>
@@ -1168,6 +1168,7 @@ ORDER BY Name</CommandText>
           <LabelField>Name</LabelField>
         </DataSetReference>
       </ValidValues>
+      <MultiValue>true</MultiValue>
     </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>

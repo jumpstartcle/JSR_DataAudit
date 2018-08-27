@@ -236,7 +236,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Person (who recorded time)</Value>
+                                  <Value>Person (who spent time)</Value>
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -832,7 +832,6 @@
                       <Value>ONLY update the Date of first contact IF the Date of first Contact will remain in the SAME quarter as it is in currently. Example: If Date of First Contact is 3/21 and time was logged on 2/15, change the Date of First Contact to 2/15. Example 2: If Date of First Contact is 5/1 and Time was logged on 2/15 Do NOT change the Date of First Contact to be in an earlier quarter.</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontSize>10.5pt</FontSize>
                         <FontWeight>Normal</FontWeight>
                         <TextDecoration>None</TextDecoration>
                         <Color>#333333</Color>
