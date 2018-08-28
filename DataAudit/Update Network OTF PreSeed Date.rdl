@@ -9,7 +9,7 @@
               <Width>2.75in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.78125in</Width>
+              <Width>1.33333in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1in</Width>
@@ -66,7 +66,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Network Portfolio Date</Value>
+                              <Value>Third Frontier First Investment Date</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -215,7 +215,7 @@
                       <ActionInfo>
                         <Actions>
                           <Action>
-                            <Hyperlink>="https://na2.salesforce.com/" &amp; Fields!id.Value</Hyperlink>
+                            <Hyperlink>=Fields!CSR_URL.Value</Hyperlink>
                           </Action>
                         </Actions>
                       </ActionInfo>
@@ -234,14 +234,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="is_a_client_of_jen__c">
+                    <Textbox Name="Third_Frontier_First_Investment_Date__c">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Network_Funded_Date__c.Value</Value>
+                              <Value>=Fields!Third_Frontier_First_Investment_Date__c.Value</Value>
                               <Style>
                                 <Format>M/d/yyyy</Format>
                               </Style>
@@ -250,7 +250,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>is_a_client_of_jen__c</rd:DefaultName>
+                      <rd:DefaultName>Third_Frontier_First_Investment_Date__c</rd:DefaultName>
                       <ZIndex>4</ZIndex>
                       <Style>
                         <Border>
@@ -387,7 +387,7 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>Portfolio</DataSetName>
+        <DataSetName>OTF</DataSetName>
         <SortExpressions>
           <SortExpression>
             <Value>=Fields!name.Value</Value>
@@ -395,14 +395,14 @@
         </SortExpressions>
         <Top>0.06944in</Top>
         <Height>0.5in</Height>
-        <Width>8.72917in</Width>
+        <Width>8.28125in</Width>
         <Style />
       </Tablix>
     </ReportItems>
     <Height>0.70833in</Height>
     <Style />
   </Body>
-  <Width>9.79167in</Width>
+  <Width>9.98958in</Width>
   <Page>
     <PageHeader>
       <Height>1.21876in</Height>
@@ -416,7 +416,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Update Network Portfolio Date</Value>
+                  <Value>Update Network OTF PreSeed Date</Value>
                   <Style>
                     <FontFamily>Tahoma</FontFamily>
                     <FontSize>20pt</FontSize>
@@ -444,7 +444,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Update the portfolio date for network clients only. ODSA reporting of portfolio companies is only for ESP clients. NCAF, IF, and potentially others may fund companies who either are not eligible for the NEO ESP or who never get 20 hours recorded in SalesForce.</Value>
+                  <Value>Update the portfolio date for network clients only. ODSA reporting of portfolio companies is only for ESP clients. NCAF, IF, and potentially others may fund companies who either are not eligible for the NEO ESP or who never get 20 hours recorded in SalesForce. - ??????????????</Value>
                   <Style>
                     <FontStyle>Normal</FontStyle>
                     <FontWeight>Normal</FontWeight>
@@ -553,11 +553,11 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="Portfolio">
+    <DataSet Name="OTF">
       <Query>
         <DataSourceName>SalesForce</DataSourceName>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspDA_UpdateNetworkPortfolioDate</CommandText>
+        <CommandText>uspDA_UpdateNetworkOTFPreSeedDate</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -565,12 +565,16 @@
           <DataField>Id</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="CSR_URL">
+          <DataField>CSR_URL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="name">
           <DataField>Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Network_Funded_Date__c">
-          <DataField>Network_Funded_Date__c</DataField>
+        <Field Name="Third_Frontier_First_Investment_Date__c">
+          <DataField>Third_Frontier_First_Investment_Date__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="NewDate">

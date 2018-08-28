@@ -9,13 +9,13 @@
               <Width>2.75in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.52083in</Width>
+              <Width>1.33333in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.15625in</Width>
+              <Width>1.19792in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2in</Width>
@@ -66,7 +66,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Network Funded Date</Value>
+                              <Value>Third Frontier First Investment Date</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -234,14 +234,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="is_a_client_of_jen__c">
+                    <Textbox Name="Third_Frontier_First_Investment_Date__c">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Network_Funded_Date__c.Value</Value>
+                              <Value>=Fields!Third_Frontier_First_Investment_Date__c.Value</Value>
                               <Style>
                                 <Format>M/d/yyyy</Format>
                               </Style>
@@ -250,7 +250,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>is_a_client_of_jen__c</rd:DefaultName>
+                      <rd:DefaultName>Third_Frontier_First_Investment_Date__c</rd:DefaultName>
                       <ZIndex>4</ZIndex>
                       <Style>
                         <Border>
@@ -273,7 +273,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!networkfundeddate.Value</Value>
+                              <Value>=Fields!NewDate.Value</Value>
                               <Style>
                                 <Format>M/d/yyyy</Format>
                               </Style>
@@ -387,26 +387,25 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>Funded</DataSetName>
+        <DataSetName>OTF</DataSetName>
         <SortExpressions>
           <SortExpression>
             <Value>=Fields!name.Value</Value>
           </SortExpression>
         </SortExpressions>
         <Top>0.06944in</Top>
-        <Left>0in</Left>
         <Height>0.5in</Height>
-        <Width>8.42708in</Width>
+        <Width>8.28125in</Width>
         <Style />
       </Tablix>
     </ReportItems>
     <Height>0.70833in</Height>
     <Style />
   </Body>
-  <Width>9.79167in</Width>
+  <Width>9.98958in</Width>
   <Page>
     <PageHeader>
-      <Height>1.46876in</Height>
+      <Height>1.21876in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -417,7 +416,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Update Network Funded Date</Value>
+                  <Value>Update Network OTF PreSeed Date</Value>
                   <Style>
                     <FontFamily>Tahoma</FontFamily>
                     <FontSize>20pt</FontSize>
@@ -429,7 +428,6 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>textbox1</rd:DefaultName>
-          <Left>0in</Left>
           <Height>0.375in</Height>
           <Width>9.79167in</Width>
           <Style>
@@ -446,49 +444,23 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Instructions: Click on Client Services Record to open record in Salesforce.  Update the Network Funded Date to the date in the New Value field.  ID's provided in last field so this can be done via DemandTools.</Value>
-                  <Style />
+                  <Value>Update the portfolio date for network clients only. ODSA reporting of portfolio companies is only for ESP clients. NCAF, IF, and potentially others may fund companies who either are not eligible for the NEO ESP or who never get 20 hours recorded in SalesForce. - ??????????????</Value>
+                  <Style>
+                    <FontStyle>Normal</FontStyle>
+                    <FontWeight>Normal</FontWeight>
+                    <TextDecoration>None</TextDecoration>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style />
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>textbox14</rd:DefaultName>
-          <Top>1.03622in</Top>
+          <Top>0.74455in</Top>
           <Height>0.41666in</Height>
           <Width>9.79167in</Width>
           <ZIndex>1</ZIndex>
           <Style>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="Textbox9">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>Network Funded Criteria: Investment by Network Partner Organization (including Hyper-Local Funds) based on OPF Network = JEN</Value>
-                  <Style />
-                </TextRun>
-              </TextRuns>
-              <Style />
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox9</rd:DefaultName>
-          <Top>0.77233in</Top>
-          <Left>0in</Left>
-          <Height>0.25in</Height>
-          <Width>9.79167in</Width>
-          <ZIndex>2</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -515,10 +487,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
           <Top>0.5258in</Top>
-          <Left>0in</Left>
           <Height>0.17708in</Height>
           <Width>9.79167in</Width>
-          <ZIndex>3</ZIndex>
+          <ZIndex>2</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -547,10 +518,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox6</rd:DefaultName>
           <Top>0.375in</Top>
-          <Left>0in</Left>
           <Height>0.22in</Height>
           <Width>9.79167in</Width>
-          <ZIndex>4</ZIndex>
+          <ZIndex>3</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -583,16 +553,16 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="Funded">
+    <DataSet Name="OTF">
       <Query>
         <DataSourceName>SalesForce</DataSourceName>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspDA_UpdateNetworkFundedDate</CommandText>
+        <CommandText>uspDA_UpdateNetworkOTFPreSeedDate</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
         <Field Name="id">
-          <DataField>id</DataField>
+          <DataField>Id</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="CSR_URL">
@@ -600,19 +570,19 @@
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="name">
-          <DataField>name</DataField>
+          <DataField>Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Network_Funded_Date__c">
-          <DataField>Network_Funded_Date__c</DataField>
+        <Field Name="Third_Frontier_First_Investment_Date__c">
+          <DataField>Third_Frontier_First_Investment_Date__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="networkfundeddate">
-          <DataField>NetworkFundedDate</DataField>
+        <Field Name="NewDate">
+          <DataField>NewDate</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="network_services_client_date__c">
-          <DataField>network_services_client_date__c</DataField>
+          <DataField>Network_Services_Client_Date__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>

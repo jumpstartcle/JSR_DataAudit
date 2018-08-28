@@ -215,7 +215,7 @@
                       <ActionInfo>
                         <Actions>
                           <Action>
-                            <Hyperlink>="https://na2.salesforce.com/" &amp; Fields!id.Value</Hyperlink>
+                            <Hyperlink>=Fields!CSR_URL.Value</Hyperlink>
                           </Action>
                         </Actions>
                       </ActionInfo>
@@ -593,6 +593,10 @@
       <Fields>
         <Field Name="id">
           <DataField>id</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CSR_URL">
+          <DataField>CSR_URL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="name">
