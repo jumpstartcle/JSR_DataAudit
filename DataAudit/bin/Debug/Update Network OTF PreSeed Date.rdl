@@ -55,6 +55,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -394,6 +395,7 @@
           </SortExpression>
         </SortExpressions>
         <Top>0.06944in</Top>
+        <Left>0.16667in</Left>
         <Height>0.5in</Height>
         <Width>8.28125in</Width>
         <Style />
@@ -402,7 +404,7 @@
     <Height>0.70833in</Height>
     <Style />
   </Body>
-  <Width>9.98958in</Width>
+  <Width>10.15625in</Width>
   <Page>
     <PageHeader>
       <Height>1.21876in</Height>
@@ -444,10 +446,18 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Update the portfolio date for network clients only. ODSA reporting of portfolio companies is only for ESP clients. NCAF, IF, and potentially others may fund companies who either are not eligible for the NEO ESP or who never get 20 hours recorded in SalesForce. - ??????????????</Value>
+                  <Value>Update the Third Frontier First Investment Date for network clients only. ODSA reporting of portfolio companies is only for ESP clients. NCAF, IF, and potentially others may fund companies who either are not eligible for the NEO ESP or who never get 20 hours recorded in SalesForce. - </Value>
                   <Style>
                     <FontStyle>Normal</FontStyle>
                     <FontWeight>Normal</FontWeight>
+                    <TextDecoration>None</TextDecoration>
+                  </Style>
+                </TextRun>
+                <TextRun>
+                  <Value>??????????????</Value>
+                  <Style>
+                    <FontStyle>Normal</FontStyle>
+                    <FontWeight>Bold</FontWeight>
                     <TextDecoration>None</TextDecoration>
                   </Style>
                 </TextRun>
