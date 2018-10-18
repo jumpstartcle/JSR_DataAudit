@@ -204,7 +204,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Date (Time Tracking Record)</Value>
+                                  <Value>Date (Of Time Tracking Record)</Value>
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -336,7 +336,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Person (who spent time)</Value>
+                                  <Value>Person (Who Spent Time)</Value>
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -697,7 +697,7 @@
             <DataSetName>TimeRecords</DataSetName>
             <Top>1.825in</Top>
             <Height>0.5in</Height>
-            <Width>14.90004in</Width>
+            <Width>14.9in</Width>
             <Style />
           </Tablix>
           <Textbox Name="Textbox1">

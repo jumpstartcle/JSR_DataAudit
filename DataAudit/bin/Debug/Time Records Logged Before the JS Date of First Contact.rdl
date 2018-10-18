@@ -196,7 +196,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Date (Time Tracking Record)</Value>
+                                  <Value>Date (Of Time Tracking Record)</Value>
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -328,7 +328,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Person (who spent time)</Value>
+                                  <Value>Person (Who Spent Time)</Value>
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -738,7 +738,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>ONLY update the Date of first contact if the Date of first Contact will remain in the SAME quarter as it is in currently. </Value>
+                    <Value />
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -746,34 +746,6 @@
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Example 1: If Date of First Contact is 3/21 and time was logged on 2/15, change the Date of First Contact to 2/15. </Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <ListLevel>1</ListLevel>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Example 2: If Date of First Contact is 5/1 and Time was logged on 2/15 Do NOT change the Date of First Contact to be in an earlier quarter.</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <ListLevel>1</ListLevel>
                 <Style />
               </Paragraph>
             </Paragraphs>
