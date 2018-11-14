@@ -4,7 +4,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="SalesForce">
-      <DataSourceReference>SalesForce</DataSourceReference>
+      <DataSourceReference>SalesForce-Read</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>cb1fec5d-1540-4ca1-becc-638aa5f4d853</rd:DataSourceID>
     </DataSource>
@@ -208,7 +208,6 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
-            <Left>0in</Left>
             <Height>0.43in</Height>
             <Width>23.86875in</Width>
             <Style>
@@ -1914,7 +1913,7 @@
             </SortExpressions>
             <Top>3.73903in</Top>
             <Height>0.43in</Height>
-            <Width>23.86875in</Width>
+            <Width>23.86879in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -1942,7 +1941,6 @@
             </Paragraphs>
             <rd:DefaultName>textbox11</rd:DefaultName>
             <Top>0.72167in</Top>
-            <Left>0in</Left>
             <Height>0.25in</Height>
             <Width>23.86875in</Width>
             <ZIndex>2</ZIndex>
@@ -1973,7 +1971,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox16</rd:DefaultName>
             <Top>0.44389in</Top>
-            <Left>0in</Left>
             <Height>0.25in</Height>
             <Width>23.86875in</Width>
             <ZIndex>3</ZIndex>
@@ -2275,7 +2272,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
             <Top>0.97167in</Top>
-            <Left>0in</Left>
             <Height>2.75347in</Height>
             <Width>23.86875in</Width>
             <ZIndex>4</ZIndex>

@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="SalesForce">
-      <DataSourceReference>SalesForce</DataSourceReference>
+      <DataSourceReference>SalesForce-Read</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>674d7fc5-0c8f-4312-b98d-2b176781b4a1</rd:DataSourceID>
     </DataSource>
@@ -689,7 +689,7 @@
             <DataSetName>TimeRecords</DataSetName>
             <Top>1.79in</Top>
             <Height>0.5in</Height>
-            <Width>14.9in</Width>
+            <Width>14.90001in</Width>
             <Style />
           </Tablix>
           <Textbox Name="Textbox1">

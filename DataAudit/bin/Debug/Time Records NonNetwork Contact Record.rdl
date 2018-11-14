@@ -658,7 +658,7 @@ Note that records marked Locked will need to be updated by an Administrator.</Va
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="SalesForce">
-      <DataSourceReference>SalesForce</DataSourceReference>
+      <DataSourceReference>SalesForce-Read</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>8e667737-7d09-4060-8692-87255cc08bc8</rd:DataSourceID>
     </DataSource>
