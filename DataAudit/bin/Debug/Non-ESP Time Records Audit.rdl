@@ -1146,7 +1146,7 @@ ORDER BY Name</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>            And the Time Tracking Record Type equals ‘Non-ESP Time Collaborators’, ‘NEO NON-ESP Time’, NEO NON-ESP Time - Locked‘.</Value>
+                    <Value>            And the Time Tracking Record Type equals ‘NEO NON-ESP Time’, NEO NON-ESP Time - Locked‘.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -1178,7 +1178,7 @@ ORDER BY Name</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>            OR the Nework Services Cleint Date is NOT Blank and the ESP Do Not Survey Date is Blank.</Value>
+                    <Value>            OR the Nework Services Client Date is NOT Blank and the ESP Do Not Survey Date is Blank.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
