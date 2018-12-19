@@ -4,7 +4,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="SalesForce">
-      <DataSourceReference>SalesForce</DataSourceReference>
+      <DataSourceReference>SalesForce-Read</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>cb1fec5d-1540-4ca1-becc-638aa5f4d853</rd:DataSourceID>
     </DataSource>
@@ -646,7 +646,7 @@
             <Top>1.8425in</Top>
             <Left>0.09375in</Left>
             <Height>0.43in</Height>
-            <Width>12.97291in</Width>
+            <Width>12.97292in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>

@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="SalesForce">
-      <DataSourceReference>SalesForce</DataSourceReference>
+      <DataSourceReference>SalesForce-Read</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>674d7fc5-0c8f-4312-b98d-2b176781b4a1</rd:DataSourceID>
     </DataSource>
@@ -150,7 +150,6 @@
                                 <TextRun>
                                   <Value>Client Services Name</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -182,7 +181,6 @@
                                 <TextRun>
                                   <Value>Core City Do Not Survey Date</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -216,7 +214,6 @@
                                 <TextRun>
                                   <Value>Core City Do Not Survey Reason</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -248,9 +245,8 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Date Time Tracking Record)</Value>
+                                  <Value>Date (OfTime Tracking Record)</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -284,7 +280,6 @@
                                 <TextRun>
                                   <Value>Time Spent</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -318,7 +313,6 @@
                                 <TextRun>
                                   <Value>Time Record Type Name</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -350,7 +344,6 @@
                                 <TextRun>
                                   <Value>Lead Advisor</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -380,9 +373,8 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Person (who spent  time)</Value>
+                                  <Value>Person (Who Spent Time)</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -414,7 +406,6 @@
                                 <TextRun>
                                   <Value>Person's Organization</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -773,7 +764,7 @@
             <DataSetName>TimeRecords</DataSetName>
             <Top>1.79in</Top>
             <Height>0.5in</Height>
-            <Width>16.93in</Width>
+            <Width>16.93001in</Width>
             <Style />
           </Tablix>
           <Textbox Name="textbox6">

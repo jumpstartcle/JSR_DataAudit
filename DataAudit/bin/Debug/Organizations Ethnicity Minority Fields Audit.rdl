@@ -2,20 +2,16 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="SFDown">
-      <ConnectionProperties>
-        <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=0-AZURE-SQL;Initial Catalog=SFDown</ConnectString>
-        <IntegratedSecurity>true</IntegratedSecurity>
-      </ConnectionProperties>
-      <rd:SecurityType>Integrated</rd:SecurityType>
-      <rd:DataSourceID>74b334a3-f346-4f5d-ad22-4db9385a791a</rd:DataSourceID>
+    <DataSource Name="Salesforce">
+      <DataSourceReference>SalesForce-Read</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>d4786265-6035-4158-9818-7db13c0bbf0d</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>SFDown</DataSourceName>
+        <DataSourceName>Salesforce</DataSourceName>
         <CommandText>select * from vwEthnicityMinorityCleanUp</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>

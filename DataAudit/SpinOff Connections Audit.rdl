@@ -2,20 +2,16 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="SFDown">
-      <ConnectionProperties>
-        <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=0-AZURE-SQL;Initial Catalog=SFDown</ConnectString>
-        <IntegratedSecurity>true</IntegratedSecurity>
-      </ConnectionProperties>
-      <rd:SecurityType>Integrated</rd:SecurityType>
-      <rd:DataSourceID>b73d058e-363d-4152-8032-eeffdee03127</rd:DataSourceID>
+    <DataSource Name="Salesforce">
+      <DataSourceReference>SalesForce-Read</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>58325ad7-9b7a-40ab-b9e1-beae7436ef21</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>SFDown</DataSourceName>
+        <DataSourceName>Salesforce</DataSourceName>
         <QueryParameters>
           <QueryParameter Name="@Start">
             <Value>=Parameters!Start.Value</Value>

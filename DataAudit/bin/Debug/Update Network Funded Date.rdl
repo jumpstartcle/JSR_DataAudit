@@ -394,7 +394,6 @@
           </SortExpression>
         </SortExpressions>
         <Top>0.06944in</Top>
-        <Left>0in</Left>
         <Height>0.5in</Height>
         <Width>8.42708in</Width>
         <Style />
@@ -429,7 +428,6 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>textbox1</rd:DefaultName>
-          <Left>0in</Left>
           <Height>0.375in</Height>
           <Width>9.79167in</Width>
           <Style>
@@ -481,7 +479,6 @@
           </Paragraphs>
           <rd:DefaultName>Textbox9</rd:DefaultName>
           <Top>0.77233in</Top>
-          <Left>0in</Left>
           <Height>0.25in</Height>
           <Width>9.79167in</Width>
           <ZIndex>2</ZIndex>
@@ -515,7 +512,6 @@
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
           <Top>0.5258in</Top>
-          <Left>0in</Left>
           <Height>0.17708in</Height>
           <Width>9.79167in</Width>
           <ZIndex>3</ZIndex>
@@ -547,7 +543,6 @@
           </Paragraphs>
           <rd:DefaultName>Textbox6</rd:DefaultName>
           <Top>0.375in</Top>
-          <Left>0in</Left>
           <Height>0.22in</Height>
           <Width>9.79167in</Width>
           <ZIndex>4</ZIndex>
@@ -577,7 +572,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="SalesForce">
-      <DataSourceReference>SalesForce</DataSourceReference>
+      <DataSourceReference>SalesForce-Read</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>99638c56-57d6-4012-b21e-9fd1893bc216</rd:DataSourceID>
     </DataSource>

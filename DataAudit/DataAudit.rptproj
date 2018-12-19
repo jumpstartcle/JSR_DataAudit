@@ -49,7 +49,7 @@
     <Reports>@(Report)</Reports>
   </PropertyGroup>
   <ItemGroup>
-    <DataSource Include="SalesForce.rds" />
+    <DataSource Include="SalesForce-Read.rds" />
   </ItemGroup>
   <ItemGroup>
     <Report Include="Client Engagement Letter Review.rdl" />

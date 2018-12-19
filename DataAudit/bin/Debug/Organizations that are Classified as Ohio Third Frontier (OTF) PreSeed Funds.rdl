@@ -307,20 +307,16 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="SFDown">
-      <ConnectionProperties>
-        <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=0-AZURE-SQL;Initial Catalog=SFDown</ConnectString>
-        <IntegratedSecurity>true</IntegratedSecurity>
-      </ConnectionProperties>
-      <rd:SecurityType>Integrated</rd:SecurityType>
-      <rd:DataSourceID>b7e77383-c977-4ce7-9380-065d35b84993</rd:DataSourceID>
+    <DataSource Name="Salesforce">
+      <DataSourceReference>SalesForce-Read</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>b79023ca-248c-483c-878b-3deb434bef32</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>SFDown</DataSourceName>
+        <DataSourceName>Salesforce</DataSourceName>
         <CommandText>SELECT * FROM vwOTFPreseedFunds</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
