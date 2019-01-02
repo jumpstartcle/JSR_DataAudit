@@ -327,11 +327,11 @@
         <DataSetName>JSFundedDateAudit</DataSetName>
         <Top>0.06944in</Top>
         <Height>0.5in</Height>
-        <Width>7.76042in</Width>
+        <Width>7.7604in</Width>
         <Style />
       </Tablix>
     </ReportItems>
-    <Height>0.64583in</Height>
+    <Height>1.5625in</Height>
     <Style />
   </Body>
   <Width>9.80209in</Width>
@@ -348,7 +348,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>JS Funded Date Audit</Value>
+                  <Value>JumpStart Funded Date Audit</Value>
                   <Style>
                     <FontFamily>Tahoma</FontFamily>
                     <FontSize>20pt</FontSize>
@@ -361,12 +361,10 @@
           </Paragraphs>
           <rd:DefaultName>textbox1</rd:DefaultName>
           <Height>0.375in</Height>
-          <Width>9.79167in</Width>
+          <Width>7.7604in</Width>
           <Style>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
         <Textbox Name="textbox14">
@@ -445,7 +443,7 @@
           <rd:DefaultName>Textbox2</rd:DefaultName>
           <Top>0.375in</Top>
           <Height>0.15in</Height>
-          <Width>9.79167in</Width>
+          <Width>7.7604in</Width>
           <ZIndex>3</ZIndex>
           <Style>
             <Border>
@@ -453,8 +451,6 @@
             </Border>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
         <Textbox Name="Textbox6">
@@ -476,9 +472,9 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox6</rd:DefaultName>
-          <Top>0.55278in</Top>
+          <Top>0.525in</Top>
           <Height>0.15in</Height>
-          <Width>9.79167in</Width>
+          <Width>7.7604in</Width>
           <ZIndex>4</ZIndex>
           <Style>
             <Border>
@@ -486,8 +482,6 @@
             </Border>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
       </ReportItems>
