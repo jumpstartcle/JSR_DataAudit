@@ -299,6 +299,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -403,7 +404,7 @@
         </SortExpressions>
         <Top>1.664in</Top>
         <Height>0.5in</Height>
-        <Width>8.427in</Width>
+        <Width>8.42708in</Width>
         <Style />
       </Tablix>
       <Textbox Name="Textbox4">
@@ -444,7 +445,16 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Network Funded Criteria: Investment by Network Partner Organization (including Hyper-Local Funds) based on OPF Network = JEN</Value>
+                <Value>Displays Investment information by Network Partner Organization (including Hyper-Local Funds) where:</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>OPF Network = JEN</Value>
                 <Style />
               </TextRun>
             </TextRuns>
