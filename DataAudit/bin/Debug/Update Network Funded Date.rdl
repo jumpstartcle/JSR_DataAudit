@@ -6,7 +6,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.75in</Width>
+              <Width>3.21875in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.52083in</Width>
@@ -18,7 +18,7 @@
               <Width>1.15625in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2in</Width>
+              <Width>2.39583in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -299,7 +299,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -402,9 +401,9 @@
             <Value>=Fields!name.Value</Value>
           </SortExpression>
         </SortExpressions>
-        <Top>1.664in</Top>
+        <Top>2.575in</Top>
         <Height>0.5in</Height>
-        <Width>8.42708in</Width>
+        <Width>9.291in</Width>
         <Style />
       </Tablix>
       <Textbox Name="Textbox4">
@@ -428,7 +427,7 @@
         <rd:DefaultName>Textbox2</rd:DefaultName>
         <Top>0.525in</Top>
         <Height>0.15in</Height>
-        <Width>8.427in</Width>
+        <Width>9.291in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -445,7 +444,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Displays Investment information by Network Partner Organization (including Hyper-Local Funds) where:</Value>
+                <Value>Displays Client Services Records where there is Network Funding Date Mismatches</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -454,19 +453,30 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>OPF Network = JEN</Value>
+                <Value>Compares the Earliest 'Actual Disbursement Date' from the Source/Tranche Release record where the field 'Network Partner' equals "JEN" for the Organization Providing Funds.</Value>
                 <Style />
               </TextRun>
             </TextRuns>
+            <ListStyle>Bulleted</ListStyle>
+            <ListLevel>1</ListLevel>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>To the field 'Network Funded Date' on the Client Services Record.</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <ListStyle>Bulleted</ListStyle>
+            <ListLevel>1</ListLevel>
             <Style />
           </Paragraph>
           <Paragraph>
             <TextRuns>
               <TextRun>
                 <Value />
-                <Style>
-                  <TextDecoration>Underline</TextDecoration>
-                </Style>
+                <Style />
               </TextRun>
             </TextRuns>
             <Style />
@@ -485,17 +495,52 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Click on Client Services Record to open record in Salesforce.  Update the Network Funded Date to the date in the New Value field.  ID's provided in last field so this can be done via DemandTools.</Value>
+                <Value>Click on Client Services Record to open record in Salesforce.</Value>
                 <Style />
               </TextRun>
             </TextRuns>
+            <ListStyle>Bulleted</ListStyle>
+            <ListLevel>1</ListLevel>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Update the Network Funded Date to the date in the New Value field. (Only if the Organization Providing Funds is a JEN Network Partner).</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <ListStyle>Bulleted</ListStyle>
+            <ListLevel>1</ListLevel>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>If there is a Network Funded Date on the Client Services Record and the column 'New Value' is blank, than the Organization Providing Funds is no Longer a JEN Network Partner.</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <ListStyle>Bulleted</ListStyle>
+            <ListLevel>1</ListLevel>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>If this is the case then delete the Network Funded Date in the Client Services Record. </Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <ListStyle>Bulleted</ListStyle>
+            <ListLevel>2</ListLevel>
             <Style />
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox14</rd:DefaultName>
         <Top>0.675in</Top>
-        <Height>0.989in</Height>
-        <Width>8.427in</Width>
+        <Height>1.9in</Height>
+        <Width>9.291in</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
@@ -522,7 +567,7 @@
         </Paragraphs>
         <rd:DefaultName>textbox1</rd:DefaultName>
         <Height>0.375in</Height>
-        <Width>8.427in</Width>
+        <Width>9.291in</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
@@ -550,7 +595,7 @@
         <rd:DefaultName>Textbox6</rd:DefaultName>
         <Top>0.375in</Top>
         <Height>0.15in</Height>
-        <Width>8.427in</Width>
+        <Width>9.291in</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>
@@ -561,10 +606,10 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>2.23958in</Height>
+    <Height>3.11886in</Height>
     <Style />
   </Body>
-  <Width>11.15625in</Width>
+  <Width>10.97917in</Width>
   <Page>
     <PageHeight>8.5in</PageHeight>
     <PageWidth>11in</PageWidth>
