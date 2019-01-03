@@ -403,7 +403,7 @@
         </SortExpressions>
         <Top>2.575in</Top>
         <Height>0.5in</Height>
-        <Width>9.291in</Width>
+        <Width>9.29166in</Width>
         <Style />
       </Tablix>
       <Textbox Name="Textbox4">
@@ -609,7 +609,7 @@
     <Height>3.11886in</Height>
     <Style />
   </Body>
-  <Width>10.97917in</Width>
+  <Width>9.33334in</Width>
   <Page>
     <PageHeight>8.5in</PageHeight>
     <PageWidth>11in</PageWidth>
