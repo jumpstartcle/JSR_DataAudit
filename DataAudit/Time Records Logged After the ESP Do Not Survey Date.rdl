@@ -97,6 +97,13 @@
             <FilterValue>=Fields!ESP_Do_Not_Survey_Date__c.Value</FilterValue>
           </FilterValues>
         </Filter>
+        <Filter>
+          <FilterExpression>=Fields!ESP_Do_Not_Survey_Reason__c.Value</FilterExpression>
+          <Operator>NotEqual</Operator>
+          <FilterValues>
+            <FilterValue>Pipeline Company</FilterValue>
+          </FilterValues>
+        </Filter>
       </Filters>
     </DataSet>
   </DataSets>
@@ -109,6 +116,9 @@
               <TablixColumns>
                 <TablixColumn>
                   <Width>2.92508in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.89583in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.05794in</Width>
@@ -158,6 +168,39 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox43</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Date of First Contact</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -469,6 +512,39 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Date_of_First_Contact__c">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Date_of_First_Contact__c.Value</Value>
+                                  <Style>
+                                    <Format>d</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Date_of_First_Contact__c</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="ESP_Do_Not_Survey_Date__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -733,6 +809,7 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -762,9 +839,9 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>TimeRecords</DataSetName>
-            <Top>1.79in</Top>
+            <Top>1.67889in</Top>
             <Height>0.5in</Height>
-            <Width>16.57063in</Width>
+            <Width>17.46646in</Width>
             <Style />
           </Tablix>
           <Textbox Name="textbox6">
@@ -787,7 +864,7 @@
             </Paragraphs>
             <rd:DefaultName>textbox6</rd:DefaultName>
             <Height>0.375in</Height>
-            <Width>16.57in</Width>
+            <Width>17.46646in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
@@ -815,7 +892,7 @@
             <rd:DefaultName>Textbox23</rd:DefaultName>
             <Top>0.375in</Top>
             <Height>0.15in</Height>
-            <Width>16.57in</Width>
+            <Width>17.46646in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -846,7 +923,7 @@
             <rd:DefaultName>Textbox21</rd:DefaultName>
             <Top>0.525in</Top>
             <Height>0.15in</Height>
-            <Width>16.57in</Width>
+            <Width>17.46646in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -889,20 +966,9 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Work Instructions</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>Underline</TextDecoration>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
+                    <Value>Time tracking Date &gt; ESP_Do_Not_Survey_Date__c.
+ESP_Do_Not_Survey_Date__c  NOT IS NULL.
+ESP_Do_Not_Survey_Reason does not equal "Pipeline Company"</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -915,8 +981,8 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>0.675in</Top>
-            <Height>1.115in</Height>
-            <Width>16.57in</Width>
+            <Height>0.94833in</Height>
+            <Width>17.46646in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -930,7 +996,7 @@
         <Height>2.39236in</Height>
         <Style />
       </Body>
-      <Width>16.59083in</Width>
+      <Width>17.53938in</Width>
       <Page>
         <PageHeight>8.5in</PageHeight>
         <PageWidth>11in</PageWidth>

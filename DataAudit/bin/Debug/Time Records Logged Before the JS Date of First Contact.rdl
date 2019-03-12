@@ -82,6 +82,15 @@
             <FilterValue>=Fields!JS_Date_of_First_Contact__c.Value</FilterValue>
           </FilterValues>
         </Filter>
+        <Filter>
+          <FilterExpression>=(Fields!PersonOrg.Value = "JumpStart Inc." 
+  OR Fields!TimeRecordType.Value = "JS Time"
+  OR Fields!TimeRecordType.Value = "JS Time - Locked")</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue DataType="Boolean">true</FilterValue>
+          </FilterValues>
+        </Filter>
       </Filters>
     </DataSet>
   </DataSets>
@@ -114,7 +123,7 @@
                   <Width>1.69997in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.84108in</Width>
+                  <Width>1.74733in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -687,9 +696,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>TimeRecords</DataSetName>
-            <Top>1.79in</Top>
+            <Top>2.20667in</Top>
+            <Left>0.00001in</Left>
             <Height>0.5in</Height>
-            <Width>14.90001in</Width>
+            <Width>12.80626in</Width>
             <Style />
           </Tablix>
           <Textbox Name="Textbox1">
@@ -699,7 +709,21 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Displays a list of Client Service records where there is Time recorded before the JS Date of First Contact</Value>
+                    <Value>Displays a list of Client Service records where time was recorded before the JS Date of First Contact </Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Only shows time records that are recorded by a JumpStart person (Person’s Company is JumpStart)
+OR the time tracking record type = JS Time or JS Time – Locked.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -725,7 +749,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Work Instructions</Value>
+                    <Value>Work Instructions:</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -738,7 +762,9 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value />
+                    <Value>ONLY update the JS Date of first contact IF the JS Date of first Contact will remain in the SAME quarter as it is in currently. 
+Example 1: If the JS Date of First Contact is 3/21 and time was logged on 2/15, change the Date of First Contact to 2/15. 
+Example 2: If the JS Date of First Contact is 5/1 and Time was logged on 2/15 Do NOT change the Date of First Contact to be in an earlier quarter.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -751,8 +777,9 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>0.675in</Top>
-            <Height>1.115in</Height>
-            <Width>14.9in</Width>
+            <Left>0.00001in</Left>
+            <Height>1.41708in</Height>
+            <Width>12.80625in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -781,8 +808,9 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox6</rd:DefaultName>
+            <Left>0.00001in</Left>
             <Height>0.375in</Height>
-            <Width>14.9in</Width>
+            <Width>12.80625in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
@@ -809,8 +837,9 @@
             </Paragraphs>
             <rd:DefaultName>Textbox23</rd:DefaultName>
             <Top>0.375in</Top>
+            <Left>0.00001in</Left>
             <Height>0.15in</Height>
-            <Width>14.9in</Width>
+            <Width>12.80625in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -840,8 +869,9 @@
             </Paragraphs>
             <rd:DefaultName>Textbox21</rd:DefaultName>
             <Top>0.525in</Top>
+            <Left>0.00001in</Left>
             <Height>0.15in</Height>
-            <Width>14.9in</Width>
+            <Width>12.80625in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -852,10 +882,10 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>2.39236in</Height>
+        <Height>2.84028in</Height>
         <Style />
       </Body>
-      <Width>16.24526in</Width>
+      <Width>12.9536in</Width>
       <Page>
         <PageHeight>8.5in</PageHeight>
         <PageWidth>11in</PageWidth>
