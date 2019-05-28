@@ -52,6 +52,7 @@
     <DataSource Include="SalesForce-Read.rds" />
   </ItemGroup>
   <ItemGroup>
+    <Report Include="BGC Date of First Contact Audit.rdl" />
     <Report Include="Client Engagement Letter Review.rdl" />
     <Report Include="Client Service Records where the Lead Advisor is Blank.rdl" />
     <Report Include="Core City Do Not Survey Audit.rdl" />
