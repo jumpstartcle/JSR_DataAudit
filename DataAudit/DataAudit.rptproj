@@ -53,6 +53,8 @@
   </ItemGroup>
   <ItemGroup>
     <Report Include="BGC Date of First Contact Audit.rdl" />
+    <Report Include="BGC Milestones and Deal Flow Meeting Audit.rdl" />
+    <Report Include="BGC Project Plan and Entrepreneur Audit.rdl" />
     <Report Include="Client Engagement Letter Review.rdl" />
     <Report Include="Client Service Records where the Lead Advisor is Blank.rdl" />
     <Report Include="Core City Do Not Survey Audit.rdl" />
