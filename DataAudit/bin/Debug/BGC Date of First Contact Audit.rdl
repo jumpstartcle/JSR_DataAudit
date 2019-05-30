@@ -15,8 +15,7 @@
         <DataSourceName>SalesForce_Read</DataSourceName>
         <CommandText>SELECT
   vwBGC_SF_CSR_Audit.[Organization Name]
-  ,'https://jumpstart.my.salesforce.com/'+vwBGC_SF_CSR_Audit.CSR_Id [ID]
-  ,vwBGC_SF_CSR_Audit.[BGC Date of First Contact]
+  ,'https://js.force.com/bgc/'+vwBGC_SF_CSR_Audit.CSR_Id [CSR_Link]
 FROM
   vwBGC_SF_CSR_Audit
 WHERE
@@ -42,12 +41,8 @@ WHERE
           <DataField>Organization Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ID">
-          <DataField>ID</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="BGC_Date_of_First_Contact">
-          <DataField>BGC Date of First Contact</DataField>
+        <Field Name="CSR_Link">
+          <DataField>CSR_Link</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
@@ -67,7 +62,7 @@ WHERE
                     <Value>BGC Date of First Contact Audit</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
-                      <FontSize>24pt</FontSize>
+                      <FontSize>20pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -76,14 +71,9 @@ WHERE
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
-            <Height>0.43in</Height>
+            <Height>0.375in</Height>
             <Width>8.51042in</Width>
-            <Style>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
+            <Style />
           </Textbox>
           <Tablix Name="table1">
             <TablixBody>
@@ -110,8 +100,7 @@ WHERE
                                 <TextRun>
                                   <Value>Organization Name</Value>
                                   <Style>
-                                    <FontFamily />
-                                    <FontSize>11pt</FontSize>
+                                    <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -122,11 +111,9 @@ WHERE
                           <rd:DefaultName>textbox2</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <BottomBorder>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
-                            </BottomBorder>
+                            </Border>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -145,10 +132,9 @@ WHERE
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Client Service Record</Value>
+                                  <Value>Link to Client Service Record</Value>
                                   <Style>
-                                    <FontFamily />
-                                    <FontSize>11pt</FontSize>
+                                    <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -159,11 +145,9 @@ WHERE
                           <rd:DefaultName>textbox3</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <BottomBorder>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
-                            </BottomBorder>
+                            </Border>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -189,7 +173,7 @@ WHERE
                                 <TextRun>
                                   <Value>=Fields!Organization_Name.Value</Value>
                                   <Style>
-                                    <FontFamily />
+                                    <FontFamily>Arial</FontFamily>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
@@ -200,11 +184,9 @@ WHERE
                           <rd:DefaultName>Organization_Name</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -216,16 +198,16 @@ WHERE
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="ID">
+                        <Textbox Name="CSR_Link">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ID.Value</Value>
+                                  <Value>=Fields!CSR_Link.Value</Value>
                                   <Style>
-                                    <FontFamily />
+                                    <FontFamily>Arial</FontFamily>
                                     <Color>Blue</Color>
                                   </Style>
                                 </TextRun>
@@ -233,21 +215,19 @@ WHERE
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>ID</rd:DefaultName>
+                          <rd:DefaultName>CSR_Link</rd:DefaultName>
                           <ActionInfo>
                             <Actions>
                               <Action>
-                                <Hyperlink>=Fields!ID.Value</Hyperlink>
+                                <Hyperlink>=Fields!CSR_Link.Value</Hyperlink>
                               </Action>
                             </Actions>
                           </ActionInfo>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -293,12 +273,13 @@ WHERE
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>1.39875in</Top>
+            <Top>1.8868in</Top>
             <Height>0.43in</Height>
             <Width>8.51042in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
+                <Color>LightGrey</Color>
                 <Style>Solid</Style>
               </Border>
             </Style>
@@ -310,33 +291,52 @@ WHERE
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Identifies BGC organizations that are missing their Date of First Contact.
-Work Instructions:
-
+                    <Value>Identifies BGC organizations that are missing their Date of First Contact.</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value xml:space="preserve">
+</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>Work Instructions:</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <TextDecoration>Underline</TextDecoration>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>
 Click on the link to the Client Service Record
-
-Enter the proper value into the "BGC Date of First Contact" field. The BGC Date of First Contact can be informed by the Deal Flow Meeting Date or the Program Record Date of Fist Contact. 
-
+Enter the proper value into the "BGC Date of First Contact" field. The BGC Date of First Contact can be informed by the Deal Flow Meeting Date or the Program Record Date of First Contact.
 This report will be blank if there are no BGC organizations that are missing their Date of First Contact.</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>0.91264in</Top>
-            <Height>0.47222in</Height>
+            <Top>0.675in</Top>
+            <Height>1.2118in</Height>
             <Width>8.51042in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="Textbox4">
@@ -347,7 +347,10 @@ This report will be blank if there are no BGC organizations that are missing the
                 <TextRuns>
                   <TextRun>
                     <Value>="Report ran on: " &amp; Globals!ExecutionTime</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style>
@@ -356,18 +359,14 @@ This report will be blank if there are no BGC organizations that are missing the
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox4</rd:DefaultName>
-            <Top>0.43in</Top>
-            <Height>0.21875in</Height>
+            <Top>0.375in</Top>
+            <Height>0.15in</Height>
             <Width>8.51042in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="Textbox5">
@@ -378,7 +377,10 @@ This report will be blank if there are no BGC organizations that are missing the
                 <TextRuns>
                   <TextRun>
                     <Value>Query Last Modified/Reviewed: 5/30/2019</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style>
@@ -387,22 +389,18 @@ This report will be blank if there are no BGC organizations that are missing the
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox5</rd:DefaultName>
-            <Top>0.64875in</Top>
-            <Height>0.25in</Height>
+            <Top>0.525in</Top>
+            <Height>0.15in</Height>
             <Width>8.51042in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>2.56833in</Height>
+        <Height>2.3168in</Height>
         <Style />
       </Body>
       <Width>8.51042in</Width>

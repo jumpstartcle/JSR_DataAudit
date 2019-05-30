@@ -15,7 +15,7 @@
         <DataSourceName>SalesForce_Read</DataSourceName>
         <CommandText>SELECT
   vwBGC_SF_CSR_Audit.[Organization Name]
-  ,'https://jumpstart.my.salesforce.com/'+vwBGC_SF_CSR_Audit.CSR_Id [ID]
+  ,'https://js.force.com/bgc/'+vwBGC_SF_CSR_Audit.CSR_Id [CSR_Link]
   ,vwBGC_SF_CSR_Audit.[BGC Description of the Business]
   ,vwBGC_SF_CSR_Audit.[BGC Description of Market Opportunity]
   ,vwBGC_SF_CSR_Audit.[BGC View of Talent on the Team]
@@ -91,8 +91,8 @@ WHERE
           <DataField>Organization Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ID">
-          <DataField>ID</DataField>
+        <Field Name="CSR_Link">
+          <DataField>CSR_Link</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="BGC_Description_of_the_Business">
@@ -144,7 +144,7 @@ WHERE
                     <Value>BGC Project Plan and Entrepreneur Audit</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
-                      <FontSize>24pt</FontSize>
+                      <FontSize>20pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -153,15 +153,9 @@ WHERE
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
-            <Left>0.00001in</Left>
-            <Height>0.43in</Height>
-            <Width>15.19792in</Width>
-            <Style>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
+            <Height>0.375in</Height>
+            <Width>16.44791in</Width>
+            <Style />
           </Textbox>
           <Tablix Name="table1">
             <TablixBody>
@@ -173,28 +167,28 @@ WHERE
                   <Width>4.14583in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.25in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.25in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.25in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.25in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.25in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.25in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.08333in</Width>
+                  <Width>1.25in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.66667in</Width>
+                  <Width>1.25in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -212,8 +206,7 @@ WHERE
                                 <TextRun>
                                   <Value>Organization Name</Value>
                                   <Style>
-                                    <FontFamily />
-                                    <FontSize>11pt</FontSize>
+                                    <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -224,6 +217,7 @@ WHERE
                           <rd:DefaultName>textbox2</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -247,10 +241,9 @@ WHERE
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Client Service Record</Value>
+                                  <Value>Link to Client Service Record</Value>
                                   <Style>
-                                    <FontFamily />
-                                    <FontSize>11pt</FontSize>
+                                    <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -261,6 +254,7 @@ WHERE
                           <rd:DefaultName>textbox3</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -286,8 +280,7 @@ WHERE
                                 <TextRun>
                                   <Value>BGC Description of the Business</Value>
                                   <Style>
-                                    <FontFamily />
-                                    <FontSize>11pt</FontSize>
+                                    <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -298,6 +291,7 @@ WHERE
                           <rd:DefaultName>textbox4</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -323,8 +317,7 @@ WHERE
                                 <TextRun>
                                   <Value>BGC Description of Market Opportunity</Value>
                                   <Style>
-                                    <FontFamily />
-                                    <FontSize>11pt</FontSize>
+                                    <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -335,6 +328,7 @@ WHERE
                           <rd:DefaultName>textbox5</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -360,8 +354,7 @@ WHERE
                                 <TextRun>
                                   <Value>BGC View of Talent on the Team</Value>
                                   <Style>
-                                    <FontFamily />
-                                    <FontSize>11pt</FontSize>
+                                    <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -372,6 +365,7 @@ WHERE
                           <rd:DefaultName>textbox6</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -397,8 +391,7 @@ WHERE
                                 <TextRun>
                                   <Value>BGC Two Areas of Assistance</Value>
                                   <Style>
-                                    <FontFamily />
-                                    <FontSize>11pt</FontSize>
+                                    <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -409,6 +402,7 @@ WHERE
                           <rd:DefaultName>textbox7</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -434,8 +428,7 @@ WHERE
                                 <TextRun>
                                   <Value>BGC Lead Advisor</Value>
                                   <Style>
-                                    <FontFamily />
-                                    <FontSize>11pt</FontSize>
+                                    <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -446,6 +439,7 @@ WHERE
                           <rd:DefaultName>textbox8</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -471,8 +465,7 @@ WHERE
                                 <TextRun>
                                   <Value>Intake Industry</Value>
                                   <Style>
-                                    <FontFamily />
-                                    <FontSize>11pt</FontSize>
+                                    <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -483,6 +476,7 @@ WHERE
                           <rd:DefaultName>textbox9</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -508,8 +502,7 @@ WHERE
                                 <TextRun>
                                   <Value>Entrepreneur</Value>
                                   <Style>
-                                    <FontFamily />
-                                    <FontSize>11pt</FontSize>
+                                    <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -520,6 +513,7 @@ WHERE
                           <rd:DefaultName>textbox10</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -545,8 +539,7 @@ WHERE
                                 <TextRun>
                                   <Value>Entrepreneur Email</Value>
                                   <Style>
-                                    <FontFamily />
-                                    <FontSize>11pt</FontSize>
+                                    <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -557,6 +550,7 @@ WHERE
                           <rd:DefaultName>textbox11</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -587,7 +581,7 @@ WHERE
                                 <TextRun>
                                   <Value>=Fields!Organization_Name.Value</Value>
                                   <Style>
-                                    <FontFamily />
+                                    <FontFamily>Arial</FontFamily>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
@@ -598,6 +592,7 @@ WHERE
                           <rd:DefaultName>Organization_Name</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -614,16 +609,16 @@ WHERE
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="ID">
+                        <Textbox Name="CSR_Link">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ID.Value</Value>
+                                  <Value>=Fields!CSR_Link.Value</Value>
                                   <Style>
-                                    <FontFamily />
+                                    <FontFamily>Arial</FontFamily>
                                     <Color>Blue</Color>
                                   </Style>
                                 </TextRun>
@@ -631,21 +626,19 @@ WHERE
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>ID</rd:DefaultName>
+                          <rd:DefaultName>CSR_Link</rd:DefaultName>
                           <ActionInfo>
                             <Actions>
                               <Action>
-                                <Hyperlink>=Fields!ID.Value</Hyperlink>
+                                <Hyperlink>=Fields!CSR_Link.Value</Hyperlink>
                               </Action>
                             </Actions>
                           </ActionInfo>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -666,7 +659,7 @@ WHERE
                                 <TextRun>
                                   <Value>=Fields!BGC_Description_of_the_Business.Value</Value>
                                   <Style>
-                                    <FontFamily />
+                                    <FontFamily>Arial</FontFamily>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
@@ -677,6 +670,7 @@ WHERE
                           <rd:DefaultName>BGC_Description_of_the_Business</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -702,7 +696,7 @@ WHERE
                                 <TextRun>
                                   <Value>=Fields!BGC_Description_of_Market_Opportunity.Value</Value>
                                   <Style>
-                                    <FontFamily />
+                                    <FontFamily>Arial</FontFamily>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
@@ -713,6 +707,7 @@ WHERE
                           <rd:DefaultName>BGC_Description_of_Market_Opportunity</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -738,7 +733,7 @@ WHERE
                                 <TextRun>
                                   <Value>=Fields!BGC_View_of_Talent_on_the_Team.Value</Value>
                                   <Style>
-                                    <FontFamily />
+                                    <FontFamily>Arial</FontFamily>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
@@ -749,6 +744,7 @@ WHERE
                           <rd:DefaultName>BGC_View_of_Talent_on_the_Team</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -774,7 +770,7 @@ WHERE
                                 <TextRun>
                                   <Value>=Fields!BGC_Two_Areas_of_Assistance.Value</Value>
                                   <Style>
-                                    <FontFamily />
+                                    <FontFamily>Arial</FontFamily>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
@@ -785,6 +781,7 @@ WHERE
                           <rd:DefaultName>BGC_Two_Areas_of_Assistance</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -810,7 +807,7 @@ WHERE
                                 <TextRun>
                                   <Value>=Fields!BGC_Lead_Advisor.Value</Value>
                                   <Style>
-                                    <FontFamily />
+                                    <FontFamily>Arial</FontFamily>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
@@ -821,6 +818,7 @@ WHERE
                           <rd:DefaultName>BGC_Lead_Advisor</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -846,7 +844,7 @@ WHERE
                                 <TextRun>
                                   <Value>=Fields!Intake_Industry.Value</Value>
                                   <Style>
-                                    <FontFamily />
+                                    <FontFamily>Arial</FontFamily>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
@@ -857,6 +855,7 @@ WHERE
                           <rd:DefaultName>Intake_Industry</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -882,7 +881,7 @@ WHERE
                                 <TextRun>
                                   <Value>=Fields!Entrepreneur.Value</Value>
                                   <Style>
-                                    <FontFamily />
+                                    <FontFamily>Arial</FontFamily>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
@@ -893,6 +892,7 @@ WHERE
                           <rd:DefaultName>Entrepreneur</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -918,7 +918,7 @@ WHERE
                                 <TextRun>
                                   <Value>=Fields!Entrepreneur_Email.Value</Value>
                                   <Style>
-                                    <FontFamily />
+                                    <FontFamily>Arial</FontFamily>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
@@ -929,6 +929,7 @@ WHERE
                           <rd:DefaultName>Entrepreneur_Email</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -987,12 +988,16 @@ WHERE
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>1.43695in</Top>
-            <Left>0.00001in</Left>
+            <Top>1.70973in</Top>
             <Height>0.43in</Height>
-            <Width>15.19791in</Width>
+            <Width>16.44791in</Width>
             <ZIndex>1</ZIndex>
-            <Style />
+            <Style>
+              <Border>
+                <Color>LightGrey</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
           </Tablix>
           <Textbox Name="Textbox12">
             <CanGrow>true</CanGrow>
@@ -1001,33 +1006,52 @@ WHERE
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Identifies BGC organizations that are missing their Project Plan, Lead Adviser, Intake Industry, or Entrepreneur contact information.
-Work Instructions:
-
+                    <Value>Identifies BGC organizations that are missing their Project Plan, Lead Adviser, Intake Industry, or Entrepreneur contact information.</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value xml:space="preserve">
+</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>Work Instructions:</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <TextDecoration>Underline</TextDecoration>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>
 Click on the link to the Client Service Record
-
 Enter the appropriate missing value(s).
-
 This report will be blank if these fields are populated for every BGC organization.</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox12</rd:DefaultName>
-            <Top>0.91264in</Top>
-            <Height>0.52431in</Height>
-            <Width>15.19792in</Width>
+            <Top>0.675in</Top>
+            <Height>1.03473in</Height>
+            <Width>16.44791in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="Textbox5">
@@ -1038,7 +1062,10 @@ This report will be blank if these fields are populated for every BGC organizati
                 <TextRuns>
                   <TextRun>
                     <Value>Query Last Modified/Reviewed: 5/30/2019</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style>
@@ -1047,19 +1074,15 @@ This report will be blank if these fields are populated for every BGC organizati
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox5</rd:DefaultName>
-            <Top>0.64875in</Top>
+            <Top>0.525in</Top>
             <Left>0.00002in</Left>
-            <Height>0.25in</Height>
-            <Width>15.19791in</Width>
+            <Height>0.15in</Height>
+            <Width>16.44791in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="Textbox4">
@@ -1070,7 +1093,10 @@ This report will be blank if these fields are populated for every BGC organizati
                 <TextRuns>
                   <TextRun>
                     <Value>="Report ran on: " &amp; Globals!ExecutionTime</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style>
@@ -1079,26 +1105,22 @@ This report will be blank if these fields are populated for every BGC organizati
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox4</rd:DefaultName>
-            <Top>0.43in</Top>
+            <Top>0.375in</Top>
             <Left>0.00002in</Left>
-            <Height>0.21875in</Height>
-            <Width>15.19791in</Width>
+            <Height>0.15in</Height>
+            <Width>16.44791in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>1.86695in</Height>
+        <Height>2.13973in</Height>
         <Style />
       </Body>
-      <Width>15.19793in</Width>
+      <Width>16.44793in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
