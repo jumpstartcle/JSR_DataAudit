@@ -13,28 +13,33 @@
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>SalesForce_Read</DataSourceName>
-        <CommandText>SELECT
-  vwBGC_SF_CSR_Audit.[Organization Name]
-  ,'https://js.force.com/bgc/'+vwBGC_SF_CSR_Audit.CSR_Id [CSR_Link]
-  ,vwBGC_SF_CSR_Audit.[BGC Description of the Business]
-  ,vwBGC_SF_CSR_Audit.[BGC Description of Market Opportunity]
-  ,vwBGC_SF_CSR_Audit.[BGC View of Talent on the Team]
-  ,vwBGC_SF_CSR_Audit.[BGC Two Areas of Assistance]
-  ,vwBGC_SF_CSR_Audit.[BGC Lead Advisor]
-  ,vwBGC_SF_CSR_Audit.[Intake Industry]
-  ,vwBGC_SF_CSR_Audit.Entrepreneur
-  ,vwBGC_SF_CSR_Audit.[Entrepreneur Email]
-FROM
-  vwBGC_SF_CSR_Audit
-WHERE
-  vwBGC_SF_CSR_Audit.[BGC Description of the Business] = N'Missing'
-  OR vwBGC_SF_CSR_Audit.[BGC Description of Market Opportunity] = N'Missing'
-  OR vwBGC_SF_CSR_Audit.[BGC View of Talent on the Team] = N'Missing'
-  OR vwBGC_SF_CSR_Audit.[BGC Two Areas of Assistance] = N'Missing'
-  OR vwBGC_SF_CSR_Audit.[BGC Lead Advisor] = N'Missing'
-  OR vwBGC_SF_CSR_Audit.[Intake Industry] = N'Missing'
-  OR vwBGC_SF_CSR_Audit.Entrepreneur = N'Missing'
-  OR vwBGC_SF_CSR_Audit.[Entrepreneur Email] = N'Missing'</CommandText>
+        <CommandText>Select
+     [Organization Name]
+    ,'https://js.force.com/bgc/' + [CSR_Id] As [CSR_Link]
+    ,[BGC Description of the Business]
+    ,[BGC Description of Market Opportunity]
+    ,[BGC View of Talent on the Team]
+    ,[BGC Two Areas of Assistance]
+    ,[BGC Lead Advisor]
+    ,[Intake Industry]
+    ,[Entrepreneur]
+    ,[Entrepreneur Email]
+    ,(Case When [BGC Description of the Business] Is Null Then 1 Else 0 End
+		+ Case When [vwBGC_SF_CSR_Audit].[BGC Description of Market Opportunity] Is Null Then 1 Else 0 End
+		+ Case When [vwBGC_SF_CSR_Audit].[BGC View of Talent on the Team] Is Null Then 1 Else 0 End
+		+ Case When [vwBGC_SF_CSR_Audit].[BGC Two Areas of Assistance] Is Null Then 1 Else 0 End) As [Null BGC Project Plan Cnt]
+From
+     [vwBGC_SF_CSR_Audit]
+Where 
+	-- Only display rows where 2 or more of the BGC Project Plan colums are null
+	(Case When [BGC Description of the Business] Is Null Then 1 Else 0 End
+		+ Case When [vwBGC_SF_CSR_Audit].[BGC Description of Market Opportunity] Is Null Then 1 Else 0 End
+		+ Case When [vwBGC_SF_CSR_Audit].[BGC View of Talent on the Team] Is Null Then 1 Else 0 End
+		+ Case When [vwBGC_SF_CSR_Audit].[BGC Two Areas of Assistance] Is Null Then 1 Else 0 End) &gt; 2
+    Or [BGC Lead Advisor] Is Null
+    Or [Intake Industry] Is Null
+    Or [Entrepreneur] Is Null
+    Or [Entrepreneur Email] Is Null</CommandText>
         <rd:DesignerState>
           <QueryDefinition xmlns="http://schemas.microsoft.com/ReportingServices/QueryDefinition/Relational">
             <SelectedColumns>
@@ -127,6 +132,10 @@ WHERE
           <DataField>Entrepreneur Email</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Null_BGC_Project_Plan_Cnt">
+          <DataField>Null BGC Project Plan Cnt</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
       </Fields>
     </DataSet>
   </DataSets>
@@ -154,7 +163,7 @@ WHERE
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Height>0.375in</Height>
-            <Width>16.44791in</Width>
+            <Width>26.44791in</Width>
             <Style />
           </Textbox>
           <Tablix Name="table1">
@@ -164,34 +173,294 @@ WHERE
                   <Width>2.30208in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>4.14583in</Width>
+                  <Width>3.14583in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.25in</Width>
+                  <Width>4in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.25in</Width>
+                  <Width>4in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.25in</Width>
+                  <Width>3in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.25in</Width>
+                  <Width>2in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.25in</Width>
+                  <Width>2in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.25in</Width>
+                  <Width>2in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.25in</Width>
+                  <Width>2in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.25in</Width>
+                  <Width>2in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox13">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox13</rd:DefaultName>
+                          <Visibility>
+                            <Hidden>true</Hidden>
+                          </Visibility>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox14">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox14</rd:DefaultName>
+                          <Visibility>
+                            <Hidden>true</Hidden>
+                          </Visibility>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox15">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>BGC Project Plan</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox15</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>4</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                    <TablixCell />
+                    <TablixCell />
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox19">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox19</rd:DefaultName>
+                          <Visibility>
+                            <Hidden>true</Hidden>
+                          </Visibility>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox20">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox20</rd:DefaultName>
+                          <Visibility>
+                            <Hidden>true</Hidden>
+                          </Visibility>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox21">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox21</rd:DefaultName>
+                          <Visibility>
+                            <Hidden>true</Hidden>
+                          </Visibility>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox22">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox22</rd:DefaultName>
+                          <Visibility>
+                            <Hidden>true</Hidden>
+                          </Visibility>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
                 <TablixRow>
                   <Height>0.22in</Height>
                   <TablixCells>
@@ -220,9 +489,6 @@ WHERE
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -241,7 +507,24 @@ WHERE
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Link to Client Service Record</Value>
+                                  <Value>Link to </Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>Collaborators </Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#404040</Color>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>Client Service Record</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -257,9 +540,6 @@ WHERE
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -294,9 +574,6 @@ WHERE
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -331,9 +608,6 @@ WHERE
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -368,9 +642,6 @@ WHERE
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -405,9 +676,6 @@ WHERE
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -442,9 +710,6 @@ WHERE
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -479,9 +744,6 @@ WHERE
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -516,9 +778,6 @@ WHERE
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -553,9 +812,6 @@ WHERE
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -673,9 +929,7 @@ WHERE
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
+                            <BackgroundColor>=Iif(IsNothing(Fields!BGC_Description_of_the_Business.Value),IIf(Fields!Null_BGC_Project_Plan_Cnt.Value &gt; 2, "#ffffe1", nothing), nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -710,9 +964,7 @@ WHERE
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
+                            <BackgroundColor>=Iif(IsNothing(Fields!BGC_Description_of_Market_Opportunity.Value),IIf(Fields!Null_BGC_Project_Plan_Cnt.Value &gt; 2, "#ffffe1", nothing), nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -747,9 +999,7 @@ WHERE
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
+                            <BackgroundColor>=Iif(IsNothing(Fields!BGC_View_of_Talent_on_the_Team.Value),IIf(Fields!Null_BGC_Project_Plan_Cnt.Value &gt; 2, "#ffffe1", nothing), nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -784,9 +1034,7 @@ WHERE
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
+                            <BackgroundColor>=Iif(IsNothing(Fields!BGC_Two_Areas_of_Assistance.Value),IIf(Fields!Null_BGC_Project_Plan_Cnt.Value &gt; 2, "#ffffe1", nothing), nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -821,9 +1069,7 @@ WHERE
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
+                            <BackgroundColor>=IIF(IsNothing(Fields!BGC_Lead_Advisor.Value),"#ffffe1",nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -858,9 +1104,7 @@ WHERE
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
+                            <BackgroundColor>=IIF(IsNothing(Fields!Intake_Industry.Value),"#ffffe1",nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -895,9 +1139,7 @@ WHERE
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
+                            <BackgroundColor>=IIF(IsNothing(Fields!Entrepreneur.Value),"#ffffe1",nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -932,9 +1174,7 @@ WHERE
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
+                            <BackgroundColor>=IIF(IsNothing(Fields!Entrepreneur_Email.Value),"#ffffe1",nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -967,6 +1207,10 @@ WHERE
                 <TablixMember>
                   <KeepWithGroup>After</KeepWithGroup>
                   <RepeatOnNewPage>true</RepeatOnNewPage>
+                </TablixMember>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                  <RepeatOnNewPage>true</RepeatOnNewPage>
                   <KeepTogether>true</KeepTogether>
                 </TablixMember>
                 <TablixMember>
@@ -989,8 +1233,8 @@ WHERE
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
             <Top>1.70973in</Top>
-            <Height>0.43in</Height>
-            <Width>16.44791in</Width>
+            <Height>0.68in</Height>
+            <Width>26.44791in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -1006,9 +1250,12 @@ WHERE
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Identifies BGC organizations that are missing their Project Plan, Lead Adviser, Intake Industry, or Entrepreneur contact information.</Value>
+                    <Value>Identifies BGC organizations that are missing more than two BGC Project Plan (BGC Description of the Business, BGC Description of Market Opportunity, BGC View of Talent on the Team, BGC Two Areas of Assistance) values, the BGC Lead Adviser value, the Intake Industry value, or Entrepreneur contact values. Companies will be included on this report if they have a BGC Date of First Contact, are tagged to a BGC Deal Flow Meeting, are tagged to a BGC Program Record, or are tagged to a BGC Milestone.</Value>
                     <Style>
+                      <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -1024,29 +1271,37 @@ WHERE
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>Work Instructions:</Value>
+                    <Value>Work Instructions:
+</Value>
                     <Style>
+                      <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
                       <TextDecoration>Underline</TextDecoration>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>
-Click on the link to the Client Service Record
-Enter the appropriate missing value(s).
-This report will be blank if these fields are populated for every BGC organization.</Value>
+                    <Value>Click on the link to the Client Service Record
+Enter at least 3 of the 4 BGC Project Plan (BGC Description of the Business, BGC Description of Market Opportunity, BGC View of Talent on the Team, BGC Two Areas of Assistance) values, the BGC Lead Adviser value, the Intake Industry value, the Entrepreneur value, or the Entrepreneur Email value if they are missing. Missing value(s) are highlighted in yellow for easy identification.
+This report will be blank if these fields are populated properly for each BGC organization.</Value>
                     <Style>
+                      <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <Style />
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox12</rd:DefaultName>
             <Top>0.675in</Top>
+            <Left>0.00002in</Left>
             <Height>1.03473in</Height>
-            <Width>16.44791in</Width>
+            <Width>26.44791in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -1077,7 +1332,7 @@ This report will be blank if these fields are populated for every BGC organizati
             <Top>0.525in</Top>
             <Left>0.00002in</Left>
             <Height>0.15in</Height>
-            <Width>16.44791in</Width>
+            <Width>26.44791in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -1108,7 +1363,7 @@ This report will be blank if these fields are populated for every BGC organizati
             <Top>0.375in</Top>
             <Left>0.00002in</Left>
             <Height>0.15in</Height>
-            <Width>16.44791in</Width>
+            <Width>26.44791in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -1117,10 +1372,10 @@ This report will be blank if these fields are populated for every BGC organizati
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>2.13973in</Height>
+        <Height>2.38973in</Height>
         <Style />
       </Body>
-      <Width>16.44793in</Width>
+      <Width>26.44793in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>

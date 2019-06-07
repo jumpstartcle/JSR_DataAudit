@@ -88,7 +88,7 @@ WHERE
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Height>0.375in</Height>
-            <Width>10.22917in</Width>
+            <Width>9.36458in</Width>
             <Style />
           </Textbox>
           <Tablix Name="table1">
@@ -98,7 +98,7 @@ WHERE
                   <Width>3.58333in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>4.15625in</Width>
+                  <Width>3.29167in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.21875in</Width>
@@ -157,7 +157,24 @@ WHERE
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Link to Client Service Record</Value>
+                                  <Value>Link to </Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>Collaborators </Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#404040</Color>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>Client Service Record</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -194,14 +211,16 @@ WHERE
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Deal Flow Meeting Without Milestones</Value>
+                                  <Value>BGC Deal Flow Meeting Without  BGC Milestones</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>textbox4</rd:DefaultName>
@@ -231,14 +250,16 @@ WHERE
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Milestones Without Deal Flow Meeting</Value>
+                                  <Value>BGC Milestones Without BGC Deal Flow Meeting</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>textbox5</rd:DefaultName>
@@ -358,7 +379,9 @@ WHERE
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Deal_Flow_Meeting_Without_Milestones</rd:DefaultName>
@@ -395,7 +418,9 @@ WHERE
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Milestones_Without_Deal_Flow_Meeting</rd:DefaultName>
@@ -456,7 +481,7 @@ WHERE
             <DataSetName>DataSet1</DataSetName>
             <Top>1.87639in</Top>
             <Height>0.43in</Height>
-            <Width>10.22916in</Width>
+            <Width>9.36458in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -500,7 +525,32 @@ WHERE
                     <Value>
 Click on the link to the Client Service Record
 Enter a BGC Milestone or BGC Deal Flow Meeting.
-This report will be blank if nigher of these situations are an issue.</Value>
+This report will be blank if </Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>neither</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value xml:space="preserve"> </Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#c00000</Color>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>of these situations are an issue.</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                     </Style>
@@ -513,7 +563,7 @@ This report will be blank if nigher of these situations are an issue.</Value>
             <Top>0.675in</Top>
             <Left>0.00001in</Left>
             <Height>1.20139in</Height>
-            <Width>10.22917in</Width>
+            <Width>9.36458in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -543,7 +593,7 @@ This report will be blank if nigher of these situations are an issue.</Value>
             <rd:DefaultName>Textbox4</rd:DefaultName>
             <Top>0.375in</Top>
             <Height>0.15in</Height>
-            <Width>10.22917in</Width>
+            <Width>9.36458in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -573,7 +623,7 @@ This report will be blank if nigher of these situations are an issue.</Value>
             <rd:DefaultName>Textbox5</rd:DefaultName>
             <Top>0.525in</Top>
             <Height>0.15in</Height>
-            <Width>10.22917in</Width>
+            <Width>9.36458in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -585,7 +635,7 @@ This report will be blank if nigher of these situations are an issue.</Value>
         <Height>2.30639in</Height>
         <Style />
       </Body>
-      <Width>10.22918in</Width>
+      <Width>9.36459in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
