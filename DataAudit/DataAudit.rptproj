@@ -52,6 +52,7 @@
     <DataSource Include="SalesForce-Read.rds" />
   </ItemGroup>
   <ItemGroup>
+    <Report Include="BGC Boost Fund Grants Audit.rdl" />
     <Report Include="BGC Date of First Contact Audit.rdl" />
     <Report Include="BGC Milestones and Deal Flow Meeting Audit.rdl" />
     <Report Include="BGC Project Plan and Entrepreneur Audit.rdl" />
