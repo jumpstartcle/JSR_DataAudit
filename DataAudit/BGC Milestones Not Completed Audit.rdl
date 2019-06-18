@@ -94,10 +94,8 @@ WHERE
                                 <TextRun>
                                   <Value>Organization Name</Value>
                                   <Style>
-                                    <FontFamily />
-                                    <FontSize>11pt</FontSize>
+                                    <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>#666666</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -108,6 +106,7 @@ WHERE
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
+                              <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
                               <Style>Solid</Style>
@@ -132,10 +131,8 @@ WHERE
                                 <TextRun>
                                   <Value>Link to Collaborators Client Milestone Record</Value>
                                   <Style>
-                                    <FontFamily />
-                                    <FontSize>11pt</FontSize>
+                                    <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>#666666</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -146,6 +143,7 @@ WHERE
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
+                              <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
                               <Style>Solid</Style>
@@ -170,10 +168,8 @@ WHERE
                                 <TextRun>
                                   <Value>Due Date</Value>
                                   <Style>
-                                    <FontFamily />
-                                    <FontSize>11pt</FontSize>
+                                    <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>#666666</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -184,6 +180,7 @@ WHERE
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
+                              <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
                               <Style>Solid</Style>
@@ -208,10 +205,8 @@ WHERE
                                 <TextRun>
                                   <Value>Milestone Status</Value>
                                   <Style>
-                                    <FontFamily />
-                                    <FontSize>11pt</FontSize>
+                                    <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>#666666</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -222,6 +217,7 @@ WHERE
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
+                              <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
                               <Style>Solid</Style>
@@ -246,10 +242,8 @@ WHERE
                                 <TextRun>
                                   <Value>Description</Value>
                                   <Style>
-                                    <FontFamily />
-                                    <FontSize>11pt</FontSize>
+                                    <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>#666666</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -260,6 +254,7 @@ WHERE
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
+                              <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
                               <Style>Solid</Style>
@@ -290,7 +285,6 @@ WHERE
                                   <Value>=Fields!Organization_Name.Value</Value>
                                   <Style>
                                     <FontFamily />
-                                    <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -301,6 +295,7 @@ WHERE
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
+                              <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
                               <Style>Solid</Style>
@@ -326,7 +321,6 @@ WHERE
                                   <Value>=Fields!Link_to_Collaborators_Client_Milestone_Record.Value</Value>
                                   <Style>
                                     <FontFamily />
-                                    <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -337,6 +331,7 @@ WHERE
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
+                              <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
                               <Style>Solid</Style>
@@ -362,7 +357,6 @@ WHERE
                                   <Value>=Fields!Due_Date.Value</Value>
                                   <Style>
                                     <FontFamily />
-                                    <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -373,6 +367,7 @@ WHERE
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
+                              <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
                               <Style>Solid</Style>
@@ -398,7 +393,6 @@ WHERE
                                   <Value>=Fields!Milestone_Status.Value</Value>
                                   <Style>
                                     <FontFamily />
-                                    <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -409,6 +403,7 @@ WHERE
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
+                              <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
                               <Style>Solid</Style>
@@ -434,7 +429,6 @@ WHERE
                                   <Value>=Fields!Description.Value</Value>
                                   <Style>
                                     <FontFamily />
-                                    <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -445,6 +439,7 @@ WHERE
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
+                              <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
                               <Style>Solid</Style>
