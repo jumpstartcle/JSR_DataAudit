@@ -1357,6 +1357,11 @@ WHERE
                   <Group Name="table1_Details_Group">
                     <DataElementName>Detail</DataElementName>
                   </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!Organization_Name.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
                   <TablixMembers>
                     <TablixMember />
                   </TablixMembers>
