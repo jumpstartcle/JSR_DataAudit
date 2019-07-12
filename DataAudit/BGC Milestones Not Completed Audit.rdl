@@ -160,7 +160,9 @@ vwBGC_SF_Milestones_Not_Completed_Audit</CommandText>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>textbox4</rd:DefaultName>
@@ -344,10 +346,13 @@ vwBGC_SF_Milestones_Not_Completed_Audit</CommandText>
                                   <Value>=Fields!Due_Date.Value</Value>
                                   <Style>
                                     <FontFamily />
+                                    <Format>d</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Due_Date</rd:DefaultName>
@@ -356,9 +361,6 @@ vwBGC_SF_Milestones_Not_Completed_Audit</CommandText>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -366,6 +368,7 @@ vwBGC_SF_Milestones_Not_Completed_Audit</CommandText>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>

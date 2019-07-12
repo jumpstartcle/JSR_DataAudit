@@ -13,23 +13,10 @@
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>SalesForce_Read</DataSourceName>
-        <CommandText>SELECT
-	 acc.Name								AS 'Organization Name'
-	,'https://js.force.com/bgc/' + clm.ID	AS 'Link to Collaborators Client Milestone Record'
-	,clm.Due_Date__c						AS 'Due Date'
-	,clm.Status__c							AS 'Milestone Status'
-	,clm.Milestone_Description__c			AS 'Description'
-
+        <CommandText>SELECT *
 
 FROM 
-	Account								acc
-	Inner Join	Client_Services__c		csr ON acc.ID							= csr.Organization__c
-	Inner Join	Client_Milestones__c	clm ON clm.Client_Services_Record__c	= csr.Id
-
-WHERE
-	csr.BGC_Date_of_First_Contact__c		is not null
-	AND clm.Due_Date__c						&lt; GETDATE()
-	AND clm.Completed_Date__c				is null</CommandText>
+vwBGC_SF_Milestones_Not_Completed_Audit</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -173,7 +160,9 @@ WHERE
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>textbox4</rd:DefaultName>
@@ -357,10 +346,13 @@ WHERE
                                   <Value>=Fields!Due_Date.Value</Value>
                                   <Style>
                                     <FontFamily />
+                                    <Format>d</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Due_Date</rd:DefaultName>
@@ -369,9 +361,6 @@ WHERE
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -379,6 +368,7 @@ WHERE
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -497,7 +487,7 @@ WHERE
             <DataSetName>DataSet1</DataSetName>
             <Top>1.71667in</Top>
             <Height>0.43in</Height>
-            <Width>13.69792in</Width>
+            <Width>13.69791in</Width>
             <Style />
           </Tablix>
           <Textbox Name="Textbox17">
