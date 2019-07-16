@@ -779,7 +779,6 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -801,14 +800,18 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Link_to_Collaborators_Program_Record</rd:DefaultName>
+                          <ActionInfo>
+                            <Actions>
+                              <Action>
+                                <Hyperlink>=Fields!Link_to_Collaborators_Program_Record.Value</Hyperlink>
+                              </Action>
+                            </Actions>
+                          </ActionInfo>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -816,6 +819,7 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>

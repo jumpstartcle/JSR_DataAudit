@@ -397,14 +397,18 @@ vwBGC_SF_Milestones_Not_Completed_Audit</CommandText>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Link_to_Collaborators_Client_Milestone_Record</rd:DefaultName>
+                          <ActionInfo>
+                            <Actions>
+                              <Action>
+                                <Hyperlink>=Fields!Link_to_Collaborators_Client_Milestone_Record.Value</Hyperlink>
+                              </Action>
+                            </Actions>
+                          </ActionInfo>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -412,6 +416,7 @@ vwBGC_SF_Milestones_Not_Completed_Audit</CommandText>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>

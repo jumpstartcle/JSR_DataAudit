@@ -800,14 +800,18 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Link_to_Collaborators_Program_Record</rd:DefaultName>
+                          <ActionInfo>
+                            <Actions>
+                              <Action>
+                                <Hyperlink>=Fields!Link_to_Collaborators_Program_Record.Value</Hyperlink>
+                              </Action>
+                            </Actions>
+                          </ActionInfo>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -815,6 +819,7 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1348,7 +1353,20 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                 <TextRuns>
                   <TextRun>
                     <Value>Identifies BGC organizations that have incomplete milestones. Companies will be included on this report if they are tagged to a BGC Milestone which is past its Due Date and the Completed Date is blank.
-Work Instructions:
+</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>Work Instructions:</Value>
+                    <Style>
+                      <FontFamily>Arial</FontFamily>
+                      <TextDecoration>Underline</TextDecoration>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>
 Click on the link to the Client Milestone record.
 Enter the date the milestone was completed into the Completed Date field.
 This report will be blank if there are no BGC organizations with an incomplete milestone after its due date.</Value>
