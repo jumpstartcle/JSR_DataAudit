@@ -55,22 +55,22 @@ vwBGC_SF_Milestones_Not_Completed_Audit</CommandText>
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>3.1875in</Width>
+                  <Width>2.86458in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.52083in</Width>
+                  <Width>3.19791in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.86458in</Width>
+                  <Width>1.1875in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.40625in</Width>
+                  <Width>1.29167in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.71875in</Width>
+                  <Width>5.15625in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -390,6 +390,7 @@ vwBGC_SF_Milestones_Not_Completed_Audit</CommandText>
                                   <Value>=Fields!Link_to_Collaborators_Client_Milestone_Record.Value</Value>
                                   <Style>
                                     <FontFamily />
+                                    <Color>Blue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -416,7 +417,6 @@ vwBGC_SF_Milestones_Not_Completed_Audit</CommandText>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -570,7 +570,7 @@ vwBGC_SF_Milestones_Not_Completed_Audit</CommandText>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>1.71667in</Top>
+            <Top>1.58125in</Top>
             <Height>0.43in</Height>
             <Width>14.69791in</Width>
             <Style />
@@ -588,6 +588,11 @@ vwBGC_SF_Milestones_Not_Completed_Audit</CommandText>
                       <FontFamily>Arial</FontFamily>
                     </Style>
                   </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
                   <TextRun>
                     <Value>Work Instructions:</Value>
                     <Style>
@@ -610,7 +615,7 @@ This report will be blank if there are no BGC organizations with an incomplete m
             </Paragraphs>
             <rd:DefaultName>Textbox17</rd:DefaultName>
             <Top>0.675in</Top>
-            <Height>1.04167in</Height>
+            <Height>0.90625in</Height>
             <Width>14.69791in</Width>
             <ZIndex>1</ZIndex>
             <Style>
@@ -713,7 +718,7 @@ This report will be blank if there are no BGC organizations with an incomplete m
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>2.14667in</Height>
+        <Height>2.01125in</Height>
         <Style />
       </Body>
       <Width>14.69791in</Width>

@@ -793,6 +793,7 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                                   <Value>=Fields!Link_to_Collaborators_Program_Record.Value</Value>
                                   <Style>
                                     <FontFamily />
+                                    <Color>Blue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -819,7 +820,6 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
