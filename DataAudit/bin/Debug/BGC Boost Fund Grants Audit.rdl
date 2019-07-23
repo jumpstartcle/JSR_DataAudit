@@ -107,7 +107,7 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Height>0.375in</Height>
-            <Width>18.19791in</Width>
+            <Width>21.44791in</Width>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -123,10 +123,10 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                   <Width>2.97917in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.27083in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>2.05208in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.11458in</Width>
@@ -135,7 +135,7 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                   <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.95833in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1in</Width>
@@ -156,10 +156,10 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                   <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.70833in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.26042in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -1324,7 +1324,7 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
             <DataSetName>DataSet1</DataSetName>
             <Top>1.56042in</Top>
             <Height>0.43in</Height>
-            <Width>18.19791in</Width>
+            <Width>21.44791in</Width>
             <ZIndex>1</ZIndex>
             <Style />
           </Tablix>
@@ -1368,7 +1368,7 @@ This report will be blank if these fields are populated properly for each BGC Bo
             <rd:DefaultName>Textbox17</rd:DefaultName>
             <Top>0.675in</Top>
             <Height>0.88542in</Height>
-            <Width>18.19791in</Width>
+            <Width>21.44791in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -1402,7 +1402,7 @@ This report will be blank if these fields are populated properly for each BGC Bo
             <rd:DefaultName>Textbox4</rd:DefaultName>
             <Top>0.375in</Top>
             <Height>0.15in</Height>
-            <Width>18.19791in</Width>
+            <Width>21.44791in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -1432,7 +1432,7 @@ This report will be blank if these fields are populated properly for each BGC Bo
             <rd:DefaultName>Textbox5</rd:DefaultName>
             <Top>0.525in</Top>
             <Height>0.15in</Height>
-            <Width>18.19791in</Width>
+            <Width>21.44791in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -1444,7 +1444,7 @@ This report will be blank if these fields are populated properly for each BGC Bo
         <Height>1.99042in</Height>
         <Style />
       </Body>
-      <Width>18.19791in</Width>
+      <Width>21.44791in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
