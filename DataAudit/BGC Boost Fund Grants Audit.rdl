@@ -14,7 +14,6 @@
       <Query>
         <DataSourceName>SalesForce_Read</DataSourceName>
         <CommandText>SELECT *
-
 FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
@@ -846,9 +845,7 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
+                            <BackgroundColor>=IIF(IsNothing(Fields!Program_Name.Value),"#ffffe1",nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -918,9 +915,7 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
+                            <BackgroundColor>=IIF(IsNothing(Fields!Entrepreneur.Value),"#ffffe1",nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -954,9 +949,7 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
+                            <BackgroundColor>=IIF(IsNothing(Fields!Cohort_Batch_or_Cycle.Value),"#ffffe1",nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -990,9 +983,7 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
+                            <BackgroundColor>=IIF(IsNothing(Fields!Program_Owner.Value),"#ffffe1",nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1029,6 +1020,7 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=IIF(IsNothing(Fields!Date_of_First_Contact.Value),"#ffffe1",nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1062,9 +1054,7 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
+                            <BackgroundColor>=IIF(IsNothing(Fields!Stage.Value),"#ffffe1",nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1098,9 +1088,7 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
+                            <BackgroundColor>=IIF(IsNothing(Fields!Stage_Summary.Value),"#ffffe1",nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1137,6 +1125,7 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=IIF(IsNothing(Fields!Program_Start_Date.Value),"#ffffe1",nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1170,9 +1159,7 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
+                            <BackgroundColor>=IIF(IsNothing(Fields!Funding_Pool.Value),"#ffffe1",nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1194,6 +1181,7 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                                   <Value>=Fields!Funded_Amount.Value</Value>
                                   <Style>
                                     <FontFamily />
+                                    <Format>'$'0.00;('$'0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1206,14 +1194,13 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
+                            <BackgroundColor>=IIF(IsNothing(Fields!Funded_Amount.Value),"#ffffe1",nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
+                            <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -1242,9 +1229,7 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
+                            <BackgroundColor>=IIF(IsNothing(Fields!Use_of_Award_Funds.Value),"#ffffe1",nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1278,9 +1263,7 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
+                            <BackgroundColor>=IIF(IsNothing(Fields!Client_Services.Value),"#ffffe1",nothing)</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1352,7 +1335,8 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Identifies BGC organizations that have incomplete milestones. Companies will be included on this report if they are tagged to a BGC Milestone which is past its Due Date and the Completed Date is blank.
+                    <Value>Identifies BGC organizations that are missing BGC Boost Fund values. Companies will be included on this report if they are tagged to the BGC Boost Fund program and any of the program data values are missing.
+
 </Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
@@ -1367,9 +1351,12 @@ FROM vwBGC_SF_Boost_Fund_Audit</CommandText>
                   </TextRun>
                   <TextRun>
                     <Value>
-Click on the link to the Client Milestone record.
-Enter the date the milestone was completed into the Completed Date field.
-This report will be blank if there are no BGC organizations with an incomplete milestone after its due date.</Value>
+
+Click on the link to the Program record.
+
+Enter any value that is missing. Missing value(s) are highlighted in yellow for easy identification.
+
+This report will be blank if these fields are populated properly for each BGC Boost Fund program record.</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                     </Style>
