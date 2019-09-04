@@ -106,13 +106,15 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Created Date</Value>
+                              <Value>Activity Date</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox10</rd:DefaultName>
@@ -261,7 +263,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Link to Record in Salesforce</Value>
+                              <Value>Link to Time Tracking Record in Salesforce</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -350,23 +352,25 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="CreatedDate">
+                    <Textbox Name="Date__c">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!CreatedDate.Value</Value>
+                              <Value>=Fields!Date__c.Value</Value>
                               <Style>
                                 <Format>MM/dd/yyyy</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>CreatedDate</rd:DefaultName>
+                      <rd:DefaultName>Date__c</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -594,7 +598,88 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Instructions: Export this to Excel and email Record Creator listed. Make the email subject "Time tracking errors in Salesforce" and in the body of the email paste the table and include the message "The individual you put in the Person field is not an employee at a Network organization. Please use the link provided to access the record, click the Edit button, use the magnifying glass search button by the Person field to locate the correct Contact record at the Correct Organization and then click on the Save button."
+                <Value>Displays Time Tracking Records where:</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>The "Person" is not a JumpStart employee</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Or the "Person" is not a Network Partner employee</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Work Instructions:</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Export this to Excel and email Record Creator listed. </Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Make the email subject "Time tracking errors in Salesforce"</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>In the body of the email paste the table</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>And include the message: </Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>"The individual you put in the Person field is not an employee at a Network organization.  Please use the link provided to access the record, click the Edit button, use the magnifying glass search button by the Person field to locate the correct Contact record at the Correct Organization and then click on the Save button."
  
 Note that records marked Locked will need to be updated by an Administrator.</Value>
                 <Style />
@@ -740,13 +825,13 @@ Note that records marked Locked will need to be updated by an Administrator.</Va
           <DataField>RecordCreatedBy</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Date__c">
+          <DataField>Date__c</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
         <Field Name="Person">
           <DataField>Person</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CreatedDate">
-          <DataField>CreatedDate</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="RecordType">
           <DataField>RecordType</DataField>
