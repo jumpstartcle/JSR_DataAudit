@@ -3,44 +3,41 @@
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="SalesForce_Read">
-      <DataSourceReference>SalesForce-Read</DataSourceReference>
+    <DataSource Name="Salesforce">
+      <DataSourceReference>SF_JSFull-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>74c79784-dd0e-44e7-af0d-89f51c340c99</rd:DataSourceID>
+      <rd:DataSourceID>a87537a1-3e28-4c0c-82ae-0429971f5400</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
+    <DataSet Name="BGC_Region">
+      <Query>
+        <DataSourceName>Salesforce</DataSourceName>
+        <CommandText>Select *
+From [SSRS].[vwBGC_DealFlow_RecType]</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="ID">
+          <DataField>ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>SalesForce_Read</DataSourceName>
-        <CommandText>SELECT
-  [Organization Name]
-  ,'https://js.force.com/bgc/'+CSR_Id As [CSR_Link]
-  , [Earliest Deal Flow Meeting Date]
-  , [Earliest Program Date of First Contact]
-FROM
-  vwBGC_SF_CSR_Audit
-WHERE
-  [BGC Date of First Contact] Is Null
-  And (
-    [Earliest Deal Flow Meeting Date] Is Not Null
-    Or [Earliest Program Date of First Contact] Is Not Null
-  )</CommandText>
-        <rd:DesignerState>
-          <QueryDefinition xmlns="http://schemas.microsoft.com/ReportingServices/QueryDefinition/Relational">
-            <SelectedColumns>
-              <ColumnExpression ColumnOwner="vwBGC_SF_CSR_Audit" ColumnName="Organization Name" />
-              <ColumnExpression ColumnOwner="vwBGC_SF_CSR_Audit" ColumnName="CSR_Id" />
-              <ColumnExpression ColumnOwner="vwBGC_SF_CSR_Audit" ColumnName="BGC Date of First Contact" />
-            </SelectedColumns>
-            <Filters>
-              <Filter Operator="=">
-                <ColumnExpression ColumnOwner="vwBGC_SF_CSR_Audit" ColumnName="BGC Date of First Contact" />
-                <FilterValue>Missing</FilterValue>
-              </Filter>
-            </Filters>
-          </QueryDefinition>
-        </rd:DesignerState>
+        <DataSourceName>Salesforce</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@strDealFlowRecordType">
+            <Value>=Parameters!pramBGC_Region.Value</Value>
+            <rd:UserDefined>true</rd:UserDefined>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>SSRS.uspBGCDateofFirstContactAudit</CommandText>
       </Query>
       <Fields>
         <Field Name="Organization_Name">
@@ -555,7 +552,7 @@ This report will be blank if there are no BGC organizations that are missing the
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Query Last Modified/Reviewed: 5/30/2019</Value>
+                    <Value>Query Last Modified/Reviewed: 12/4/2019</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontSize>9pt</FontSize>
@@ -592,10 +589,30 @@ This report will be blank if there are no BGC organizations that are missing the
       </Page>
     </ReportSection>
   </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="pramBGC_Region">
+      <DataType>String</DataType>
+      <Prompt>BGC Region</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>BGC_Region</DataSetName>
+          <ValueField>ID</ValueField>
+          <LabelField>Name</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>4</NumberOfColumns>
       <NumberOfRows>2</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>pramBGC_Region</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <Language>en-US</Language>
