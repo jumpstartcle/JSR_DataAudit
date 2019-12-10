@@ -4,7 +4,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="Salesforce">
-      <DataSourceReference>SF_Vault-Shared</DataSourceReference>
+      <DataSourceReference>SF_JSFull-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>91631760-126b-475d-9f25-76008cef4d14</rd:DataSourceID>
     </DataSource>
@@ -849,7 +849,7 @@ From [SSRS].[vwBGC_DealFlow_RecType]</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Identifies BGC organizations that have incomplete milestones. Companies will be included on this report if they are tagged to a BGC Milestone which is past its Due Date and the Completed Date is blank.</Value>
+                    <Value>Identifies BGC organizations that have incomplete milestones. Companies will be included on this report if they are tagged to a BGC Milestone which is past its Due Date, the Completed Date is blank, and the Milestone Status is not "Did Not Complete".</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                     </Style>
