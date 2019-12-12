@@ -3,8 +3,8 @@
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="SalesForce_Read">
-      <DataSourceReference>SalesForce-Read</DataSourceReference>
+    <DataSource Name="Salesforce">
+      <DataSourceReference>SF_JSFull-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>91631760-126b-475d-9f25-76008cef4d14</rd:DataSourceID>
     </DataSource>
@@ -12,10 +12,14 @@
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>SalesForce_Read</DataSourceName>
-        <CommandText>SELECT *
-FROM 
-vwBGC_SF_Milestones_Not_Completed_Audit</CommandText>
+        <DataSourceName>Salesforce</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@strDealFlowRecordType">
+            <Value>=Parameters!pramBGC_Region.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>SSRS.uspBGC_SF_Milestones_Not_Completed_Audit</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -53,6 +57,23 @@ vwBGC_SF_Milestones_Not_Completed_Audit</CommandText>
         </Field>
         <Field Name="Assigned_Organization">
           <DataField>Assigned Organization</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="BGC_Region">
+      <Query>
+        <DataSourceName>Salesforce</DataSourceName>
+        <CommandText>Select *
+From [SSRS].[vwBGC_DealFlow_RecType]</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="ID">
+          <DataField>ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
@@ -828,7 +849,7 @@ vwBGC_SF_Milestones_Not_Completed_Audit</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Identifies BGC organizations that have incomplete milestones. Companies will be included on this report if they are tagged to a BGC Milestone which is past its Due Date and the Completed Date is blank.</Value>
+                    <Value>Identifies BGC organizations that have incomplete milestones. Companies will be included on this report if they are tagged to a BGC Milestone which is past its Due Date, the Completed Date is blank, and the Milestone Status is not "Did Not Complete".</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                     </Style>
@@ -839,8 +860,7 @@ vwBGC_SF_Milestones_Not_Completed_Audit</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value xml:space="preserve">
-</Value>
+                    <Value />
                     <Style>
                       <FontFamily>Arial</FontFamily>
                     </Style>
@@ -892,7 +912,7 @@ This report will be blank if there are no BGC organizations with an incomplete m
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Query Last Modified/Reviewed: 7/23/2019</Value>
+                    <Value>Query Last Modified/Reviewed: 12/5/2019</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                       <FontSize>9pt</FontSize>
@@ -988,10 +1008,30 @@ This report will be blank if there are no BGC organizations with an incomplete m
       </Page>
     </ReportSection>
   </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="pramBGC_Region">
+      <DataType>String</DataType>
+      <Prompt>BGC Region</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>BGC_Region</DataSetName>
+          <ValueField>ID</ValueField>
+          <LabelField>Name</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>4</NumberOfColumns>
       <NumberOfRows>2</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>pramBGC_Region</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <Language>en-US</Language>

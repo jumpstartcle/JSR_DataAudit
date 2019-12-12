@@ -3,8 +3,8 @@
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="SalesForce_Read">
-      <DataSourceReference>SalesForce-Read</DataSourceReference>
+    <DataSource Name="Salesforce">
+      <DataSourceReference>SF_JSFull-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>cde7a737-df13-4d1b-842f-4b9930085e79</rd:DataSourceID>
     </DataSource>
@@ -12,34 +12,14 @@
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>SalesForce_Read</DataSourceName>
-        <CommandText>Select
-     [Organization Name]
-    ,'https://js.force.com/bgc/' + [CSR_Id] As [CSR_Link]
-    ,[BGC Description of the Business]
-    ,[BGC Description of Market Opportunity]
-    ,[BGC View of Talent on the Team]
-    ,[BGC Two Areas of Assistance]
-    ,[BGC Lead Advisor]
-    ,[Intake Industry]
-    ,[Entrepreneur]
-    ,[Entrepreneur Email]
-    ,(Case When [BGC Description of the Business] Is Null Then 1 Else 0 End
-		+ Case When [vwBGC_SF_CSR_Audit].[BGC Description of Market Opportunity] Is Null Then 1 Else 0 End
-		+ Case When [vwBGC_SF_CSR_Audit].[BGC View of Talent on the Team] Is Null Then 1 Else 0 End
-		+ Case When [vwBGC_SF_CSR_Audit].[BGC Two Areas of Assistance] Is Null Then 1 Else 0 End) As [Null BGC Project Plan Cnt]
-From
-     [vwBGC_SF_CSR_Audit]
-Where 
-	-- Only display rows where 2 or more of the BGC Project Plan colums are null
-	(Case When [BGC Description of the Business] Is Null Then 1 Else 0 End
-		+ Case When [vwBGC_SF_CSR_Audit].[BGC Description of Market Opportunity] Is Null Then 1 Else 0 End
-		+ Case When [vwBGC_SF_CSR_Audit].[BGC View of Talent on the Team] Is Null Then 1 Else 0 End
-		+ Case When [vwBGC_SF_CSR_Audit].[BGC Two Areas of Assistance] Is Null Then 1 Else 0 End) &gt; 2
-    Or [BGC Lead Advisor] Is Null
-    Or [Intake Industry] Is Null
-    Or [Entrepreneur] Is Null
-    Or [Entrepreneur Email] Is Null</CommandText>
+        <DataSourceName>Salesforce</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@strDealFlowRecordType">
+            <Value>=Parameters!pramBGC_Region.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>SSRS.uspBGCProjectPlanAndEntrepreneurAudit</CommandText>
         <rd:DesignerState>
           <QueryDefinition xmlns="http://schemas.microsoft.com/ReportingServices/QueryDefinition/Relational">
             <SelectedColumns>
@@ -135,6 +115,23 @@ Where
         <Field Name="Null_BGC_Project_Plan_Cnt">
           <DataField>Null BGC Project Plan Cnt</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="BGC_Region">
+      <Query>
+        <DataSourceName>Salesforce</DataSourceName>
+        <CommandText>Select *
+From [SSRS].[vwBGC_DealFlow_RecType]</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="ID">
+          <DataField>ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -1385,10 +1382,30 @@ This report will be blank if these fields are populated properly for each BGC or
       </Page>
     </ReportSection>
   </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="pramBGC_Region">
+      <DataType>String</DataType>
+      <Prompt>BGC Region</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>BGC_Region</DataSetName>
+          <ValueField>ID</ValueField>
+          <LabelField>Name</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>4</NumberOfColumns>
       <NumberOfRows>2</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>pramBGC_Region</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <Language>en-US</Language>
