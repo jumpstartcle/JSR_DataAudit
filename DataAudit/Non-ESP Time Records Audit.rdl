@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="SalesForce">
-      <DataSourceReference>SalesForce-Read</DataSourceReference>
+      <DataSourceReference>SF_JSFull-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>674d7fc5-0c8f-4312-b98d-2b176781b4a1</rd:DataSourceID>
     </DataSource>
@@ -13,15 +13,15 @@
       <Query>
         <DataSourceName>SalesForce</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@StartDate">
+          <QueryParameter Name="@startDate">
             <Value>=Parameters!StartDate.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@EndDate">
+          <QueryParameter Name="@endDate">
             <Value>=Parameters!EndDate.Value</Value>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspDA_NonESPTimeRecordsAudit</CommandText>
+        <CommandText>SSRS.uspDA_NonESPTimeRecordsAudit</CommandText>
       </Query>
       <Fields>
         <Field Name="OrganizationName">
@@ -99,7 +99,7 @@
       <Query>
         <DataSourceName>SalesForce</DataSourceName>
         <CommandText>SELECT Id   , Name
-  FROM vwNetworkPartners
+  FROM SSRS.vwNetworkPartners
 ORDER BY Name</CommandText>
       </Query>
       <Fields>

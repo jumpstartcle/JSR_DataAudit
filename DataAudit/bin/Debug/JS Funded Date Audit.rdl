@@ -327,7 +327,7 @@
         <DataSetName>JSFundedDateAudit</DataSetName>
         <Top>1.74653in</Top>
         <Height>0.5in</Height>
-        <Width>7.7604in</Width>
+        <Width>7.76042in</Width>
         <Style />
       </Tablix>
       <Textbox Name="textbox1">
@@ -510,7 +510,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="SalesForce">
-      <DataSourceReference>SalesForce-Read</DataSourceReference>
+      <DataSourceReference>SF_JSFull-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>99638c56-57d6-4012-b21e-9fd1893bc216</rd:DataSourceID>
     </DataSource>
@@ -520,7 +520,7 @@
       <Query>
         <DataSourceName>SalesForce</DataSourceName>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspDA_JSFundedDateAudit</CommandText>
+        <CommandText>SSRS.uspDA_JSFundedDateAudit</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>

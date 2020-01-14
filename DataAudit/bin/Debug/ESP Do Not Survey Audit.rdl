@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="Salesforce">
-      <DataSourceReference>SalesForce-Read</DataSourceReference>
+      <DataSourceReference>SF_JSFull-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>ebd7f4dd-4d83-438c-b8d2-861fb2e1a10f</rd:DataSourceID>
     </DataSource>
@@ -13,7 +13,7 @@
       <Query>
         <DataSourceName>Salesforce</DataSourceName>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspDA_ESPDoNotSurveyAudit</CommandText>
+        <CommandText>SSRS.uspDA_ESPDoNotSurveyAudit</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>

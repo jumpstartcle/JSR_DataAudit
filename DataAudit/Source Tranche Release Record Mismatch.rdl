@@ -783,7 +783,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="SalesForce">
-      <DataSourceReference>SalesForce-Read</DataSourceReference>
+      <DataSourceReference>SF_JSFull-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>24417888-c4f3-4850-b32b-09cef458716a</rd:DataSourceID>
     </DataSource>
@@ -792,7 +792,7 @@
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>SalesForce</DataSourceName>
-        <CommandText>SELECT * FROM vwDA_SourceTrancheMismatch</CommandText>
+        <CommandText>SELECT * FROM SSRS.vwDA_SourceTrancheMismatch</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>

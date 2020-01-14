@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="Salesforce">
-      <DataSourceReference>SalesForce-Read</DataSourceReference>
+      <DataSourceReference>SF_JSFull-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>58325ad7-9b7a-40ab-b9e1-beae7436ef21</rd:DataSourceID>
     </DataSource>
@@ -13,15 +13,15 @@
       <Query>
         <DataSourceName>Salesforce</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@Start">
+          <QueryParameter Name="@start">
             <Value>=Parameters!Start.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@End">
+          <QueryParameter Name="@end">
             <Value>=Parameters!End.Value</Value>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspSpinOffConnectionsAudit</CommandText>
+        <CommandText>SSRS.uspSpinOffConnectionsAudit</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>

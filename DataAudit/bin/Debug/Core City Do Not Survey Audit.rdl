@@ -4,7 +4,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="SalesForce">
-      <DataSourceReference>SalesForce-Read</DataSourceReference>
+      <DataSourceReference>SF_JSFull-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>cb1fec5d-1540-4ca1-becc-638aa5f4d853</rd:DataSourceID>
     </DataSource>
@@ -13,7 +13,7 @@
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>SalesForce</DataSourceName>
-        <CommandText>SELECT * FROM vwDA_CoreCityDoNotSurveyAudit</CommandText>
+        <CommandText>SELECT * FROM SSRS.vwDA_CoreCityDoNotSurveyAudit</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>

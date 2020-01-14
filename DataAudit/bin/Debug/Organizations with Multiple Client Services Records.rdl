@@ -728,7 +728,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="SalesForce">
-      <DataSourceReference>SalesForce-Read</DataSourceReference>
+      <DataSourceReference>SF_JSFull-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>700520b8-4d23-4108-a61d-141b632a4250</rd:DataSourceID>
     </DataSource>
@@ -737,7 +737,7 @@
     <DataSet Name="MultJENOpp">
       <Query>
         <DataSourceName>SalesForce</DataSourceName>
-        <CommandText>select * from vwDA_OrgsMultipleCSRs</CommandText>
+        <CommandText>select * from SSRS.vwDA_OrgsMultipleCSRs</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>

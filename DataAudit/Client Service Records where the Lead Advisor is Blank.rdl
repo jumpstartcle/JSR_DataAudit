@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="Salesforce">
-      <DataSourceReference>SalesForce-Read</DataSourceReference>
+      <DataSourceReference>SF_JSFull-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>ca6ca22f-15e3-4af0-81a1-b2c35792f45b</rd:DataSourceID>
     </DataSource>
@@ -13,7 +13,7 @@
       <Query>
         <DataSourceName>Salesforce</DataSourceName>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspDA_CSR_LeadAdvBlank</CommandText>
+        <CommandText>SSRS.uspDA_CSR_LeadAdvBlank</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>

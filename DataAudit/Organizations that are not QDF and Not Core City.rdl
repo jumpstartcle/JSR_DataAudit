@@ -4,7 +4,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="SalesForce">
-      <DataSourceReference>SalesForce-Read</DataSourceReference>
+      <DataSourceReference>SF_JSFull-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>cb1fec5d-1540-4ca1-becc-638aa5f4d853</rd:DataSourceID>
     </DataSource>
@@ -14,17 +14,17 @@
       <Query>
         <DataSourceName>SalesForce</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@Start">
+          <QueryParameter Name="@start">
             <Value>=Parameters!Start.Value</Value>
             <rd:UserDefined>true</rd:UserDefined>
           </QueryParameter>
-          <QueryParameter Name="@End">
+          <QueryParameter Name="@end">
             <Value>=Parameters!End.Value</Value>
             <rd:UserDefined>true</rd:UserDefined>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspDAOrgsNotQDFNotCoreCity </CommandText>
+        <CommandText>SSRS.uspDAOrgsNotQDFNotCoreCity </CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>

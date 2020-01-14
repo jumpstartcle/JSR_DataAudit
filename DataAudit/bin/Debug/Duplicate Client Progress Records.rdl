@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="Salesforce">
-      <DataSourceReference>SalesForce-Read</DataSourceReference>
+      <DataSourceReference>SF_Vault-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>6b2c3ea0-ccee-40b0-a230-9acd5bd65794</rd:DataSourceID>
     </DataSource>
@@ -13,7 +13,7 @@
       <Query>
         <DataSourceName>Salesforce</DataSourceName>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspDA_DuplicateClientProgressRecords</CommandText>
+        <CommandText>SSRS.uspDA_DuplicateClientProgressRecords</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
