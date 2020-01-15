@@ -77,6 +77,10 @@
           <DataField>Time_Spent__c</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="TimeRecordType">
+          <DataField>TimeRecordType</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <Filters>
         <Filter>

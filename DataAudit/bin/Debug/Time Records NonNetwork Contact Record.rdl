@@ -655,7 +655,7 @@
         <DataSetName>DataSet1</DataSetName>
         <Top>2.942in</Top>
         <Height>0.5in</Height>
-        <Width>18.15in</Width>
+        <Width>18.15048in</Width>
         <Style />
       </Tablix>
       <Textbox Name="textbox4">
@@ -883,7 +883,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="SalesForce">
-      <DataSourceReference>SalesForce-Read</DataSourceReference>
+      <DataSourceReference>SF_JSFull-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>8e667737-7d09-4060-8692-87255cc08bc8</rd:DataSourceID>
     </DataSource>
@@ -893,7 +893,7 @@
       <Query>
         <DataSourceName>SalesForce</DataSourceName>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspDA_TimeRecordsNonNetworkContactRecord</CommandText>
+        <CommandText>SSRS.uspDA_TimeRecordsNonNetworkContactRecord</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>

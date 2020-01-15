@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="SalesForce">
-      <DataSourceReference>SalesForce-Read</DataSourceReference>
+      <DataSourceReference>SF_JSFull-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>674d7fc5-0c8f-4312-b98d-2b176781b4a1</rd:DataSourceID>
     </DataSource>
@@ -13,7 +13,7 @@
       <Query>
         <DataSourceName>SalesForce</DataSourceName>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspDA_TimeRecords</CommandText>
+        <CommandText>SSRS.uspDA_TimeRecords</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
