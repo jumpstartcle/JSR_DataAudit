@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="Salesforce">
-      <DataSourceReference>SF_JSFull-Shared</DataSourceReference>
+      <DataSourceReference>SF_Vault-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>ca6ca22f-15e3-4af0-81a1-b2c35792f45b</rd:DataSourceID>
     </DataSource>
