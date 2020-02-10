@@ -96,7 +96,7 @@ FROM [SSRS].[vwBGC_SF_Boost_Fund_Audit]</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>BGC NEO Boost Fund Grants Audit</Value>
+                    <Value>BGC Boost Fund Grants Audit</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
                       <FontSize>20pt</FontSize>
