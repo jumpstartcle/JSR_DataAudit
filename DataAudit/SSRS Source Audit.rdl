@@ -105,7 +105,7 @@ FROM [SSRS].[vwSSRS_Source_Audit]</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>A report published to the QA environment (Report Path equals /QA/...) that does not have a Connection String containing "Initial Catalog = SF_JSFull"</Value>
+                    <Value>A Report Path starting with /QA/... (excluding /QA/NWO/...) that does not have a Connection String containing "Initial Catalog = SF_JSFull"</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                     </Style>
@@ -118,7 +118,18 @@ FROM [SSRS].[vwSSRS_Source_Audit]</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>A report published to a non QA environment (Report Path does not start with /QA/...) that has a Connection String containing "Initial Catalog = SF_JSFull"</Value>
+                    <Value>A Report Path starting with /QA/NWO/... that does not have a Connection String containing "Initial Catalog = SF_NWODev"</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <ListStyle>Bulleted</ListStyle>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>A Report Path starting with anthing except /QA/... and /NWO/... that does not have a Connection String containing "Initial Catalog = SF_Vault"</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                     </Style>
@@ -128,10 +139,21 @@ FROM [SSRS].[vwSSRS_Source_Audit]</CommandText>
                 <ListLevel>1</ListLevel>
                 <Style />
               </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>A Report Path starting with /NWO/... that does not have a Connection String containing "Initial Catalog = NWO_SF_Vault"</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <ListStyle>Bulleted</ListStyle>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox17</rd:DefaultName>
             <Top>0.675in</Top>
-            <Height>1.41667in</Height>
+            <Height>1.62848in</Height>
             <Width>9in</Width>
             <ZIndex>1</ZIndex>
             <Style>
@@ -434,7 +456,7 @@ FROM [SSRS].[vwSSRS_Source_Audit]</CommandText>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>2.09167in</Top>
+            <Top>2.30348in</Top>
             <Height>0.5in</Height>
             <Width>9in</Width>
             <ZIndex>4</ZIndex>
@@ -445,7 +467,7 @@ FROM [SSRS].[vwSSRS_Source_Audit]</CommandText>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>2.59167in</Height>
+        <Height>2.80348in</Height>
         <Style />
       </Body>
       <Width>9in</Width>
