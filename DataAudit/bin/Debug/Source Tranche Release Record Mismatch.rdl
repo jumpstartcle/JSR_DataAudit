@@ -577,17 +577,6 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>The Funding Status is 13.Closed</Value>
-                <Style />
-              </TextRun>
-            </TextRuns>
-            <ListStyle>Bulleted</ListStyle>
-            <ListLevel>1</ListLevel>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
                 <Value>And there is an Actual Disbursement Date, but the Actual Dollar Amount is Blank or Zero.</Value>
                 <Style />
               </TextRun>
@@ -707,7 +696,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Query Last Modified/Reviewed: 4/10/2018</Value>
+                  <Value>Query Last Modified/Reviewed: 3/27/2020</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -834,10 +823,6 @@
         </Field>
         <Field Name="RecordType">
           <DataField>RecordType</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Funding_Status__c">
-          <DataField>Funding_Status__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
