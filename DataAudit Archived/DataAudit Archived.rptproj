@@ -5,14 +5,14 @@
     <OutputPath>bin\Debug</OutputPath>
     <ErrorLevel>2</ErrorLevel>
     <OverwriteDatasets>False</OverwriteDatasets>
-    <OverwriteDataSources>True</OverwriteDataSources>
+    <OverwriteDataSources>False</OverwriteDataSources>
     <TargetServerVersion>SSRS2016</TargetServerVersion>
     <Platform>Win32</Platform>
-    <TargetReportFolder>QA/Data Audit</TargetReportFolder>
+    <TargetReportFolder>DataAudit Archived</TargetReportFolder>
     <TargetDatasetFolder>Datasets</TargetDatasetFolder>
     <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
     <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
-    <TargetServerURL>https://report.jumpstartinc.org/reportserver</TargetServerURL>
+    <TargetServerURL>http://localhost/reportserver</TargetServerURL>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'DebugLocal' ">
     <FullPath>DebugLocal</FullPath>
@@ -22,7 +22,7 @@
     <OverwriteDataSources>False</OverwriteDataSources>
     <TargetServerVersion>SSRS2016</TargetServerVersion>
     <Platform>Win32</Platform>
-    <TargetReportFolder>DataAudit</TargetReportFolder>
+    <TargetReportFolder>DataAudit Archived</TargetReportFolder>
     <TargetDatasetFolder>Datasets</TargetDatasetFolder>
     <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
     <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
@@ -36,7 +36,7 @@
     <OverwriteDataSources>False</OverwriteDataSources>
     <TargetServerVersion>SSRS2016</TargetServerVersion>
     <Platform>Win32</Platform>
-    <TargetReportFolder>DataAudit</TargetReportFolder>
+    <TargetReportFolder>DataAudit Archived</TargetReportFolder>
     <TargetDatasetFolder>Datasets</TargetDatasetFolder>
     <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
     <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
@@ -49,45 +49,7 @@
     <Reports>@(Report)</Reports>
   </PropertyGroup>
   <ItemGroup>
-    <DataSource Include="SalesForce-Read.rds" />
-    <DataSource Include="SF_JSFull-Shared.rds" />
-    <DataSource Include="SF_Vault-Shared.rds" />
-  </ItemGroup>
-  <ItemGroup>
-    <Report Include="BGC Boost Fund Grants Audit.rdl" />
-    <Report Include="BGC Date of First Contact Audit.rdl" />
-    <Report Include="BGC Milestones and Deal Flow Meeting Audit.rdl" />
-    <Report Include="BGC Milestones Not Completed Audit.rdl" />
-    <Report Include="BGC Missing Records Audit.rdl" />
-    <Report Include="BGC Project Plan and Entrepreneur Audit.rdl" />
-    <Report Include="Client Engagement Letter Review.rdl" />
-    <Report Include="Client Service Records where the Lead Advisor is Blank.rdl" />
-    <Report Include="Core City Do Not Survey Audit.rdl" />
-    <Report Include="Duplicate Advisor Entries.rdl" />
-    <Report Include="Duplicate Client Progress Records.rdl" />
-    <Report Include="ESP Do Not Survey Audit.rdl" />
-    <Report Include="JS Funded Date Audit.rdl" />
-    <Report Include="Multiple Contacts Same Email Address - JOSF.rdl" />
-    <Report Include="Multiple Contacts Same Email Address.rdl" />
-    <Report Include="Non-ESP Time Records Audit.rdl" />
-    <Report Include="Organizations Ethnicity Minority Fields Audit.rdl" />
-    <Report Include="Organizations that are Classified as Ohio Third Frontier (OTF) PreSeed Funds.rdl" />
-    <Report Include="Organizations that are Core City but not QDF.rdl" />
-    <Report Include="Organizations that are Not QDF - Non JumpStart Created.rdl" />
-    <Report Include="Organizations that are not QDF and Not Core City.rdl" />
-    <Report Include="Organizations that are QDF but Not Core City.rdl" />
-    <Report Include="Organizations with Multiple Client Services Records.rdl" />
-    <Report Include="Organizations with Multiple Point in Time Records for the Same Date.rdl" />
-    <Report Include="Organizations with Multiple Time Period Data Records for the Same Date.rdl" />
-    <Report Include="Source Tranche Release Record Mismatch.rdl" />
-    <Report Include="SSRS Source Audit.rdl" />
-    <Report Include="Time Records Logged After the Core City Do Not Survey Date.rdl" />
-    <Report Include="Time Records Logged After the ESP Do Not Survey Date.rdl" />
-    <Report Include="Time Records Logged Before the Date of First Contact.rdl" />
-    <Report Include="Time Records Logged Before the JS Date of First Contact.rdl" />
-    <Report Include="Time Records NonNetwork Contact Record.rdl" />
-    <Report Include="Update Network Funded Date.rdl" />
-    <Report Include="Update Network OTF PreSeed Date.rdl" />
+    <Report Include="SpinOff Connections Audit.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
