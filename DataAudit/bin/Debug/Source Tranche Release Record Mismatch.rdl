@@ -558,7 +558,7 @@
         </SortExpressions>
         <Top>2.175in</Top>
         <Height>0.5in</Height>
-        <Width>14.086in</Width>
+        <Width>14.08542in</Width>
         <Style />
       </Tablix>
       <Textbox Name="textbox2">
@@ -738,7 +738,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="SalesForce">
-      <DataSourceReference>SF_JSFull-Shared</DataSourceReference>
+      <DataSourceReference>SF_Vault-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>24417888-c4f3-4850-b32b-09cef458716a</rd:DataSourceID>
     </DataSource>
