@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="Salesforce">
-      <DataSourceReference>SF_JSFull-Shared</DataSourceReference>
+      <DataSourceReference>SF_Vault-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>7f380c57-7643-4c78-8af2-c69fee8784f2</rd:DataSourceID>
     </DataSource>
@@ -37,8 +37,8 @@
           <DataField>ESP_Qualified_Deal_Flow_Date__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Advisor_Organization_f__c">
-          <DataField>Advisor_Organization_f__c</DataField>
+        <Field Name="Advisor_Organization">
+          <DataField>Advisor Organization</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="LeadAdvisorName">
@@ -464,14 +464,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Advisor_Organization_f__c">
+                        <Textbox Name="Advisor_Organization">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Advisor_Organization_f__c.Value</Value>
+                                  <Value>=Fields!Advisor_Organization.Value</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                   </Style>
@@ -480,7 +480,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Advisor_Organization_f__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>

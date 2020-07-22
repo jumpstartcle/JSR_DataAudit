@@ -4,7 +4,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="SalesForce">
-      <DataSourceReference>SF_JSFull-Shared</DataSourceReference>
+      <DataSourceReference>SF_Vault-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>cb1fec5d-1540-4ca1-becc-638aa5f4d853</rd:DataSourceID>
     </DataSource>
@@ -52,10 +52,6 @@
           <DataField>Street</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Advisor_Organization_f__c">
-          <DataField>Advisor_Organization_f__c</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="City">
           <DataField>City</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -66,6 +62,10 @@
         </Field>
         <Field Name="State">
           <DataField>State</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Advisor_Organization">
+          <DataField>Advisor Organization</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="JS_Core_City_Cleveland__c">
@@ -1759,14 +1759,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Advisor_Organization_f__c">
+                        <Textbox Name="Advisor_Organization">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Advisor_Organization_f__c.Value</Value>
+                                  <Value>=Fields!Advisor_Organization.Value</Value>
                                   <Style>
                                     <FontFamily />
                                     <Color>#333333</Color>
@@ -1776,31 +1776,10 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Advisor_Organization_f__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <TopBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
