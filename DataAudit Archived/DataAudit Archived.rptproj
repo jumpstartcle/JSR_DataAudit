@@ -49,7 +49,15 @@
     <Reports>@(Report)</Reports>
   </PropertyGroup>
   <ItemGroup>
+    <Report Include="Client Service Records where the Lead Advisor is Blank.rdl" />
+    <Report Include="Duplicate Advisor Entries.rdl" />
+    <Report Include="Duplicate Client Progress Records.rdl" />
+    <Report Include="JS Funded Date Audit.rdl" />
+    <Report Include="Organizations with Multiple Client Services Records.rdl" />
     <Report Include="SpinOff Connections Audit.rdl" />
+    <Report Include="Time Records Logged Before the JS Date of First Contact.rdl" />
+    <Report Include="Update Network Funded Date.rdl" />
+    <Report Include="Update Network OTF PreSeed Date.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

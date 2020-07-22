@@ -61,12 +61,8 @@
     <Report Include="BGC Missing Records Audit.rdl" />
     <Report Include="BGC Project Plan and Entrepreneur Audit.rdl" />
     <Report Include="Client Engagement Letter Review.rdl" />
-    <Report Include="Client Service Records where the Lead Advisor is Blank.rdl" />
     <Report Include="Core City Do Not Survey Audit.rdl" />
-    <Report Include="Duplicate Advisor Entries.rdl" />
-    <Report Include="Duplicate Client Progress Records.rdl" />
     <Report Include="ESP Do Not Survey Audit.rdl" />
-    <Report Include="JS Funded Date Audit.rdl" />
     <Report Include="Multiple Contacts Same Email Address - JOSF.rdl" />
     <Report Include="Multiple Contacts Same Email Address.rdl" />
     <Report Include="Non-ESP Time Records Audit.rdl" />
@@ -76,7 +72,6 @@
     <Report Include="Organizations that are Not QDF - Non JumpStart Created.rdl" />
     <Report Include="Organizations that are not QDF and Not Core City.rdl" />
     <Report Include="Organizations that are QDF but Not Core City.rdl" />
-    <Report Include="Organizations with Multiple Client Services Records.rdl" />
     <Report Include="Organizations with Multiple Point in Time Records for the Same Date.rdl" />
     <Report Include="Organizations with Multiple Time Period Data Records for the Same Date.rdl" />
     <Report Include="Source Tranche Release Record Mismatch.rdl" />
@@ -84,10 +79,7 @@
     <Report Include="Time Records Logged After the Core City Do Not Survey Date.rdl" />
     <Report Include="Time Records Logged After the ESP Do Not Survey Date.rdl" />
     <Report Include="Time Records Logged Before the Date of First Contact.rdl" />
-    <Report Include="Time Records Logged Before the JS Date of First Contact.rdl" />
     <Report Include="Time Records NonNetwork Contact Record.rdl" />
-    <Report Include="Update Network Funded Date.rdl" />
-    <Report Include="Update Network OTF PreSeed Date.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
