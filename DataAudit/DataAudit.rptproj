@@ -67,9 +67,9 @@
     <Report Include="Non-ESP Time Records Audit.rdl" />
     <Report Include="Organizations Ethnicity Minority Fields Audit.rdl" />
     <Report Include="Organizations that are Classified as Ohio Third Frontier (OTF) PreSeed Funds.rdl" />
-    <Report Include="Organizations that are Core City but not QDF.rdl" />
-    <Report Include="Organizations that are Not QDF - Non JumpStart Created.rdl" />
-    <Report Include="Organizations that are not QDF and Not Core City.rdl" />
+    <Report Include="Organizations that are Non-Tech QDF but not ESP QDF .rdl" />
+    <Report Include="Organizations that are Not ESP QDF - Non JumpStart Created.rdl" />
+    <Report Include="Organizations that are Not ESP QDF and Not Non-Tech QDF.rdl" />
     <Report Include="Organizations that are QDF but Not Core City.rdl" />
     <Report Include="Organizations with Multiple Point in Time Records for the Same Date.rdl" />
     <Report Include="Organizations with Multiple Time Period Data Records for the Same Date.rdl" />

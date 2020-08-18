@@ -24,7 +24,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>SSRS.uspDAOrgsNotQDFNotCoreCity </CommandText>
+        <CommandText>SSRS.uspDAOrgsNotQDFNotNon-Tech</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -72,13 +72,17 @@
           <DataField>Zip</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="JS_Core_City_Cleveland__c">
-          <DataField>JS_Core_City_Cleveland__c</DataField>
+        <Field Name="Cleveland_Non_Tech_QDF_Date__c">
+          <DataField>Cleveland_Non_Tech_QDF_Date__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="ESP_Qualified_Deal_Flow_Date__c">
-          <DataField>ESP_Qualified_Deal_Flow_Date__c</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="Toledo_Non_Tech_QDF_Date__c">
+          <DataField>Toledo_Non_Tech_QDF_Date__c</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Stark_Non_Tech_QDF_Date__c">
+          <DataField>Stark_Non_Tech_QDF_Date__c</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="ESP_NOT_QDF_Reason__c">
           <DataField>ESP_NOT_QDF_Reason__c</DataField>
@@ -88,20 +92,28 @@
           <DataField>County__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ESP_Operating_Stage_at_First_Contact__c">
-          <DataField>ESP_Operating_Stage_at_First_Contact__c</DataField>
+        <Field Name="NEO_ESP_Qualified_Deal_Flow_Date__c">
+          <DataField>NEO_ESP_Qualified_Deal_Flow_Date__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ESP_Current_Operating_Stage__c">
-          <DataField>ESP_Current_Operating_Stage__c</DataField>
+        <Field Name="NWO_ESP_Qualified_Deal_Flow_Date__c">
+          <DataField>NWO_ESP_Qualified_Deal_Flow_Date__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ESP_Tech_Focus_Area_2017__c">
           <DataField>ESP_Tech_Focus_Area_2017__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="ESP_Comm_Stage_at_First_Contact__c">
+          <DataField>ESP_Comm_Stage_at_First_Contact__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="ESP_Primary_Market_Application_2017__c">
           <DataField>ESP_Primary_Market_Application_2017__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ESP_Current_Comm_Stage__c">
+          <DataField>ESP_Current_Comm_Stage__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Product_service_description_and_value__c">
@@ -124,10 +136,6 @@
           <DataField>Obvious_issues_holes_in_their_business__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Total_ESP_Time_Spent__c">
-          <DataField>Total_ESP_Time_Spent__c</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
         <Field Name="Total_Time_Spent__c">
           <DataField>Total_Time_Spent__c</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -136,9 +144,17 @@
           <DataField>Last_Time_Spent_Date__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
+        <Field Name="NEO_ESP_Total_Time_Spent__c">
+          <DataField>NEO_ESP_Total_Time_Spent__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="ESP_Short_Description__c">
           <DataField>ESP_Short_Description__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NWO_ESP_Total_Time_Spent__c">
+          <DataField>NWO_ESP_Total_Time_Spent__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="Not_ESP_QDF_Reviewed_by__c">
           <DataField>Not_ESP_QDF_Reviewed_by__c</DataField>
@@ -155,7 +171,8 @@
       </Fields>
       <Filters>
         <Filter>
-          <FilterExpression>=IsNothing(Fields!ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
+          <FilterExpression>=IsNothing(Fields!NEO_ESP_Qualified_Deal_Flow_Date__c.Value) AND 
+IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
           <Operator>Equal</Operator>
           <FilterValues>
             <FilterValue DataType="Boolean">true</FilterValue>
@@ -203,7 +220,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Organizations that are Not QDF - Non JumpStart Created</Value>
+                    <Value>Organizations that are Not ESP QDF - Non JumpStart Created</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
                       <FontSize>20pt</FontSize>
@@ -216,7 +233,7 @@
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Height>0.43in</Height>
-            <Width>8.38542in</Width>
+            <Width>9.32292in</Width>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -1565,7 +1582,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>This report displays the Organizations that are Not Qualified Deal Flow (QDF) in Salesforce for the Time Period that needs reviewed.
+                    <Value>This report displays the Organizations that are Not ESP Qualified Deal Flow (QDF) in Salesforce for the Time Period that needs reviewed.
 The goal is that any Companies that are eligible for ESP are marked as such prior to Quarterly Reporting on this program is completed.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
@@ -1609,7 +1626,7 @@ The goal is that any Companies that are eligible for ESP are marked as such prio
                 <TextRuns>
                   <TextRun>
                     <Value>The "Date of First Contact" is between the Date of First Contact Start Date and Date of First Contact End Date in the report parameters.
-And the "ESP Qualified Deal Flow Date" is Blank.
+And both "NEO ESP Qualified Deal Flow Date" and "NWO ESP Qualified Deal Flow Date" are blank.
 And the "Not ESP QDF, Reviewed By" is Blank.
 And the "Client Services Created By" is a NOT a JumpStart Employee.</Value>
                     <Style>
@@ -1655,7 +1672,24 @@ And the "Client Services Created By" is a NOT a JumpStart Employee.</Value>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Please add or adjust any needed data in Salesforce to designate a Company as Qualified Deal Flow (QDF) and/or Core City (CC) if appropriate.</Value>
+                    <Value>Please add or adjust any needed data in Salesforce to designate a Company as ESP Qualified Deal Flow (QDF) </Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>for either region </Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>if appropriate.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
@@ -1700,7 +1734,7 @@ And the "Client Services Created By" is a NOT a JumpStart Employee.</Value>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>If you find any duplicate Client Services Records during your review, please bring them to the attention of IT (Alex or Jeri).</Value>
+                    <Value>If you find any duplicate Client Services Records during your review, please bring them to the attention of the Data Team for deduplication.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
