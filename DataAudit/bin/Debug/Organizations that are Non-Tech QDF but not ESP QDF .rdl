@@ -78,14 +78,10 @@
         </Field>
         <Field Name="Toledo_Non_Tech_QDF_Date__c">
           <DataField>Toledo_Non_Tech_QDF_Date__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Stark_Non_Tech_QDF_Date__c">
           <DataField>Stark_Non_Tech_QDF_Date__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="ESP_NOT_QDF_Reason__c">
-          <DataField>ESP_NOT_QDF_Reason__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="County__c">
@@ -94,6 +90,14 @@
         </Field>
         <Field Name="NEO_ESP_Qualified_Deal_Flow_Date__c">
           <DataField>NEO_ESP_Qualified_Deal_Flow_Date__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NEO_ESP_NOT_QDF_Reason__c">
+          <DataField>NEO_ESP_NOT_QDF_Reason__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NWO_ESP_NOT_QDF_Reason__c">
+          <DataField>NWO_ESP_NOT_QDF_Reason__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="NWO_ESP_Qualified_Deal_Flow_Date__c">
@@ -248,6 +252,9 @@ IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.78125in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.04167in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.04167in</Width>
@@ -610,7 +617,7 @@ IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>ESP NOT QDF Reason</Value>
+                                  <Value>NEO ESP NOT QDF Reason</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -646,6 +653,57 @@ IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
                               <Width>1pt</Width>
                             </RightBorder>
                             <FontFamily />
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox5">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>NEO ESP NOT QDF Reason</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox5</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1294,14 +1352,14 @@ IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="ESP_NOT_QDF_Reason__c">
+                        <Textbox Name="NEO_ESP_NOT_QDF_Reason__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ESP_NOT_QDF_Reason__c.Value</Value>
+                                  <Value>=Fields!NEO_ESP_NOT_QDF_Reason__c.Value</Value>
                                   <Style>
                                     <FontFamily />
                                     <Color>#333333</Color>
@@ -1311,7 +1369,7 @@ IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>ESP_NOT_QDF_Reason__c</rd:DefaultName>
+                          <rd:DefaultName>NEO_ESP_NOT_QDF_Reason__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -1337,6 +1395,58 @@ IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
                               <Width>1pt</Width>
                             </RightBorder>
                             <FontFamily />
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="NWO_ESP_NOT_QDF_Reason__c">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!NWO_ESP_NOT_QDF_Reason__c.Value</Value>
+                                  <Style>
+                                    <FontFamily />
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>NWO_ESP_NOT_QDF_Reason__c</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1682,6 +1792,7 @@ IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -1713,7 +1824,7 @@ IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
             <Top>1.95708in</Top>
             <Left>0.09375in</Left>
             <Height>0.43in</Height>
-            <Width>21.08749in</Width>
+            <Width>23.12916in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -2105,7 +2216,7 @@ IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
         <Height>4.07875in</Height>
         <Style />
       </Body>
-      <Width>39.96248in</Width>
+      <Width>23.22291in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
