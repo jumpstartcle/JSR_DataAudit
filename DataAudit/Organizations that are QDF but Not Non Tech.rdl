@@ -24,7 +24,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>SSRS.uspDAOrgsNotQDFNotCoreCity </CommandText>
+        <CommandText>SSRS.uspDAOrgsNotQDFNotNon-Tech</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -68,36 +68,44 @@
           <DataField>Advisor Organization</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="JS_Core_City_Cleveland__c">
-          <DataField>JS_Core_City_Cleveland__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
         <Field Name="Zip">
           <DataField>Zip</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ESP_Qualified_Deal_Flow_Date__c">
-          <DataField>ESP_Qualified_Deal_Flow_Date__c</DataField>
+        <Field Name="Cleveland_Non_Tech_QDF_Date__c">
+          <DataField>Cleveland_Non_Tech_QDF_Date__c</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Toledo_Non_Tech_QDF_Date__c">
+          <DataField>Toledo_Non_Tech_QDF_Date__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ESP_NOT_QDF_Reason__c">
-          <DataField>ESP_NOT_QDF_Reason__c</DataField>
+        <Field Name="Stark_Non_Tech_QDF_Date__c">
+          <DataField>Stark_Non_Tech_QDF_Date__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NEO_ESP_Qualified_Deal_Flow_Date__c">
+          <DataField>NEO_ESP_Qualified_Deal_Flow_Date__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="County__c">
           <DataField>County__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ESP_Operating_Stage_at_First_Contact__c">
-          <DataField>ESP_Operating_Stage_at_First_Contact__c</DataField>
+        <Field Name="NWO_ESP_Qualified_Deal_Flow_Date__c">
+          <DataField>NWO_ESP_Qualified_Deal_Flow_Date__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ESP_Current_Operating_Stage__c">
-          <DataField>ESP_Current_Operating_Stage__c</DataField>
+        <Field Name="NEO_ESP_NOT_QDF_Reason__c">
+          <DataField>NEO_ESP_NOT_QDF_Reason__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ESP_Tech_Focus_Area_2017__c">
           <DataField>ESP_Tech_Focus_Area_2017__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NWO_ESP_NOT_QDF_Reason__c">
+          <DataField>NWO_ESP_NOT_QDF_Reason__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ESP_Primary_Market_Application_2017__c">
@@ -106,6 +114,14 @@
         </Field>
         <Field Name="Product_service_description_and_value__c">
           <DataField>Product_service_description_and_value__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ESP_Comm_Stage_at_First_Contact__c">
+          <DataField>ESP_Comm_Stage_at_First_Contact__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ESP_Current_Comm_Stage__c">
+          <DataField>ESP_Current_Comm_Stage__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Problem_the_product_service_Solves__c">
@@ -124,10 +140,6 @@
           <DataField>Obvious_issues_holes_in_their_business__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Total_ESP_Time_Spent__c">
-          <DataField>Total_ESP_Time_Spent__c</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
         <Field Name="Total_Time_Spent__c">
           <DataField>Total_Time_Spent__c</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -140,6 +152,10 @@
           <DataField>ESP_Short_Description__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="NEO_ESP_Total_Time_Spent__c">
+          <DataField>NEO_ESP_Total_Time_Spent__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="Not_ESP_QDF_Reviewed_by__c">
           <DataField>Not_ESP_QDF_Reviewed_by__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -148,6 +164,10 @@
           <DataField>RecordTypeId</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="NWO_ESP_Total_Time_Spent__c">
+          <DataField>NWO_ESP_Total_Time_Spent__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="PartnerOrg">
           <DataField>PartnerOrg</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -155,14 +175,14 @@
       </Fields>
       <Filters>
         <Filter>
-          <FilterExpression>=IsNothing(Fields!JS_Core_City_Cleveland__c.Value)</FilterExpression>
+          <FilterExpression>=IsNothing(Fields!Cleveland_Non_Tech_QDF_Date__c.Value) And IsNothing(Fields!Toledo_Non_Tech_QDF_Date__c.Value) And IsNothing(Fields!Stark_Non_Tech_QDF_Date__c.Value)</FilterExpression>
           <Operator>Equal</Operator>
           <FilterValues>
             <FilterValue DataType="Boolean">true</FilterValue>
           </FilterValues>
         </Filter>
         <Filter>
-          <FilterExpression>=IsNothing(Fields!ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
+          <FilterExpression>=IsNothing(Fields!NEO_ESP_Qualified_Deal_Flow_Date__c.Value) And IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
           <Operator>Equal</Operator>
           <FilterValues>
             <FilterValue DataType="Boolean">false</FilterValue>
@@ -196,7 +216,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Organizations that are QDF but Not Core City</Value>
+                    <Value>Organizations that are QDF but Not Non Tech</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
                       <FontSize>20pt</FontSize>
@@ -209,7 +229,7 @@
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Height>0.43in</Height>
-            <Width>23.86875in</Width>
+            <Width>26.94504in</Width>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -231,6 +251,12 @@
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.3975in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.3975in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.67875in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.67875in</Width>
@@ -442,7 +468,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>ESP Qualified Deal Flow Date </Value>
+                                  <Value>NEO ESP Qualified Deal Flow Date </Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -490,6 +516,60 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>NWO ESP Qualified Deal Flow Date</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="textbox24">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -497,7 +577,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>ESP NOT QDF Reason</Value>
+                                  <Value>NEO ESP NOT QDF Reason</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -535,6 +615,60 @@
                               <Width>1pt</Width>
                             </RightBorder>
                             <FontFamily />
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox6">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>NWO ESP NOT QDF Reason</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox6</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1227,14 +1361,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="ESP_Qualified_Deal_Flow_Date__c2">
+                        <Textbox Name="NEO_ESP_Qualified_Deal_Flow_Date__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=FormatDateTime(Fields!ESP_Qualified_Deal_Flow_Date__c.Value, 2)</Value>
+                                  <Value>=Fields!NEO_ESP_Qualified_Deal_Flow_Date__c.Value</Value>
                                   <Style>
                                     <FontFamily />
                                     <Format>d</Format>
@@ -1247,32 +1381,46 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>ESP_Qualified_Deal_Flow_Date__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <TopBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </RightBorder>
                             <FontFamily />
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="NWO_ESP_Qualified_Deal_Flow_Date__c">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value</Value>
+                                  <Style>
+                                    <FontFamily />
+                                    <Format>d</Format>
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>NWO_ESP_Qualified_Deal_Flow_Date__c</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1290,7 +1438,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ESP_NOT_QDF_Reason__c.Value</Value>
+                                  <Value>=Fields!NEO_ESP_NOT_QDF_Reason__c.Value</Value>
                                   <Style>
                                     <FontFamily />
                                     <Color>#333333</Color>
@@ -1328,6 +1476,60 @@
                               <Width>1pt</Width>
                             </RightBorder>
                             <FontFamily />
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="NWO_ESP_NOT_QDF_Reason__c">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!NWO_ESP_NOT_QDF_Reason__c.Value</Value>
+                                  <Style>
+                                    <FontFamily />
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>NWO_ESP_NOT_QDF_Reason__c</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1862,6 +2064,8 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -1892,7 +2096,7 @@
             </SortExpressions>
             <Top>3.73903in</Top>
             <Height>0.43in</Height>
-            <Width>23.86879in</Width>
+            <Width>26.94504in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -1921,7 +2125,7 @@
             <rd:DefaultName>textbox11</rd:DefaultName>
             <Top>0.72167in</Top>
             <Height>0.25in</Height>
-            <Width>23.86875in</Width>
+            <Width>26.94504in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
@@ -1951,7 +2155,7 @@
             <rd:DefaultName>Textbox16</rd:DefaultName>
             <Top>0.44389in</Top>
             <Height>0.25in</Height>
-            <Width>23.86875in</Width>
+            <Width>26.94504in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -1970,7 +2174,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>This report displays the Organizations that are Qualified Deal Flow (QDF) but NOT Core City (CC) in Salesforce for the Time Period (Quarter) that needs reviewed.</Value>
+                    <Value>This report displays the Organizations that are Qualified Deal Flow (QDF) but NOT Non Tech in Salesforce for the Time Period (Quarter) that needs reviewed.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
@@ -1985,7 +2189,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>The goal is that any Companies that are eligible for Core City are marked as such prior to Quarterly Reporting on this program is Completed.</Value>
+                    <Value>The goal is that any Companies that are eligible for Non Tech are marked as such prior to Quarterly Reporting on this program is Completed.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
@@ -2054,7 +2258,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>And the "ESP Qualified Deal Flow Date" is NOT Blank.</Value>
+                    <Value>And the "NEO/NWO ESP Qualified Deal Flow Date" is NOT Blank.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
@@ -2072,7 +2276,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>And the "JS Core City Cleveland" is Blank.</Value>
+                    <Value>And the "Cleveland/Toledo/Stark Non Tech QDF Date" is Blank.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
@@ -2252,7 +2456,7 @@
             <rd:DefaultName>Textbox28</rd:DefaultName>
             <Top>0.97167in</Top>
             <Height>2.75347in</Height>
-            <Width>23.86875in</Width>
+            <Width>26.94504in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -2265,10 +2469,10 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>5.47388in</Height>
+        <Height>4.16903in</Height>
         <Style />
       </Body>
-      <Width>43.56249in</Width>
+      <Width>26.94504in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>

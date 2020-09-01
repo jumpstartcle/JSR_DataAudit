@@ -33,10 +33,6 @@
           <DataField>Date_of_First_Contact__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="JS_Date_of_First_Contact__c">
-          <DataField>JS_Date_of_First_Contact__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
         <Field Name="ESP_Do_Not_Survey_Date__c">
           <DataField>ESP_Do_Not_Survey_Date__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
@@ -45,16 +41,16 @@
           <DataField>ESP_Do_Not_Survey_Reason__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Core_City_Do_not_Survey_Date__c">
-          <DataField>Core_City_Do_not_Survey_Date__c</DataField>
+        <Field Name="Non_Tech_Do_not_Survey_Date__c">
+          <DataField>Non_Tech_Do_not_Survey_Date__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Non_Tech_Do_Not_Survey_Reason__c">
+          <DataField>Non_Tech_Do_Not_Survey_Reason__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="LeadAdvisorName">
           <DataField>LeadAdvisorName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Core_City_Do_Not_Survey_Reason__c">
-          <DataField>Core_City_Do_Not_Survey_Reason__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Person__c">
@@ -67,6 +63,10 @@
         </Field>
         <Field Name="PersonOrg">
           <DataField>PersonOrg</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PersonOrgId">
+          <DataField>PersonOrgId</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Date__c">
@@ -87,11 +87,11 @@
           <FilterExpression>=Fields!Date__c.Value</FilterExpression>
           <Operator>GreaterThan</Operator>
           <FilterValues>
-            <FilterValue>=Fields!Core_City_Do_not_Survey_Date__c.Value</FilterValue>
+            <FilterValue>=Fields!Non_Tech_Do_not_Survey_Date__c.Value</FilterValue>
           </FilterValues>
         </Filter>
         <Filter>
-          <FilterExpression>=IsNothing(Fields!Core_City_Do_not_Survey_Date__c.Value)</FilterExpression>
+          <FilterExpression>=IsNothing(Fields!Non_Tech_Do_not_Survey_Date__c.Value)</FilterExpression>
           <Operator>NotEqual</Operator>
           <FilterValues>
             <FilterValue DataType="Boolean">true</FilterValue>
@@ -215,7 +215,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Core City Do Not Survey Date</Value>
+                                  <Value>Non Tech Do Not Survey Date</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -248,7 +248,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Core City Do Not Survey Reason</Value>
+                                  <Value>Non Tech Do Not Survey Reason</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -538,14 +538,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Core_City_Do_not_Survey_Date__c">
+                        <Textbox Name="Non_Tech_Do_not_Survey_Date__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Core_City_Do_not_Survey_Date__c.Value</Value>
+                                  <Value>=Fields!Non_Tech_Do_not_Survey_Date__c.Value</Value>
                                   <Style>
                                     <Format>MM/dd/yyyy</Format>
                                   </Style>
@@ -556,7 +556,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Core_City_Do_not_Survey_Date__c</rd:DefaultName>
+                          <rd:DefaultName>Non_Tech_Do_not_Survey_Date__c</rd:DefaultName>
                           <ZIndex>7</ZIndex>
                           <Style>
                             <Border>
@@ -572,14 +572,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Core_City_Do_Not_Survey_Reason__c">
+                        <Textbox Name="Non_Tech_Do_Not_Survey_Reason__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Core_City_Do_Not_Survey_Reason__c.Value</Value>
+                                  <Value>=Fields!Non_Tech_Do_Not_Survey_Reason__c.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -588,7 +588,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Core_City_Do_Not_Survey_Reason__c</rd:DefaultName>
+                          <rd:DefaultName>Non_Tech_Do_Not_Survey_Reason__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -844,7 +844,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value> Time Records Logged After the Core City Do Not Survey Date</Value>
+                    <Value> Time Records Logged After the Non Tech Do Not Survey Date</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
                       <FontSize>20pt</FontSize>
@@ -933,7 +933,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Displays a list of Client Service records where there is Time recorded after the Core City Do Not Survey Date.</Value>
+                    <Value>Displays a list of Client Service records where there is Time recorded after the Non Tech Do Not Survey Date.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>

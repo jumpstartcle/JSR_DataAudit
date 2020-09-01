@@ -13,7 +13,7 @@
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>SalesForce</DataSourceName>
-        <CommandText>SELECT * FROM SSRS.vwDA_CoreCityDoNotSurveyAudit</CommandText>
+        <CommandText>SELECT * FROM SSRS.vwDA_NonTechDoNotSurveyAudit</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -29,17 +29,25 @@
           <DataField>leadadvisorname</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Core_City_Do_not_Survey_Date__c">
-          <DataField>Core_City_Do_not_Survey_Date__c</DataField>
+        <Field Name="Cleveland_Non_Tech_QDF_Date__c">
+          <DataField>Cleveland_Non_Tech_QDF_Date__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="Core_City_Do_Not_Survey_Reason__c">
-          <DataField>Core_City_Do_Not_Survey_Reason__c</DataField>
+        <Field Name="Stark_Non_Tech_QDF_Date__c">
+          <DataField>Stark_Non_Tech_QDF_Date__c</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Toledo_Non_Tech_QDF_Date__c">
+          <DataField>Toledo_Non_Tech_QDF_Date__c</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Non_Tech_Do_not_Survey_Date__c">
+          <DataField>Non_Tech_Do_not_Survey_Date__c</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Non_Tech_Do_Not_Survey_Reason__c">
+          <DataField>Non_Tech_Do_Not_Survey_Reason__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="JS_Core_City_Cleveland__c">
-          <DataField>JS_Core_City_Cleveland__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -55,7 +63,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Core City Do Not Survey Audit</Value>
+                    <Value>Non Tech Do Not Survey Audit</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
                       <FontSize>20pt</FontSize>
@@ -84,6 +92,12 @@
                 </TablixColumn>
                 <TablixColumn>
                   <Width>3.09289in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.60417in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.60417in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.60417in</Width>
@@ -219,7 +233,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>JS Core City Cleveland</Value>
+                                  <Value>Cleveland Non Tech QDF Date</Value>
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -266,6 +280,114 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox6">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Stark Non Tech QDF Date</Value>
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox6</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox8">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Toledo Non Tech QDF Date</Value>
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox8</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="Textbox33">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -273,7 +395,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Core City Do Not Survey Date</Value>
+                                  <Value>Non Tech Do Not Survey Date</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Arial</FontFamily>
@@ -331,7 +453,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Core City Do Not Survey Reason</Value>
+                                  <Value>Non Tech Do Not Survey Reason</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Arial</FontFamily>
@@ -483,16 +605,17 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="JS_Core_City_Cleveland__c1">
+                        <Textbox Name="Cleveland_Non_Tech_QDF_Date__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!JS_Core_City_Cleveland__c.Value</Value>
+                                  <Value>=Fields!Cleveland_Non_Tech_QDF_Date__c.Value</Value>
                                   <Style>
                                     <FontFamily />
+                                    <Format>d</Format>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
@@ -502,31 +625,81 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>JS_Core_City_Cleveland__c1</rd:DefaultName>
+                          <rd:DefaultName>Cleveland_Non_Tech_QDF_Date__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <TopBorder>
-                              <Color>Black</Color>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Stark_Non_Tech_QDF_Date__c">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Stark_Non_Tech_QDF_Date__c.Value</Value>
+                                  <Style>
+                                    <FontFamily />
+                                    <Format>d</Format>
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Stark_Non_Tech_QDF_Date__c</rd:DefaultName>
+                          <Style>
+                            <Border>
                               <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Color>Black</Color>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Toledo_Non_Tech_QDF_Date__c">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Toledo_Non_Tech_QDF_Date__c.Value</Value>
+                                  <Style>
+                                    <FontFamily />
+                                    <Format>d</Format>
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Toledo_Non_Tech_QDF_Date__c</rd:DefaultName>
+                          <Style>
+                            <Border>
                               <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </RightBorder>
+                            </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -544,7 +717,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Core_City_Do_not_Survey_Date__c.Value</Value>
+                                  <Value>=Fields!Non_Tech_Do_not_Survey_Date__c.Value</Value>
                                   <Style>
                                     <FontFamily />
                                     <Format>MM/dd/yyyy</Format>
@@ -572,14 +745,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Core_City_Do_Not_Survey_Reason__c">
+                        <Textbox Name="Non_Tech_Do_Not_Survey_Reason__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Core_City_Do_Not_Survey_Reason__c.Value</Value>
+                                  <Value>=Fields!Non_Tech_Do_Not_Survey_Reason__c.Value</Value>
                                   <Style>
                                     <FontFamily />
                                     <Color>#333333</Color>
@@ -591,7 +764,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Core_City_Do_Not_Survey_Reason__c</rd:DefaultName>
+                          <rd:DefaultName>Non_Tech_Do_Not_Survey_Reason__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -610,6 +783,8 @@
             </TablixBody>
             <TablixColumnHierarchy>
               <TablixMembers>
+                <TablixMember />
+                <TablixMember />
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
@@ -646,7 +821,7 @@
             <Top>1.8425in</Top>
             <Left>0.09375in</Left>
             <Height>0.43in</Height>
-            <Width>12.97292in</Width>
+            <Width>16.18126in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -673,8 +848,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox11</rd:DefaultName>
-            <Top>0.31944in</Top>
-            <Left>8.68245in</Left>
+            <Top>0.33208in</Top>
+            <Left>11.8908in</Left>
             <Height>0.25in</Height>
             <Width>4.38421in</Width>
             <ZIndex>2</ZIndex>
@@ -692,7 +867,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Queries Last Modified/Reviewed: 4/13/2018</Value>
+                    <Value>Queries Last Modified/Reviewed: 8/31/2020</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
                     </Style>
@@ -704,8 +879,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox16</rd:DefaultName>
-            <Top>0.02777in</Top>
-            <Left>8.68245in</Left>
+            <Left>11.8908in</Left>
             <Height>0.25in</Height>
             <Width>4.38421in</Width>
             <ZIndex>3</ZIndex>
@@ -741,7 +915,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>JS Core City Cleveland is not Blank AND</Value>
+                    <Value>JS Non Tech Cleveland/Stark/Toledo is not Blank AND</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
@@ -759,7 +933,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>There is a Core City Do Not Survey Date and NO Core City Do Not Survey Reason.</Value>
+                    <Value>There is a Non Tech Do Not Survey Date and NO Non Tech Do Not Survey Reason.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
@@ -777,7 +951,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>OR there is a Core City Do Not Survey Reason and NO Core City Do Not Survey Date.</Value>
+                    <Value>OR there is a Non Tech Do Not Survey Reason and NO Non Tech Do Not Survey Date.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
@@ -797,7 +971,7 @@
             <Top>0.62375in</Top>
             <Left>0.09375in</Left>
             <Height>1.03472in</Height>
-            <Width>12.97291in</Width>
+            <Width>16.18126in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -813,7 +987,7 @@
         <Height>4.78708in</Height>
         <Style />
       </Body>
-      <Width>13.20208in</Width>
+      <Width>16.27501in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>

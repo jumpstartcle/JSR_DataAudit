@@ -60,23 +60,23 @@
     <Report Include="BGC Missing Records Audit.rdl" />
     <Report Include="BGC Project Plan and Entrepreneur Audit.rdl" />
     <Report Include="Client Engagement Letter Review.rdl" />
-    <Report Include="Core City Do Not Survey Audit.rdl" />
     <Report Include="ESP Do Not Survey Audit.rdl" />
     <Report Include="Multiple Contacts Same Email Address - JOSF.rdl" />
     <Report Include="Multiple Contacts Same Email Address.rdl" />
+    <Report Include="Non Tech Do Not Survey Audit.rdl" />
     <Report Include="Non-ESP Time Records Audit.rdl" />
     <Report Include="Organizations Ethnicity Minority Fields Audit.rdl" />
     <Report Include="Organizations that are Classified as Ohio Third Frontier (OTF) PreSeed Funds.rdl" />
     <Report Include="Organizations that are Non-Tech QDF but not ESP QDF .rdl" />
     <Report Include="Organizations that are Not ESP QDF - Non JumpStart Created.rdl" />
     <Report Include="Organizations that are Not ESP QDF and Not Non-Tech QDF.rdl" />
-    <Report Include="Organizations that are QDF but Not Core City.rdl" />
+    <Report Include="Organizations that are QDF but Not Non Tech.rdl" />
     <Report Include="Organizations with Multiple Point in Time Records for the Same Date.rdl" />
     <Report Include="Organizations with Multiple Time Period Data Records for the Same Date.rdl" />
     <Report Include="Source Tranche Release Record Mismatch.rdl" />
     <Report Include="SSRS Source Audit.rdl" />
-    <Report Include="Time Records Logged After the Core City Do Not Survey Date.rdl" />
     <Report Include="Time Records Logged After the ESP Do Not Survey Date.rdl" />
+    <Report Include="Time Records Logged After the Non Tech Do Not Survey Date.rdl" />
     <Report Include="Time Records Logged Before the Date of First Contact.rdl" />
     <Report Include="Time Records NonNetwork Contact Record.rdl" />
   </ItemGroup>

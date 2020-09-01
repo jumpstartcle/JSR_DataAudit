@@ -84,24 +84,17 @@
       </Fields>
       <Filters>
         <Filter>
-          <FilterExpression>=IsNothing(Fields!ESP_Do_Not_Survey_Date__c.Value)</FilterExpression>
-          <Operator>NotEqual</Operator>
-          <FilterValues>
-            <FilterValue DataType="Boolean">=True</FilterValue>
-          </FilterValues>
-        </Filter>
-        <Filter>
           <FilterExpression>=Fields!Date__c.Value</FilterExpression>
           <Operator>GreaterThan</Operator>
           <FilterValues>
-            <FilterValue>=Fields!ESP_Do_Not_Survey_Date__c.Value</FilterValue>
+            <FilterValue>=Fields!Non_Tech_Do_not_Survey_Date__c.Value</FilterValue>
           </FilterValues>
         </Filter>
         <Filter>
-          <FilterExpression>=Fields!ESP_Do_Not_Survey_Reason__c.Value</FilterExpression>
+          <FilterExpression>=IsNothing(Fields!Non_Tech_Do_not_Survey_Date__c.Value)</FilterExpression>
           <Operator>NotEqual</Operator>
           <FilterValues>
-            <FilterValue>Pipeline Company</FilterValue>
+            <FilterValue DataType="Boolean">true</FilterValue>
           </FilterValues>
         </Filter>
       </Filters>
@@ -115,34 +108,34 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>2.92508in</Width>
+                  <Width>2.91446in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.89583in</Width>
+                  <Width>0.98958in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.05794in</Width>
+                  <Width>1.04988in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.17793in</Width>
+                  <Width>2.51507in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.99872in</Width>
+                  <Width>1.16446in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.99872in</Width>
+                  <Width>1.97624in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.88214in</Width>
+                  <Width>1.50822in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.70978in</Width>
+                  <Width>1.70044in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.82032in</Width>
+                  <Width>3.10124in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -222,7 +215,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>ESP Do Not Survey Date</Value>
+                                  <Value>Non Tech Do Not Survey Date</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -255,7 +248,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>ESP Do Not Survey Reason</Value>
+                                  <Value>Non Tech Do Not Survey Reason</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -288,7 +281,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Date (Of Time Tracking Record)</Value>
+                                  <Value>Date (OfTime Tracking Record)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -347,7 +340,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox52">
+                        <Textbox Name="Textbox50">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -545,14 +538,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="ESP_Do_Not_Survey_Date__c">
+                        <Textbox Name="Non_Tech_Do_not_Survey_Date__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ESP_Do_Not_Survey_Date__c.Value</Value>
+                                  <Value>=Fields!Non_Tech_Do_not_Survey_Date__c.Value</Value>
                                   <Style>
                                     <Format>MM/dd/yyyy</Format>
                                   </Style>
@@ -563,7 +556,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>ESP_Do_Not_Survey_Date__c</rd:DefaultName>
+                          <rd:DefaultName>Non_Tech_Do_not_Survey_Date__c</rd:DefaultName>
                           <ZIndex>7</ZIndex>
                           <Style>
                             <Border>
@@ -579,14 +572,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="ESP_Do_Not_Survey_Reason__c">
+                        <Textbox Name="Non_Tech_Do_Not_Survey_Reason__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ESP_Do_Not_Survey_Reason__c.Value</Value>
+                                  <Value>=Fields!Non_Tech_Do_Not_Survey_Reason__c.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -595,7 +588,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>ESP_Do_Not_Survey_Reason__c</rd:DefaultName>
+                          <rd:DefaultName>Non_Tech_Do_Not_Survey_Reason__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -677,7 +670,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="TimeRecordType2">
+                        <Textbox Name="TimeRecordType">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -839,9 +832,9 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>TimeRecords</DataSetName>
-            <Top>1.67889in</Top>
+            <Top>1.42194in</Top>
             <Height>0.5in</Height>
-            <Width>17.46646in</Width>
+            <Width>17.91959in</Width>
             <Style />
           </Tablix>
           <Textbox Name="textbox6">
@@ -851,7 +844,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Time Records Logged After the ESP Do Not Survey Date</Value>
+                    <Value> Time Records Logged After the Non Tech Do Not Survey Date</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
                       <FontSize>20pt</FontSize>
@@ -864,7 +857,7 @@
             </Paragraphs>
             <rd:DefaultName>textbox6</rd:DefaultName>
             <Height>0.375in</Height>
-            <Width>17.46646in</Width>
+            <Width>17.91959in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
@@ -892,7 +885,7 @@
             <rd:DefaultName>Textbox23</rd:DefaultName>
             <Top>0.375in</Top>
             <Height>0.15in</Height>
-            <Width>17.46646in</Width>
+            <Width>17.91959in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -923,7 +916,7 @@
             <rd:DefaultName>Textbox21</rd:DefaultName>
             <Top>0.525in</Top>
             <Height>0.15in</Height>
-            <Width>17.46646in</Width>
+            <Width>17.91959in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -940,7 +933,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Displays a list of Client Service records where there is Time recorded after the ESP Do Not Survey Date.</Value>
+                    <Value>Displays a list of Client Service records where there is Time recorded after the Non Tech Do Not Survey Date.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -966,9 +959,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Time tracking Date &gt; ESP_Do_Not_Survey_Date__c.
-ESP_Do_Not_Survey_Date__c  NOT IS NULL.
-ESP_Do_Not_Survey_Reason does not equal "Pipeline Company"</Value>
+                    <Value>Work Instructions</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -981,8 +972,8 @@ ESP_Do_Not_Survey_Reason does not equal "Pipeline Company"</Value>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>0.675in</Top>
-            <Height>0.94833in</Height>
-            <Width>17.46646in</Width>
+            <Height>0.6775in</Height>
+            <Width>17.91959in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -993,10 +984,10 @@ ESP_Do_Not_Survey_Reason does not equal "Pipeline Company"</Value>
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>2.39236in</Height>
+        <Height>2.06944in</Height>
         <Style />
       </Body>
-      <Width>17.53938in</Width>
+      <Width>18.01333in</Width>
       <Page>
         <PageHeight>8.5in</PageHeight>
         <PageWidth>11in</PageWidth>
