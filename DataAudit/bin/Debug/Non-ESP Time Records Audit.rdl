@@ -84,16 +84,16 @@
           <DataField>Case</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="NEO_ESP_Total_Time_Spent__c">
+          <DataField>NEO_ESP_Total_Time_Spent__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="Total_Time_Spent__c">
           <DataField>Total_Time_Spent__c</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="NEO_Total_ESP_Time_Spent__c">
-          <DataField>NEO_Total_ESP_Time_Spent__c</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="NWO_Total_ESP_Time_Spent__c">
-          <DataField>NWO_Total_ESP_Time_Spent__c</DataField>
+        <Field Name="NWO_ESP_Total_Time_Spent__c">
+          <DataField>NWO_ESP_Total_Time_Spent__c</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
       </Fields>
@@ -1061,14 +1061,14 @@ ORDER BY Name</CommandText>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="NEO_Total_ESP_Time_Spent__c">
+                        <Textbox Name="NEO_ESP_Total_Time_Spent__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!NEO_Total_ESP_Time_Spent__c.Value</Value>
+                                  <Value>=Fields!NEO_ESP_Total_Time_Spent__c.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1077,7 +1077,7 @@ ORDER BY Name</CommandText>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>NEO_Total_ESP_Time_Spent__c</rd:DefaultName>
+                          <rd:DefaultName>NEO_ESP_Total_Time_Spent__c</rd:DefaultName>
                           <ZIndex>3</ZIndex>
                           <Style>
                             <Border>
@@ -1093,14 +1093,14 @@ ORDER BY Name</CommandText>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="NWO_Total_ESP_Time_Spent__c">
+                        <Textbox Name="NWO_ESP_Total_Time_Spent__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!NWO_Total_ESP_Time_Spent__c.Value</Value>
+                                  <Value>=Fields!NWO_ESP_Total_Time_Spent__c.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1109,7 +1109,7 @@ ORDER BY Name</CommandText>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>NWO_Total_ESP_Time_Spent__c</rd:DefaultName>
+                          <rd:DefaultName>NWO_ESP_Total_Time_Spent__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>

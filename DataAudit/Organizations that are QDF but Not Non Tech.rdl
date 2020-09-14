@@ -182,10 +182,10 @@
           </FilterValues>
         </Filter>
         <Filter>
-          <FilterExpression>=IsNothing(Fields!NEO_ESP_Qualified_Deal_Flow_Date__c.Value) And IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
-          <Operator>Equal</Operator>
+          <FilterExpression>=IIf(IsNothing(Fields!NEO_ESP_Qualified_Deal_Flow_Date__c.Value),0,1) + IIf(IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value),0,1)</FilterExpression>
+          <Operator>GreaterThan</Operator>
           <FilterValues>
-            <FilterValue DataType="Boolean">false</FilterValue>
+            <FilterValue DataType="Integer">0</FilterValue>
           </FilterValues>
         </Filter>
         <Filter>
@@ -193,13 +193,6 @@
           <Operator>Equal</Operator>
           <FilterValues>
             <FilterValue>JumpStart Inc.</FilterValue>
-          </FilterValues>
-        </Filter>
-        <Filter>
-          <FilterExpression>=Fields!County__c.Value</FilterExpression>
-          <Operator>Equal</Operator>
-          <FilterValues>
-            <FilterValue>Cuyahoga</FilterValue>
           </FilterValues>
         </Filter>
       </Filters>

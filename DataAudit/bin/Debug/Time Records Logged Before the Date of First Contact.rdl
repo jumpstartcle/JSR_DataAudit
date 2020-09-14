@@ -33,10 +33,6 @@
           <DataField>Date_of_First_Contact__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="JS_Date_of_First_Contact__c">
-          <DataField>JS_Date_of_First_Contact__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
         <Field Name="ESP_Do_Not_Survey_Date__c">
           <DataField>ESP_Do_Not_Survey_Date__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
@@ -45,16 +41,16 @@
           <DataField>ESP_Do_Not_Survey_Reason__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Core_City_Do_not_Survey_Date__c">
-          <DataField>Core_City_Do_not_Survey_Date__c</DataField>
+        <Field Name="Non_Tech_Do_not_Survey_Date__c">
+          <DataField>Non_Tech_Do_not_Survey_Date__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Non_Tech_Do_Not_Survey_Reason__c">
+          <DataField>Non_Tech_Do_Not_Survey_Reason__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="LeadAdvisorName">
           <DataField>LeadAdvisorName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Core_City_Do_Not_Survey_Reason__c">
-          <DataField>Core_City_Do_Not_Survey_Reason__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Person__c">
