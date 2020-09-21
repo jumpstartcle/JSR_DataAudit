@@ -122,7 +122,7 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.50125in</Height>
+                  <Height>0.60542in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -519,7 +519,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.28292in</Height>
+                  <Height>0.38709in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -951,9 +951,9 @@
                 <Value>=Fields!OrgName.Value</Value>
               </SortExpression>
             </SortExpressions>
-            <Top>2.40223in</Top>
-            <Height>0.78417in</Height>
-            <Width>18.90602in</Width>
+            <Top>2.307in</Top>
+            <Height>0.9925in</Height>
+            <Width>18.906in</Width>
             <Style />
           </Tablix>
           <Textbox Name="textbox1">
@@ -975,16 +975,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
-            <Top>0.01389in</Top>
-            <Height>0.38085in</Height>
-            <Width>18.90602in</Width>
+            <Left>0.00002in</Left>
+            <Height>0.375in</Height>
+            <Width>18.906in</Width>
             <ZIndex>1</ZIndex>
-            <Style>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
+            <Style />
           </Textbox>
           <Textbox Name="Textbox6">
             <CanGrow>true</CanGrow>
@@ -994,7 +989,9 @@
                 <TextRuns>
                   <TextRun>
                     <Value>Query Last Modified/Reviewed: 04/04/2018</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style>
@@ -1003,18 +1000,15 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>0.46418in</Top>
-            <Height>0.22222in</Height>
-            <Width>18.90602in</Width>
+            <Top>0.375in</Top>
+            <Left>0.00002in</Left>
+            <Height>0.15in</Height>
+            <Width>18.906in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="textbox11">
@@ -1025,7 +1019,9 @@
                 <TextRuns>
                   <TextRun>
                     <Value>="Report Run on " &amp; Globals!ExecutionTime</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style>
@@ -1034,16 +1030,12 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox11</rd:DefaultName>
-            <Top>0.72807in</Top>
-            <Height>0.21875in</Height>
-            <Width>18.90602in</Width>
+            <Top>0.525in</Top>
+            <Left>0.00002in</Left>
+            <Height>0.15in</Height>
+            <Width>18.906in</Width>
             <ZIndex>3</ZIndex>
-            <Style>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
+            <Style />
           </Textbox>
           <Textbox Name="Textbox14">
             <CanGrow>true</CanGrow>
@@ -1258,25 +1250,21 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox13</rd:DefaultName>
-            <Top>0.96071in</Top>
-            <Height>1.41375in</Height>
-            <Width>18.90602in</Width>
+            <Top>0.675in</Top>
+            <Height>1.632in</Height>
+            <Width>18.906in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
         </ReportItems>
         <Height>4.95308in</Height>
         <Style />
       </Body>
-      <Width>18.90602in</Width>
+      <Width>18.90604in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>

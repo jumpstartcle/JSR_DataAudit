@@ -213,8 +213,8 @@ IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
                   <TextRun>
                     <Value>Organizations that are Non-Tech QDF but Not ESP QDF</Value>
                     <Style>
-                      <FontFamily>Arial</FontFamily>
-                      <FontSize>16pt</FontSize>
+                      <FontFamily>Tahoma</FontFamily>
+                      <FontSize>20pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -223,14 +223,9 @@ IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
-            <Height>0.43in</Height>
-            <Width>5.875in</Width>
-            <Style>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
+            <Height>0.375in</Height>
+            <Width>23.129in</Width>
+            <Style />
           </Textbox>
           <Tablix Name="table1">
             <TablixBody>
@@ -280,7 +275,7 @@ IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.22in</Height>
+                  <Height>0.255in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1033,7 +1028,7 @@ IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.21in</Height>
+                  <Height>0.245in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1821,9 +1816,8 @@ IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
                 <Value>=Fields!Name.Value</Value>
               </SortExpression>
             </SortExpressions>
-            <Top>1.95708in</Top>
-            <Left>0.09375in</Left>
-            <Height>0.43in</Height>
+            <Top>3.2918in</Top>
+            <Height>0.5in</Height>
             <Width>23.12916in</Width>
             <ZIndex>1</ZIndex>
             <Style>
@@ -1842,24 +1836,21 @@ IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
                     <Value>="Report Run on " &amp; Globals!ExecutionTime</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
+                      <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <Style />
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox11</rd:DefaultName>
-            <Top>0.31944in</Top>
-            <Left>6.08871in</Left>
-            <Height>0.25in</Height>
-            <Width>5.29046in</Width>
+            <Top>0.525in</Top>
+            <Height>0.15in</Height>
+            <Width>23.129in</Width>
             <ZIndex>2</ZIndex>
-            <Style>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
+            <Style />
           </Textbox>
           <Textbox Name="Textbox16">
             <CanGrow>true</CanGrow>
@@ -1871,25 +1862,24 @@ IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
                     <Value>Queries Last Modified/Reviewed: 8/17/2020</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
+                      <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <Style />
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox16</rd:DefaultName>
-            <Left>6.08871in</Left>
-            <Height>0.25in</Height>
-            <Width>5.29046in</Width>
+            <Top>0.375in</Top>
+            <Height>0.15in</Height>
+            <Width>23.129in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="Textbox28">
@@ -2197,26 +2187,21 @@ IsNothing(Fields!NWO_ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>0.62375in</Top>
-            <Left>0.09375in</Left>
-            <Height>1.26389in</Height>
-            <Width>11.28542in</Width>
+            <Top>0.675in</Top>
+            <Height>2.6168in</Height>
+            <Width>23.129in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
                 <Style>Solid</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>4.07875in</Height>
+        <Height>4.00583in</Height>
         <Style />
       </Body>
-      <Width>23.22291in</Width>
+      <Width>23.36337in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>

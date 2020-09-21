@@ -913,9 +913,9 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>4.98611in</Top>
+        <Top>4.675in</Top>
         <Height>0.75in</Height>
-        <Width>14.61458in</Width>
+        <Width>14.6145in</Width>
         <Style />
       </Tablix>
       <Textbox Name="Textbox16">
@@ -1036,18 +1036,14 @@ If you find that a Contact should have multiple contact records add today's date
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox16</rd:DefaultName>
-        <Top>0.91667in</Top>
+        <Top>0.675in</Top>
         <Height>4in</Height>
-        <Width>14.85417in</Width>
+        <Width>14.6145in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
       <Textbox Name="textbox1">
@@ -1069,15 +1065,10 @@ If you find that a Contact should have multiple contact records add today's date
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox1</rd:DefaultName>
-        <Height>0.37153in</Height>
-        <Width>14.85417in</Width>
+        <Height>0.375in</Height>
+        <Width>14.6145in</Width>
         <ZIndex>2</ZIndex>
-        <Style>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
+        <Style />
       </Textbox>
       <Textbox Name="Textbox4">
         <CanGrow>true</CanGrow>
@@ -1098,18 +1089,14 @@ If you find that a Contact should have multiple contact records add today's date
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox3</rd:DefaultName>
-        <Top>0.38542in</Top>
-        <Height>0.25in</Height>
-        <Width>14.85417in</Width>
+        <Top>0.375in</Top>
+        <Height>0.15in</Height>
+        <Width>14.6145in</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
       <Textbox Name="Textbox3">
@@ -1131,22 +1118,18 @@ If you find that a Contact should have multiple contact records add today's date
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox3</rd:DefaultName>
-        <Top>0.63542in</Top>
-        <Height>0.20833in</Height>
-        <Width>14.85417in</Width>
+        <Top>0.525in</Top>
+        <Height>0.15in</Height>
+        <Width>14.6145in</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>8.03in</Height>
+    <Height>5.70708in</Height>
     <Style />
   </Body>
   <Width>15in</Width>

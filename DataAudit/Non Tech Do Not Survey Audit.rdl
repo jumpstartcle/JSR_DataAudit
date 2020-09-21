@@ -75,14 +75,9 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
-            <Height>0.43in</Height>
-            <Width>6.87413in</Width>
-            <Style>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
+            <Height>0.375in</Height>
+            <Width>16.1812in</Width>
+            <Style />
           </Textbox>
           <Tablix Name="table1">
             <TablixBody>
@@ -111,7 +106,7 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.22in</Height>
+                  <Height>0.49458in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -505,7 +500,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.21in</Height>
+                  <Height>0.245in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -818,10 +813,9 @@
                 <Value>=Fields!CSname.Value</Value>
               </SortExpression>
             </SortExpressions>
-            <Top>1.8425in</Top>
-            <Left>0.09375in</Left>
-            <Height>0.43in</Height>
-            <Width>16.18126in</Width>
+            <Top>1.625in</Top>
+            <Height>0.73958in</Height>
+            <Width>16.1812in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -839,6 +833,7 @@
                     <Value>="Report Run on " &amp; Globals!ExecutionTime</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
+                      <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -848,17 +843,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox11</rd:DefaultName>
-            <Top>0.33208in</Top>
-            <Left>11.8908in</Left>
-            <Height>0.25in</Height>
-            <Width>4.38421in</Width>
+            <Top>0.525in</Top>
+            <Height>0.15in</Height>
+            <Width>16.1812in</Width>
             <ZIndex>2</ZIndex>
-            <Style>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
+            <Style />
           </Textbox>
           <Textbox Name="Textbox16">
             <CanGrow>true</CanGrow>
@@ -870,6 +859,7 @@
                     <Value>Queries Last Modified/Reviewed: 8/31/2020</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
+                      <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -879,18 +869,14 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox16</rd:DefaultName>
-            <Left>11.8908in</Left>
-            <Height>0.25in</Height>
-            <Width>4.38421in</Width>
+            <Top>0.375in</Top>
+            <Height>0.15in</Height>
+            <Width>16.1812in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="Textbox28">
@@ -968,23 +954,18 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>0.62375in</Top>
-            <Left>0.09375in</Left>
-            <Height>1.03472in</Height>
-            <Width>16.18126in</Width>
+            <Top>0.675in</Top>
+            <Height>0.95in</Height>
+            <Width>16.1812in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
                 <Style>Solid</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>4.78708in</Height>
+        <Height>2.5475in</Height>
         <Style />
       </Body>
       <Width>16.27501in</Width>

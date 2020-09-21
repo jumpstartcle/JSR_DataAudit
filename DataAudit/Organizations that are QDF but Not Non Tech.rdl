@@ -221,14 +221,9 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
-            <Height>0.43in</Height>
+            <Height>0.375in</Height>
             <Width>26.94504in</Width>
-            <Style>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
+            <Style />
           </Textbox>
           <Tablix Name="table1">
             <TablixBody>
@@ -287,7 +282,7 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.22in</Height>
+                  <Height>0.255in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1199,7 +1194,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.21in</Height>
+                  <Height>0.245in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -2087,8 +2082,8 @@
                 <Value>=Fields!Name.Value</Value>
               </SortExpression>
             </SortExpressions>
-            <Top>3.73903in</Top>
-            <Height>0.43in</Height>
+            <Top>3.4284in</Top>
+            <Height>0.5in</Height>
             <Width>26.94504in</Width>
             <ZIndex>1</ZIndex>
             <Style>
@@ -2107,6 +2102,7 @@
                     <Value>="Report Run on " &amp; Globals!ExecutionTime</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
+                      <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -2116,16 +2112,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox11</rd:DefaultName>
-            <Top>0.72167in</Top>
-            <Height>0.25in</Height>
+            <Top>0.525in</Top>
+            <Height>0.15in</Height>
             <Width>26.94504in</Width>
             <ZIndex>2</ZIndex>
-            <Style>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
+            <Style />
           </Textbox>
           <Textbox Name="Textbox16">
             <CanGrow>true</CanGrow>
@@ -2137,6 +2128,7 @@
                     <Value>Queries Last Modified/Reviewed: 3/30/2018</Value>
                     <Style>
                       <FontFamily>Arial</FontFamily>
+                      <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -2146,18 +2138,14 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox16</rd:DefaultName>
-            <Top>0.44389in</Top>
-            <Height>0.25in</Height>
+            <Top>0.375in</Top>
+            <Height>0.15in</Height>
             <Width>26.94504in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="Textbox28">
@@ -2430,7 +2418,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>If you find any duplicate Client Services Records during your review, please bring them to the attention of IT (Alex or Jeri).</Value>
+                    <Value>If you find any duplicate Client Services Records during your review, please bring them to the attention of IT (Steve or Jeri).</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
@@ -2447,22 +2435,18 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>0.97167in</Top>
-            <Height>2.75347in</Height>
+            <Top>0.675in</Top>
+            <Height>2.7534in</Height>
             <Width>26.94504in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
                 <Style>Solid</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>4.16903in</Height>
+        <Height>4.12042in</Height>
         <Style />
       </Body>
       <Width>26.94504in</Width>
