@@ -95,37 +95,37 @@ From [SSRS].[vwBGC_DealFlow_RecType]</CommandText>
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>2.5in</Width>
+                  <Width>2.5767in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.19791in</Width>
+                  <Width>3.27461in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.55208in</Width>
+                  <Width>1.62878in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.0767in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.1875in</Width>
+                  <Width>1.2642in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.0767in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2in</Width>
+                  <Width>2.0767in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5in</Width>
+                  <Width>2.5767in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.29167in</Width>
+                  <Width>1.36837in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.45833in</Width>
+                  <Width>1.96212in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>5.15625in</Width>
+                  <Width>5.23295in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -994,7 +994,7 @@ From [SSRS].[vwBGC_DealFlow_RecType]</CommandText>
             <DataSetName>DataSet1</DataSetName>
             <Top>1.58125in</Top>
             <Height>0.43in</Height>
-            <Width>22.84375in</Width>
+            <Width>24.11457in</Width>
             <Style />
           </Tablix>
           <Textbox Name="Textbox17">
@@ -1048,7 +1048,7 @@ This report will be blank if there are no BGC organizations with an incomplete m
             <rd:DefaultName>Textbox17</rd:DefaultName>
             <Top>0.66111in</Top>
             <Height>0.90625in</Height>
-            <Width>19.83333in</Width>
+            <Width>24.11457in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -1082,7 +1082,7 @@ This report will be blank if there are no BGC organizations with an incomplete m
             <rd:DefaultName>Textbox5</rd:DefaultName>
             <Top>0.525in</Top>
             <Height>0.15in</Height>
-            <Width>19.83333in</Width>
+            <Width>24.11457in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -1110,9 +1110,9 @@ This report will be blank if there are no BGC organizations with an incomplete m
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox4</rd:DefaultName>
-            <Top>0.375in</Top>
+            <Top>0.38889in</Top>
             <Height>0.15in</Height>
-            <Width>19.83333in</Width>
+            <Width>24.11457in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -1142,7 +1142,7 @@ This report will be blank if there are no BGC organizations with an incomplete m
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Height>0.375in</Height>
-            <Width>19.83333in</Width>
+            <Width>24.11457in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
@@ -1153,7 +1153,7 @@ This report will be blank if there are no BGC organizations with an incomplete m
         <Height>2.01125in</Height>
         <Style />
       </Body>
-      <Width>23.60416in</Width>
+      <Width>24.11457in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
