@@ -479,7 +479,7 @@ From [SSRS].[vwBGC_DealFlow_RecType]</CommandText>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Milestones</Value>
+                                  <Value>Milestone</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -515,7 +515,7 @@ From [SSRS].[vwBGC_DealFlow_RecType]</CommandText>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Description</Value>
+                                  <Value>SMART Description or Other Milestone</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -994,7 +994,7 @@ From [SSRS].[vwBGC_DealFlow_RecType]</CommandText>
             <DataSetName>DataSet1</DataSetName>
             <Top>1.58125in</Top>
             <Height>0.43in</Height>
-            <Width>24.11457in</Width>
+            <Width>24.11453in</Width>
             <Style />
           </Tablix>
           <Textbox Name="Textbox17">
