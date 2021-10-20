@@ -56,7 +56,6 @@
     <Report Include="Multiple Contacts Same Email Address - JOSF.rdl" />
     <Report Include="Multiple Contacts Same Email Address.rdl" />
     <Report Include="SSRS Source Audit.rdl" />
-    <Report Include="Time Records NonNetwork Contact Record.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

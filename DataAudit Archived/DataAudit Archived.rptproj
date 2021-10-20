@@ -78,6 +78,7 @@
     <Report Include="Time Records Logged After the Non Tech Do Not Survey Date.rdl" />
     <Report Include="Time Records Logged Before the Date of First Contact.rdl" />
     <Report Include="Time Records Logged Before the JS Date of First Contact.rdl" />
+    <Report Include="Time Records NonNetwork Contact Record.rdl" />
     <Report Include="Update Network Funded Date.rdl" />
     <Report Include="Update Network OTF PreSeed Date.rdl" />
   </ItemGroup>
